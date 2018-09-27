@@ -1,0 +1,27 @@
+    \documentclass{article}
+   \usepackage{fullpage}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \usepackage{lipsum}%just to generate some text
+     
+    \renewcommand\headheight{12pt}%this change was suggested by a warning obtained after compilation
+                                                     %of your original code. Pay attention to those warnings
+    \fancyhead{}%apparently you don't need headers
+    \renewcommand\headrule{}%without headers there's no need to have a headrule
+    \fancyfoot[R]{\slshape Blah Blah Blah}%there was some redunant code here
+     
+    \title{What Is This ??}
+    \author{Prof XYZ, Ph.D}
+    \date{}
+     
+    \begin{document}
+     
+    %let the first page have footers too
+    \begingroup
+       \maketitle
+       \thispagestyle{fancy}
+    \endgroup
+     
+    \lipsum[1-20]
+     
+    \end{document}

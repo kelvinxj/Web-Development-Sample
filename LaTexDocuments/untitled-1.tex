@@ -1,0 +1,47 @@
+%document begin with \document{styleName}
+
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\begin{document}
+
+%`` means left double quote while " means right double quote
+%{\br some text} will show bold font
+``Well, in {\bf OUR country},'' said Alice, still panting 
+a little, ``you'd generally get to somewhere else -- if
+you ran very fast for a long time, as 
+we've been doing.''
+
+%blank line will create new paragraph
+
+``A slow sort of country!'' said the Queen.
+
+%\verb will not interprete TeX command
+\verb,showing  Tex commands(not regard as command): \begin{tabular},
+
+% it is a comment
+\begin{center}
+This is a centered text.
+\end{center}
+
+%used like multiple line comment
+\iffalse
+multiple line comment
+\fi
+
+`Twas brillig, and the slithy toves \\
+     Did gyre and gimble in the wabe; \\
+     All mimsy were the borogoves, \\
+     And the mome raths outgrabe.
+
+``Now, HERE, you see, it takes all the 
+running YOU can do, to keep in the same
+place.  If you want to get somewhere else,
+you must run at least twice as fast as that!''
+
+ \begin{tabular}{rrr}
+   This & Here & And the \\
+   is & is second & third is \\
+   first & column & here \\
+   \end{tabular}
+
+\end{document}
