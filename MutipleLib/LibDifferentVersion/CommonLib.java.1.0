@@ -1,0 +1,9 @@
+package org.mylib;
+
+public class CommonLib {
+
+	public void func() {
+		System.out.println("This is version 1.0");
+	}
+
+}
