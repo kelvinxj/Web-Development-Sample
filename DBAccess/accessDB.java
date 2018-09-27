@@ -13,7 +13,7 @@ public class accessDB {
 		//if you type user name and password in connection string, you
 		//only need to call DriverManager.getConnection(connString) to get connection.
 		//String connectionString = "jdbc:mysql://localhost/world?useSSL=false;user=xiejia&password=Lihui2020";
-		String connectionString = "jdbc:db2://n000a381.cloud.icds.ibm.com:55000/MDMTEST3:sslConnection=true;sslTrustStoreLocation=C:\\Users\\IBM_ADMIN\\Documents\\cert\\myCerts.jks;sslTrustStorePassword=Lihui2020;";
+		String connectionString = "jdbcurl:sslConnection=true;sslTrustStoreLocation=C:\\Users\\IBM_ADMIN\\Documents\\cert\\myCerts.jks;sslTrustStorePassword=Lihui2020;";
 		//String connectionString = "jdbc:db2://localhost:50000/MDMEXTD";
 		ResultSet rs = null;
 		Statement stmt = null;
