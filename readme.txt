@@ -1,0 +1,1 @@
+java_ee_sdk-6u3-windows.exe -j C:\IBM\WebSphere\AppServer\java\jre
