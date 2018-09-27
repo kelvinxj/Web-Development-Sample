@@ -1,0 +1,29 @@
+This is MetaPost, version 2.000 (TeX Live 2017/W32TeX) (kpathsea version 6.2.3)  1 FEB 2018 17:54
+**gridandshapes.mp
+(c:/texlive/2017/texmf-dist/metapost/context/base/common/metafun.mp
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/metafun.mpii
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-base.mpii
+Preloading the plain mem file, version 1.004 for metafun ii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-tool.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-spec.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-core.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-page.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-text.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-txts.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-shap.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-butt.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-char.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-step.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-grph.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-figs.mpii)
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-grid.mpii
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-form.mpii
+(c:/texlive/2017/texmf-dist/metapost/base/string.mp)
+(c:/texlive/2017/texmf-dist/metapost/base/marith.mp
+(c:/texlive/2017/texmf-dist/metapost/base/string.mp))))
+(c:/texlive/2017/texmf-dist/metapost/context/base/mpii/mp-func.mpii)))
+(./gridandshapes.mp [1{psfonts.map}]
+metafun ii 2018-2-1 17:54
+ )
+1 output file written: gridandshapes-1.svg
+

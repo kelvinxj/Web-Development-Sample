@@ -1,0 +1,15 @@
+This is MetaPost, version 2.000 (TeX Live 2017/W32TeX) (kpathsea version 6.2.3)  1 FEB 2018 14:37
+**dot.mp
+(c:/texlive/2017/texmf-dist/metapost/base/mpost.mp
+(c:/texlive/2017/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./dot.mp
+>> 0.03528boundingbox.currentpicture.enlarged1
+! Improper `clip'.
+<to be read again> 
+                   ;
+l.15 ...boundingbox currentpicture enlarged 1/2u ;
+                                                  
+? 
+[1] )
+1 output file written: dot-1.svg
+
