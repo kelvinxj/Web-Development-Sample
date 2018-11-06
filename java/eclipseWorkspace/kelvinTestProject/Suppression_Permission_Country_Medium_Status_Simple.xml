@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SuppressionPermissionCountryMediumStatusInfo
+	xmlns="http://w3.ibm.com/xmlns/ibmww/com" xmlns:mo="http://w3.ibm.com/xmlns/ibmww/mo"
+	hasAllowedValues="y">
+	<IBM_Metadata>
+		<DublinCoreMetadata>
+			<Title>Suppression Permission 
+			Country Medium Status Business Data
+				Standard</Title>
+			<Subject>IBM Common schema for the Suppression Permission Country
+				Medium Status Business Data Standard</Subject>
+			<Publisher>IBM Corporation, mo</Publisher>
+			<Creator>kathert@us.ibm.com</Creator>
+			<Date.Created>2016-11-18T17:35:30GMT</Date.Created>
+			<Format>text/xml</Format>
+			<Identifier>https://w3.ibm.com/standards/information/tmt/output/Approved/ibmww/mo/bds/xml/Suppression_Permission/Suppression_Permission_Country_Medium_Status.xml
+			</Identifier>
+			<Language>en-US</Language>
+			<Description>IBM Common schema for instantiating the Suppression
+				Permission Country Medium Status Business Data Standard
+			</Description>
+		</DublinCoreMetadata>
+		<IBM_GWA_Metadata>
+			<Keywords>BDS, business data standards, data element, Suppression
+				Permission Country Medium Status</Keywords>
+		</IBM_GWA_Metadata>
+	</IBM_Metadata>
+</SuppressionPermissionCountryMediumStatusInfo>

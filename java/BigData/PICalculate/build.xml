@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project name="PICalculate" basedir="." default="clean-build">
+	<property name="src.dir" value="."/>
+	<property name="build.dir" value="build"/>
+	<property name="classes.dir" value="${build.dir}/classes"/>
+	<property name="jar.dir" value="."/>
+	<property name="lib.dir" value="../lib"/>
+	<property name="linuxShareDir" value="C:\Users\IBM_ADMIN\Documents\linuxshare"/>
+	<property name="srcFileName" value="${ant.project.name}.java"/>
+	<property name="sourceFolder" value="C:\Users\IBM_ADMIN\Documents\MySource\myEclipseWorkspace\kelvinTestProject\src\com\kelvin\test\mapreduce"/>
+	<path id="classpath">
+		<pathelement location="../lib/hadoop-core-1.0.3.jar"/>
+	</path>
+	
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete file="${jar.dir}/${ant.project.name}.jar"/>
+	</target>
+	<target name="copySource">
+		<copy file="${sourceFolder}/${srcFileName}" todir="${src.dir}" overwrite="true"/>
+	</target>
+	<target name="compile" depends="copySource">
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false">
+			<classpath>
+				<path refid="classpath"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<!--
+		<mkdir dir="${jar.dir}"/>
+		-->		
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<!--hadoop jar don't need manifest file
+			<manifest>
+				<attribute name="Main-Class" value="startUpClassName"/>
+			</manifest>
+			-->
+		</jar>
+	</target>
+	<target name="run" depends="jar">
+		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
+	</target>
+	<target name="copyToShare">
+		<copy file="${jar.dir}/${ant.project.name}.jar" todir="${linuxShareDir}" overwrite="true"/>
+	</target>
+	<target name="clean-build" depends="clean,jar,copyToShare"/>
+	<target name="main" depends="clean,run"/>
+</project>

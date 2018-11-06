@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.39-bin.jar" sourcepath="C:/Program Files (x86)/MySQL/Connector.J 5.1/src.zip"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/SQLLIB/java/db2jcc4.jar"/>
+	<classpathentry kind="lib" path="C:/RSA804/workspace_R1.3/MDM/lib/libphonenumber-8.8.9.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/libphonenumber-8.8.9-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/Avro/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/Avro/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/commons-cli-1.4/commons-cli-1.4.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/commons-cli-1.4/commons-cli-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/Avro/avro-1.8.2.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/Avro/avro-1.8.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/Avro/avro-mapred-1.8.2.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/Avro/avro-mapred-1.8.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/lib/mockito-all-1.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/lib/mrunit-1.0.0-hadoop1.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/src"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/log4j/apache-log4j-1.2.17/log4j-1.2.17.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/log4j/apache-log4j-1.2.17/src"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/common/hadoop-common-2.6.5.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/common/sources/hadoop-common-2.6.5-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.5.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/mapreduce/sources/hadoop-mapreduce-client-core-2.6.5-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

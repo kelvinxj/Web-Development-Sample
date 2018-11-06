@@ -1,0 +1,4436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SuppressionPermissionCountryMediumStatusInfo
+	xmlns="http://w3.ibm.com/xmlns/ibmww/com" xmlns:mo="http://w3.ibm.com/xmlns/ibmww/mo"
+	hasAllowedValues="y">
+	<IBM_Metadata>
+		<DublinCoreMetadata>
+			<Title>Suppression Permission Country Medium Status Business Data
+				Standard</Title>
+			<Subject>IBM Common schema for the Suppression Permission Country
+				Medium Status Business Data Standard</Subject>
+			<Publisher>IBM Corporation, mo</Publisher>
+			<Creator>kathert@us.ibm.com</Creator>
+			<Date.Created>2016-11-18T17:35:30GMT</Date.Created>
+			<Format>text/xml</Format>
+			<Identifier>https://w3.ibm.com/standards/information/tmt/output/Approved/ibmww/mo/bds/xml/Suppression_Permission/Suppression_Permission_Country_Medium_Status.xml
+			</Identifier>
+			<Language>en-US</Language>
+			<Description>IBM Common schema for instantiating the Suppression
+				Permission Country Medium Status Business Data Standard
+			</Description>
+		</DublinCoreMetadata>
+		<IBM_GWA_Metadata>
+			<Keywords>BDS, business data standards, data element, Suppression
+				Permission Country Medium Status</Keywords>
+		</IBM_GWA_Metadata>
+	</IBM_Metadata>
+	<BDS_CommonElements>
+		<BDS_DD_Name>SuppressionPermissionCountryMediumStatus</BDS_DD_Name>
+		<BDS_Title>Suppression Permission Country Medium Status</BDS_Title>
+		<BDS_Vocabulary>ibmww</BDS_Vocabulary>
+		<BDS_SubVocabulary>mo</BDS_SubVocabulary>
+		<BDS_StandardsGroup>Suppression_Permission</BDS_StandardsGroup>
+		<BDS_Definition>The Suppression Permission Country Medium Status
+			defines each Suppression Permission Medium (a communication type)
+			that is used to contact a customer for all countries where IBM
+			operates business. Each Suppression Permission Country Medium Status
+			defines either opt-in (Permission) or opt-out (Suppression) data
+			privacy laws for each Suppression Permission Medium in every Country.
+		</BDS_Definition>
+		<BDS_AV_Notes>Allow only values of opt-in or opt-out. Opt-in means
+			permission is required before communication to an individual. Opt-out
+			means permission is not required first and may be assumed.Scroll to
+			far right of page for values</BDS_AV_Notes>
+		<BDS_AV_QualifingValueName1>EmailPolicyType
+		</BDS_AV_QualifingValueName1>
+		<BDS_AV_QualifingValueName2>TelephonePolicyType
+		</BDS_AV_QualifingValueName2>
+		<BDS_AV_QualifingValueName3>ConsumerNotes</BDS_AV_QualifingValueName3>
+		<BDS_AV_QualifingValueName4>PostalMailStatus
+		</BDS_AV_QualifingValueName4>
+		<BDS_AV_QualifingValueName5>TelephonePermissionExceptionNotes
+		</BDS_AV_QualifingValueName5>
+		<BDS_AV_QualifingValueName6>EmailException
+		</BDS_AV_QualifingValueName6>
+		<BDS_AV_QualifingValueName7>TeleException</BDS_AV_QualifingValueName7>
+		<BDS_AV_QualifingValueName8>PostalException
+		</BDS_AV_QualifingValueName8>
+		<BDS_AV_QualifingValueName9>NoticeExemption
+		</BDS_AV_QualifingValueName9>
+	</BDS_CommonElements>
+	<SuppressionPermissionCountryMediumStatusList>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AD
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Andorra
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">United Arab Emirates
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Afghanistan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Albania
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Armenia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Angola
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Argentina
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">American Samoa
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Austria
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Australia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AX
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ãland Islands
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>AZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Azerbaijan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bosnia and
+				Herzegovina</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BD
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bangladesh
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Belgium
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Burkina Faso
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bulgaria
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bahrain
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Burundi
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BJ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Benin
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Brunei Darussalam
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bolivia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Brazil
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bhutan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BV
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Bouvet Island
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Botswana
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Belarus
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>BZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Belize
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Canada
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016 Oct added email code;Dec 2013 requested by
+				Canada Mktg &amp; Legal to change opt-in; May 2013 opt-in delayed;
+				Oct 15, 2011 email new effective date Jan 1. September 2011 changed
+				Telephone back to opt-out. July 2011 changed email and telephone to
+				opt-in and require permission.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-10-24</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue6>B6, C24</BDS_AV_QualifingValue6>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CC
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cocos (Keeling)
+				Islands</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CD
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Congo, The Democratic
+				Republic of the</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Central African
+				Republic</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Congo
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Switzerland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ivory Coast
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cook Islands
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Chile
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cameroon
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">China
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Colombia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2013-July changed all media from opt-out to opt-in
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2013-07-01</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Costa Rica
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cuba
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CV
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cape Verde
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CX
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Christmas Island
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cyprus
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>CZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Czech Republic
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>DE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Germany
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016 Oct added tel code; 2013-June added tele
+				exception;</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-10-24</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue5>IBM customers can be called wout Permission
+				having a bsns relationship or Prospects can be called when there is
+				a reason for the call Such as a preceding mail or e-mail, even if
+				the contact did not respond.</BDS_AV_QualifingValue5>
+			<BDS_AV_QualifingValue7>D3</BDS_AV_QualifingValue7>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>DJ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Djibouti
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>DK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Denmark
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016-Feb changed tele to opt-out consumer tel opt-in
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-03-21</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue5>consumer opt-in tele</BDS_AV_QualifingValue5>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>DO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Dominican Republic
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>DZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Algeria
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>EC
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ecuador
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>EE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Estonia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>EG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Egypt
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>EH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Western Sahara
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ER
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Eritrea
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ES
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Spain
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016 Oct added tel code; 2013-June added tele
+				exception;</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-10-24</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue5>explicit consent not required when there is a
+				pre-existing contractual relationship and is used to make
+				communications for products and services similar to those originally
+				contracted</BDS_AV_QualifingValue5>
+			<BDS_AV_QualifingValue7>C24</BDS_AV_QualifingValue7>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ET
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ethiopia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>FI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Finland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2013-dec changed email from opt-in to opt-out
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2013-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>FJ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Fiji
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>FK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Falkland Islands
+				(Malvinas)</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>FM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Micronesia, Federated
+				States of</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>FO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Faroe Islands
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>FR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">France
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Gabon
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GB
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">United Kingdom
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-10-12</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>Consumer, partners &amp; employees of
+				partnerships are opt-in. opt-in for automated calls
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Georgia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">French Guiana
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Guernsey
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ghana
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Gibraltar
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Greenland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Gambia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Guinea
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GP
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Guadeloupe
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GQ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Equatorial Guinea
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Greece
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2013-July tele changed to opt-out</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2013-07-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">South Georgia and the
+				South Sandwich Islands</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Guatemala
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Guam
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>GW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Guinea-Bissau
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>HK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Hong Kong
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>HM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Heard Island and
+				McDonald Islands</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>HN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Honduras
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>HR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Croatia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>HT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Haiti
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>HU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Hungary
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016 Sept change to opt-in; Nov 15 2011 Changed
+				Hungary email to opt-out policy.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-09-30</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ID
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Indonesia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>12-15-2011 changed email to opt-in</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ireland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Israel
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Isle of Man
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">India
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">British Indian Ocean
+				Territory</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IQ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Iraq
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Iran, Islamic
+				Republic of</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Iceland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>IT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Italy
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>JA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Jamaica
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>JE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Jersey
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>JO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Jordan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>JP
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Japan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Kenya
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Kyrgyzstan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Cambodia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Kiribati
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Comoros
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KP
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Korea, Democratic
+				People's Republic of</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Korea, Republic of
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>Nov 2014 Korea law changed email and tele; Nov 15
+				2011 Changed Korea telephone to opt-out policy.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-11-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Kuwait
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>KZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Kazakhstan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Lao People's
+				Democratic Republic</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LB
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Lebanon
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LC
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Saint Lucia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2012-10-15</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Liechtenstein
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Sri Lanka
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Liberia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Lesotho
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Lithuania
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Luxembourg
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LV
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Latvia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>LY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Libyan Arab
+				Jamahiriya</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Morocco
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MC
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Monaco
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MD
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Moldova, Republic of
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ME
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Montenegro
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Madagascar
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Marshall Islands
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Macedonia, The former
+				Yugoslav Republic of</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ML
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mali
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Myanmar
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mongolia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Macao
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MP
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Northern Mariana
+				Islands</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MQ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Martinique
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mauritania
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Malta
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016 Oct added tel code; 2013-June added tele
+				exception;</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-10-24</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue5>explicit consent not required when there is a
+				pre-existing contractual relationship and is used to make
+				communications for products and services similar to those originally
+				contracted</BDS_AV_QualifingValue5>
+			<BDS_AV_QualifingValue7>C24</BDS_AV_QualifingValue7>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mauritius
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct modified email opt-in to opt-out
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MV
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Maldives
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Malawi
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MX
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mexico
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Malaysia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>12-15-2011 modified email to opt-in
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>MZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mozambique
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Namibia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NC
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">New Caledonia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Niger
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Norfolk Island
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Nigeria
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Nicaragua
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Netherlands
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Norway
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NP
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Nepal
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Nauru
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Niue
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>NZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">New Zealand
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>OM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Oman
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Panama
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Peru
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2013-July changed all media from opt-out to opt-in
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2013-07-01</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">French Polynesia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Papua New Guinea
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Philippines
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>12-15-2011 changed email to opt-in</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Pakistan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Poland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Saint Pierre and
+				Miquelon</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Pitcairn
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Puerto Rico
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Palestinian
+				Territory, Occupied</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Portugal
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2016 Oct added tel code; 2013-June added tele
+				exception;</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-10-24</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue7>C24</BDS_AV_QualifingValue7>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Palau
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue5>explicit consent not required when there is a
+				pre-existing contractual relationship and is used to make
+				communications for products and services similar to those originally
+				contracted</BDS_AV_QualifingValue5>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>PY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Paraguay
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>QA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Qatar
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>RE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">RÃ©union
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>RO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Romania
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>RS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Serbia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>RU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Russian Federation
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>RW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Rwanda
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Saudi Arabia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-Oct changed telephone from opt-out to opt-in
+				per legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SB
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Solomon Islands
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SC
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Seychelles
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SD
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Sudan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Sweden
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Singapore
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>Country Do Not Call List - Consumer and
+				Business</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Saint Helena
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Slovenia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-in</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SJ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Svalbard and Jan
+				Mayen</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Slovakia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>tele changed to opt-out</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Sierra Leone
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">San Marino
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Senegal
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2014-Jul changed email from opt-out to opt-in per
+				legal; 2012-oct changed email from opt-in to opt-out per legal.
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2014-07-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Somalia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ST
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">SÃ£o Tome and
+				Principe</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SV
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">El Salvador
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Syrian Arab Republic
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>SZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Swaziland
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TD
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Chad
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">French Southern
+				Territories</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue3>opt-in for individual consumer contact
+			</BDS_AV_QualifingValue3>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Togo
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TH
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Thailand
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>12-15-2011 modified email to opt-in
+			</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TJ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Tajikistan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TK
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Tokelau
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TL
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Timor-Leste
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Turkmenistan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Tunisia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TO
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Tonga
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TR
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Turkey
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>changed email and telephone status from opt-in to
+				opt-out</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-02-23</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TV
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Tuvalu
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Taiwan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>TZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Tanzania, United
+				Republic of</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>UA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Ukraine
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>UG
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Uganda
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>US
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">United States
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2016-11-21</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+			<BDS_AV_QualifingValue9>Sales</BDS_AV_QualifingValue9>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>UY
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Uruguay
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>UZ
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Uzbekistan
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>VA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Holy See (Vatican
+				City State)</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-in</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>VE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Venezuela
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>VI
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Virgin Islands, U.S.
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>VN
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Vietnam
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>12-15-2011 changed email to opt-in</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2011-12-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>VU
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Vanuatu
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>WF
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Wallis and Futuna
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>WS
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Samoa
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>YE
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Yemen
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments>2012-oct changed email from opt-in to opt-out per
+				legal.</BDS_AV_Comments>
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_ChangeDeleteDate>2012-10-15</BDS_AV_ChangeDeleteDate>
+			<BDS_AV_QualifingValue1>opt-out</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>YT
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Mayotte
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ZA
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">South Africa
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ZM
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Zambia
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+		<SuppressionPermissionCountryMediumStatus
+			level="0" lastDBUpdateDate="2016-11-18">
+			<mo:SuppressionPermissionCountryMediumStatus>ZW
+			</mo:SuppressionPermissionCountryMediumStatus>
+			<BDS_AV_Description xml:lang="en-US">Zimbabwe
+			</BDS_AV_Description>
+			<BDS_AV_RecordType>Active</BDS_AV_RecordType>
+			<BDS_AV_MapToCode />
+			<BDS_AV_Comments />
+			<BDS_AV_SecurityClassification>Unclassified
+			</BDS_AV_SecurityClassification>
+			<BDS_AV_EffectiveDate>2009-01-01</BDS_AV_EffectiveDate>
+			<BDS_AV_AnnounceDate />
+			<BDS_AV_ExtendedDescription />
+			<BDS_AV_Business_Rule />
+			<BDS_AV_QualifingValue1>opt-in</BDS_AV_QualifingValue1>
+			<BDS_AV_QualifingValue2>opt-out</BDS_AV_QualifingValue2>
+			<BDS_AV_QualifingValue4>opt-out</BDS_AV_QualifingValue4>
+		</SuppressionPermissionCountryMediumStatus>
+	</SuppressionPermissionCountryMediumStatusList>
+</SuppressionPermissionCountryMediumStatusInfo>
