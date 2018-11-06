@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<classpath>
-  <source-attachment entry="C:/Users/IBM_ADMIN/Documents/MyTools/apache-tomcat-7.0.91-windows-x64/apache-tomcat-7.0.91/lib/catalina-ant.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="C:/Users/IBM_ADMIN/Documents/MyTools/apache-tomcat-7.0.91-src.zip"/>
-  <source-attachment entry="C:/Users/IBM_ADMIN/Documents/MyTools/apache-tomcat-7.0.91-windows-x64/apache-tomcat-7.0.91/lib/jasper.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="C:/Users/IBM_ADMIN/Documents/MyTools/apache-tomcat-7.0.91-src.zip"/>
-  <source-attachment entry="C:/Users/IBM_ADMIN/Documents/MyTools/apache-tomcat-7.0.91-windows-x64/apache-tomcat-7.0.91/lib/servlet-api.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="C:/Users/IBM_ADMIN/Documents/MyTools/apache-tomcat-7.0.91-src.zip"/>
-</classpath>

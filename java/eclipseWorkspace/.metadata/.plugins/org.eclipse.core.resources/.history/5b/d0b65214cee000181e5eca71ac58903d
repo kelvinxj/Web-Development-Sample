@@ -1,8 +1,0 @@
-package com.kelvin.web.bean;
-
-public class UserData {
-
-	String username;
-    String email;
-    int age;
-}
