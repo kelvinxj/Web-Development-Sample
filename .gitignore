@@ -16,4 +16,4 @@
 *.xmi
 
 #ignore eclispe workspace folder
-/java/eclipseWorkspace/.metadata
+#/java/eclipseWorkspace/.metadata
