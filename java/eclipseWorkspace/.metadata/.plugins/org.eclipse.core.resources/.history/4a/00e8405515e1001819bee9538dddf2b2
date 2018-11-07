@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+    <Resource  
+        name="jdbc/world" 
+		auth="Container" 
+        type="javax.sql.DataSource"
+        url="jdbc:mysql://localhost/world"
+        driverClassName ="com.mysql.jdbc.Driver"  
+        username="xiejia"  
+        password="Lihui2020"  
+    /> 
+</context>

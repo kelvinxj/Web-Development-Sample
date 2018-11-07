@@ -1,0 +1,8 @@
+package com.kelvin.web.bean;
+
+public class Snippet {
+	public static void main(String[] args) {
+		UserData
+	}
+}
+

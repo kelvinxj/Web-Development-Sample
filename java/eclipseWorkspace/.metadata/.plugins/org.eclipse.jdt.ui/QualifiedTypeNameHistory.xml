@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.bookstore.BookRepository"/>
+<fullyQualifiedTypeName name="com.bookstore.BookRepositoryJDBCImpl"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+</qualifiedTypeNameHistroy>
