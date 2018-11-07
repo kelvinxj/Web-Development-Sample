@@ -189,6 +189,20 @@ object Hello{
 		//Readlines from file
 		
 		//Language specific features
+		//case class: class only contains data
+		case class Time(hours:Int=0,minutes:Int=0)
+		
+		val time = Time(9,0)
+		val time1 = Time(9,0)		
+		
+		//unapply function can retrieve the value inside an case class
+		val timeOption = Time.unapply(time)
+		//timeOption is Tuple2 wrapped by "Some" type
+		println("time case class unapplied is: " + timeOption + "its value is: " + timeOption.get.getClass)
+		
+		//cass class compared by value, not by reference
+		println(time == time1)
+		
 		//Option:
 		var op = Option("Jamie")
 		println(op)
@@ -205,5 +219,39 @@ object Hello{
 		println(op)
 		op = Some("Jamie")
 		println(op)
+		
+		//Higher order functions take other functions as parameters 
+		//or return a function as a result.
+		//This is possible because functions are first-class values in Scala. 
+		val salaries = Seq(20000, 70000, 40000)
+		println("Salary is: " + salaries)
+		//return function to multiple a value by 2
+		val doubleSalary = (x: Int) => x * 2
+		//Higher order function often used in map method of List
+		val newSalaries = salaries.map(doubleSalary)
+		//or using anonymous function
+		val newSalaries1 = salaries.map(x=>x * 2)
+		println("doubled salary is: " + newSalaries1)
+		
+		//map function for collection
+		//map will return a new map by a function parameter
+		val myVector = Vector(1,2,3,4,5)
+		var myVector1 = myVector.map(number=>number+1)
+		println("Old vector: " + myVector)
+		println("New vector: " + myVector1)
+		
+		//filter function for collection
+		//filter will return a new map, which contains item filtered by a function parameter
+		val languages = List("python", "java")
+		val python = languages.filter(lang=>lang.contains("py"))
+		println("Language contains 'python': " + python)
+		
+		//foreach function will execute some method for each item in collection
+		var listForeach = List(1,2)
+		listForeach.foreach(println)
+
+		//forall function(if all elements satisfy condition, return true)
+		var result = listForeach.forall(number=>number>100)
+		println(result)
 	}
 }
