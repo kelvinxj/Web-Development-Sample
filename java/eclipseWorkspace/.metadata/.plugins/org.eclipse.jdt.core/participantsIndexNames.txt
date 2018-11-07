@@ -1,5 +1,0 @@
-INDEX VERSION 1.127
-C:\Users\IBM_ADMIN\Documents\MyGit\MySource\java\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\665007207.index
-\MyWeb5\src
-C:\Users\IBM_ADMIN\Documents\MyGit\MySource\java\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3810257901.index
-\MyWebTomcat\src
