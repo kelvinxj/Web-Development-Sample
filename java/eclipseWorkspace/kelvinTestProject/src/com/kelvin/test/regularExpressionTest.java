@@ -11,6 +11,12 @@ import com.ibm.idm.helper.IDMPhoneNumberUtil;
 public class regularExpressionTest {
 	
 	@Test
+	public void testStringMatches(){
+		String str = "11";
+		System.out.println(str.matches("\\d{2}"));
+	}
+	
+	@Test
 	public void getMatchedPart(){
 		String str = "2018-01-29 21:48:21,365 : <ns:TCRMAdminContEquivBObj><ns:AdminPartyId>8501e85cdbd1aac</ns:AdminPartyId><ns:AdminSystemType>100007</ns:AdminSystemType><ns:TCRMExtension><ns:XAdminContEquivBObjExt><ns:XStatusType>100007</ns:XStatusType></ns:XAdminContEquivBObjExt></ns:TCRMExtension></ns:TCRMAdminContEquivBObj";
 		Pattern p = Pattern.compile("AdminPartyId>([^<]*)");
