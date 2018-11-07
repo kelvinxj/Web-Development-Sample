@@ -17,3 +17,6 @@
 
 #ignore eclispe workspace folder
 #/java/eclipseWorkspace/.metadata
+
+#ignore abc file
+*.abc
