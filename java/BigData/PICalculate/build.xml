@@ -7,7 +7,7 @@
 	<property name="lib.dir" value="../lib"/>
 	<property name="linuxShareDir" value="C:\Users\IBM_ADMIN\Documents\linuxshare"/>
 	<property name="srcFileName" value="${ant.project.name}.java"/>
-	<property name="sourceFolder" value="C:\Users\IBM_ADMIN\Documents\MySource\myEclipseWorkspace\kelvinTestProject\src\com\kelvin\test\mapreduce"/>
+	<property name="sourceFolder" value="C:\Users\IBM_ADMIN\Documents\MyGit\MySource\java\eclipseWorkspace\kelvinTestProject\src\com\kelvin\test\mapreduce"/>
 	<path id="classpath">
 		<pathelement location="../lib/hadoop-core-1.0.3.jar"/>
 	</path>
