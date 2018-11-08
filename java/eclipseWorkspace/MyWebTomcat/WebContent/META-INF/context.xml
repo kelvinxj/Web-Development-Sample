@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<context>
+<!--Note: "Context" should be first letter capitalized!, "context" is not acceptable-->
+<Context>
     <Resource  
         name="jndi/world" 
 		auth="Container" 
@@ -24,4 +25,4 @@
     />
     <!-- 
     <ResourceLink global="jndi/world" name="jndi/world" type="javax.sql.DataSource" /> -->
-</context>
+</Context>
