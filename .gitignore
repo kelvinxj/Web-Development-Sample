@@ -19,5 +19,7 @@
 /java/eclipseWorkspace/.metadata
 
 
-#ignore scala class file
+#ignore scala class file and build files
 /scala/*.class
+/scala/target
+/scala/project
