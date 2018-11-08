@@ -227,6 +227,7 @@ object Hello{
 		println("Salary is: " + salaries)
 		//return function to multiple a value by 2
 		val doubleSalary = (x: Int) => x * 2
+		
 		//Higher order function often used in map method of List
 		val newSalaries = salaries.map(doubleSalary)
 		//or using anonymous function
@@ -239,6 +240,11 @@ object Hello{
 		var myVector1 = myVector.map(number=>number+1)
 		println("Old vector: " + myVector)
 		println("New vector: " + myVector1)
+		
+		//flatMap method for collection
+		val fruits = List("Apple", "Pear")
+		println("Original map:" + fruits)
+		println("Flat map:" + fruits.flatMap(word=>word))
 		
 		//filter function for collection
 		//filter will return a new map, which contains item filtered by a function parameter
@@ -253,5 +259,22 @@ object Hello{
 		//forall function(if all elements satisfy condition, return true)
 		var result = listForeach.forall(number=>number>100)
 		println(result)
+		
+		//reduce method for collection
+		val numbers = 1 to 10
+		println("The numbers:" + numbers)
+		println("Add them together:" + numbers.reduce(_+_))
+		println("Multiple them together:" + numbers.product)
+		
+		//exist and find(find will only find the first value which matches the condition)
+		println("Is there a number which is more than 100?" + numbers.exists(value=>value>100))
+		println("Find first value which is less than 7: " + numbers.find(number=>number<=7).get)
+		
+		//takeWhile(take the item to a new list, until find item which do not match condition)
+		//and dropWhile(drop item from list, unit find item which do not matched items)
+		//will return an empty list
+		println(numbers.takeWhile(num=>num>2))
+		//will still return list contains 1 to 10
+		println(numbes.dropWhile(num=>num>2))
 	}
 }
