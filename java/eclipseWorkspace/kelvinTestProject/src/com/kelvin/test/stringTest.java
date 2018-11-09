@@ -7,6 +7,19 @@ import org.junit.Test;
 public class stringTest {
 	
 	@Test
+	public void testStringDecode() throws UnsupportedEncodingException{
+		String str = "abcÖÐ¹ú";
+//		byte[] bytes = str.getBytes("utf-8");
+//		for(byte ch: bytes){
+//			System.out.println(ch);
+//		}
+		
+		for(int i = 0;i<str.length();i++){
+			System.out.println(str.codePointAt(i));
+		}
+	}
+	
+	@Test
 	public void testString() throws UnsupportedEncodingException{
 		String str = new String("abc");
 		String str1 = new String("abc");
