@@ -8,7 +8,8 @@ public class stringTest {
 	
 	@Test
 	public void testStringDecode() throws UnsupportedEncodingException{
-		String str = "abc�й�";
+		//String str = "abc中国";
+		String str = "Дмитрий";
 //		byte[] bytes = str.getBytes("utf-8");
 //		for(byte ch: bytes){
 //			System.out.println(ch);
@@ -16,6 +17,27 @@ public class stringTest {
 		
 		for(int i = 0;i<str.length();i++){
 			System.out.println(str.codePointAt(i));
+		}
+		
+		String encoding = "utf-8";
+		byte[] contents = "Д".getBytes(encoding);
+		String myStr = new String(contents, encoding);
+		System.out.println(myStr);
+	}
+	
+	@Test
+	public void showCharacterAndCodePoint(){
+		String characters = "èabД中αñüğçШуy";
+		char[] chars = new char[characters.length()];
+		characters.getChars(0,characters.length() - 1,chars, 0);
+		int codePoint = 0;
+		
+		for(int i = 0; i < characters.length(); i++){
+			codePoint = characters.codePointAt(i);
+			System.out.println(String.format("Character: %s, Code point: %s, char: %s"
+					,(new StringBuilder()).appendCodePoint(codePoint).toString()
+					, codePoint, characters.charAt(i))
+					);
 		}
 	}
 	

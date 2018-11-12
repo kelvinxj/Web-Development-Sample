@@ -26,6 +26,7 @@ public class testReadFromFile {
 		//if the file is encoded by UTF-8, should use UTF-8 to create inputStreamReader
 		//should also make sure eclipse console encoding utf-8
 		InputStreamReader isr = new InputStreamReader(fs,"UTF-8");
+//		InputStreamReader isr = new InputStreamReader(fs);
 		//InputStreamReader isr = new InputStreamReader(fs);
 		BufferedReader bf = new BufferedReader(isr);
 		
@@ -43,8 +44,8 @@ public class testReadFromFile {
 		bf.close();
 		
 		//FileReader don't support encoding, so it will break unicode data.
-		//the only way to make it not break unicode data is change source file 
-		//decode to unicode decoding(utf-8 or utf-16)
+		//the only way to make it not break unicode data is change source code file 
+		//decode to unicode decoding(utf-8 or utf-16): eclipse Edit->Set Encoding to choose encoding
 		bf = new BufferedReader(new FileReader(filename));
 		System.out.println("Method 2: using FileReader(unicode data broken):");
 		while((line = bf.readLine()) != null){
