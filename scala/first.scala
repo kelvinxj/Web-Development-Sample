@@ -275,6 +275,32 @@ object Hello{
 		//will return an empty list
 		println(numbers.takeWhile(num=>num>2))
 		//will still return list contains 1 to 10
-		println(numbes.dropWhile(num=>num>2))
+		println(numbers.dropWhile(num=>num>2))
+		
+		//Companion object:
+		//an object and a class are in the same source file
+		object TheObj{
+			private val defaultMessage:String ="Hello: message from object private member"
+		}
+
+		//class TheObj can access private member of Hello object
+		class TheObj(message:String=TheObj.defaultMessage){
+			println("Message:" + message)
+		}
+		
+		//will print defaultMessage in TheObj
+		val theObj = new TheObj();
+		
+		//For and yield
+		val myNums = 1 to 3
+		val myVec = for(i <- myNums if i%2 == 1) yield i
+		println("Vector can't divided by : " + myVec)
+		
+		//i = 1,3; j: from 1 to 1; 1 to 3
+		val myVec1 = for{
+			i <- myNums if i%2 == 1
+			j <- 1 to i
+		}yield i*j
+		println(myVec1)
 	}
 }
