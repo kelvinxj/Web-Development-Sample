@@ -20,6 +20,7 @@
 
 #ignore eclipse build folder
 /java/eclipseWorkspace/kelvinTestProject/build
+/java/eclipseWorkspace/kelvinTestProject/bin
 
 #ignore scala class file and build files
 /scala/*.class
