@@ -18,6 +18,8 @@
 #ignore eclispe workspace folder
 /java/eclipseWorkspace/.metadata
 
+#ignore eclipse build folder
+/java/eclipseWorkspace/kelvinTestProject/build
 
 #ignore scala class file and build files
 /scala/*.class
