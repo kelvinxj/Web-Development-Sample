@@ -36,7 +36,7 @@ else
 	ResultSet rs = null;
 	try{
 		Context initCtx = new InitialContext();
-		DataSource ds = (DataSource)initCtx.lookup("java:comp/env/jndi/world");
+		DataSource ds = (DataSource)initCtx.lookup("java:comp/env/jdbc/world");
 		conn = ds.getConnection();
 		stmt = conn.createStatement();
 		String sql = "";

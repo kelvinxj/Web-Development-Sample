@@ -16,6 +16,6 @@
 	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/log4j/apache-log4j-1.2.17/log4j-1.2.17.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/log4j/apache-log4j-1.2.17/src"/>
 	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/common/hadoop-common-2.6.5.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/common/sources/hadoop-common-2.6.5-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.5.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/hadoop-2.6.5/share/hadoop/mapreduce/sources/hadoop-mapreduce-client-core-2.6.5-sources.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/MyTools/JUnit/junit-4.12.jar" sourcepath="C:/Users/IBM_ADMIN/Documents/MyTools/JUnit/junit-4.12-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,4 +1,4 @@
-package com.kelvin.test.mapreduce;
+package com.kelvin.test.mapreduceTest;
 
 import static org.junit.Assert.*;
 
@@ -26,6 +26,12 @@ import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.apache.hadoop.mrunit.types.Pair;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.kelvin.test.mapreduce.PICalculate;
+import com.kelvin.test.mapreduce.WordCount;
+import com.kelvin.test.mapreduce.PICalculate.mapper;
+import com.kelvin.test.mapreduce.WordCount.Reduce;
+import com.kelvin.test.mapreduce.WordCount.WordCountMapper;
 
 public class MapreduceTest {
 	/*

@@ -2,6 +2,7 @@ package com.kelvin.web.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -42,6 +43,20 @@ public class HelloWorldServlet extends HttpServlet {
 		writer.print("This page was requested by GET method<br/>");
 		writer.print("<input type='button' value='click me'/>");
 		writer.close();
+	}
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		System.out.println("destroy() called at: " + new Date());
+		super.destroy();
+	}
+
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		System.out.println("init() called at: " + new Date());
+		super.init();
 	}
 
 	/**

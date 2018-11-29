@@ -81,6 +81,7 @@ public class WordCount {
 		while((line = br.readLine()) != null){
 			System.out.println(line);
 		}
+		
 		br.close();
 	}
 

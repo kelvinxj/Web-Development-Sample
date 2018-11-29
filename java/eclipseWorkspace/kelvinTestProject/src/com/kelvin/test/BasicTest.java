@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.TreeMap;
 
+
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class BasicTest {
@@ -144,5 +147,19 @@ public class BasicTest {
 				cArray[i] = (char)(97 + increment);
 		}
 		return new String(cArray);
+	}
+	
+	public enum nameType{
+		Latin,DBCS
+	}
+	
+	@Test
+	public void usingEnum(){
+		nameType type1 = nameType.Latin;
+		nameType type2 = nameType.DBCS;
+		
+		assertNotEquals(type1, type2);
+		assertEquals(nameType.Latin,nameType.Latin);
+		assertEquals(nameType.DBCS,nameType.DBCS);
 	}
 }

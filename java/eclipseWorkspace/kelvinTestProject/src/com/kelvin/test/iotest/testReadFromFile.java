@@ -16,6 +16,8 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 import org.junit.Test;
+
+import com.ibm.jvm.io.ConsoleInputStream;
 public class testReadFromFile {	
 	@Test
 	public void testReadNonPropertyFileByLine() throws IOException {
@@ -51,7 +53,10 @@ public class testReadFromFile {
 		while((line = bf.readLine()) != null){
 			System.out.println(line);
 		}
-		bf.close();	
+		bf.close();
+		
+		String encoding = ConsoleInputStream.getEncoding(new FileInputStream(filename));
+		System.out.println(encoding);
 	}
 	
 	@Test
@@ -127,7 +132,7 @@ public class testReadFromFile {
 	/*
 	 * read from file by character. use read(). it will return -1 when reach the end of the file.
 	 */
-	public void readFileByByte() throws IOException{
+	public void readFileByCharacter() throws IOException{
 		String filename = "./file.txt"; //file should be at root path of this project
 		
 		FileInputStream fs = new FileInputStream(filename);
@@ -143,6 +148,19 @@ public class testReadFromFile {
 		
 		//only need to call BufferedReader.close()
 		bf.close();
+	}
+	
+	@Test
+	public void readFileBySingleByte() throws IOException{
+		String filename = "./file.txt"; //file should be at root path of this project
+		
+		FileInputStream fs = new FileInputStream(filename);
+		int byteValue = 0;
+		int offset = 0;
+		while((byteValue = fs.read()) != -1){
+			offset += 1;
+			System.out.println("Byte " + offset + ": " + byteValue + "(" + Integer.toHexString(byteValue) + ")");
+		}
 	}
 	
 	@Test

@@ -2,7 +2,7 @@
 <!--Note: "Context" should be first letter capitalized!, "context" is not acceptable-->
 <Context>
     <Resource  
-        name="jndi/world" 
+        name="jdbc/world" 
 		auth="Container" 
         type="javax.sql.DataSource"
         url="jdbc:mysql://localhost/world"
