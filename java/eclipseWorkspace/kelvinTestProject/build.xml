@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="kelvinTestProject" default="copyJar">
+	<property name="build.dir" value="build"/>
+	<property name="linuxShareDir" value="C:\Users\IBM_ADMIN\Documents\linuxshare"/>
+	<property name="jarName" value="abc.jar"/>
+	<path id="classpath">
+		<!--specify a folder as class path
+		<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		-->
+		<!--specify a single jar as class path-->
+		<pathelement location="C:\Users\IBM_ADMIN\Documents\MyTools\hadoop-2.6.5\share\hadoop\mapreduce\lib/hadoop-annotations-2.6.5.jar"/>
+		<pathelement location="C:\Users\IBM_ADMIN\Documents\MyTools\hadoop-2.6.5\share\hadoop\common/hadoop-common-2.6.5.jar"/>
+		<pathelement location="C:\Users\IBM_ADMIN\Documents\MyTools\hadoop-2.6.5\share\hadoop\mapreduce/hadoop-mapreduce-client-core-2.6.5.jar"/>
+		<!--<pathelement location="../lib/hadoop-core-1.0.3.jar"/>-->
+		<!--
+		<pathelement location="C:\Users\IBM_ADMIN\Documents\MyTools\commons-cli-1.4\commons-cli-1.4.jar"/>
+		-->
+	</path>
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+	</target>
+	<target name="compile" depends="clean">		
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="src\com\kelvin\test\mapreduce" destdir="${build.dir}" includeAntRuntime="false" deprecation="on">
+			<classpath>
+				<path refid="classpath"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="createjar" depends="compile">
+		<jar destfile="${build.dir}/${jarName}" basedir="${build.dir}"></jar>
+	</target>
+	<target name="copyJar" depends="createjar">
+		<copy file="${build.dir}/${jarName}" todir="${linuxShareDir}" overwrite="true"/>
+	</target>
+</project>
