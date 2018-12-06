@@ -3,6 +3,7 @@ package com.kelvin.test;
 import java.io.UnsupportedEncodingException;
 import java.util.StringTokenizer;
 
+import static org.junit.Assert.*;
 import org.junit.Test;
 public class stringTest {
 	
@@ -73,5 +74,18 @@ public class stringTest {
 		while(st.hasMoreTokens()){
 			System.out.println(st.nextToken());
 		}
+	}
+	
+	@Test
+	public void testSubString(){
+		String str = "1234567890";
+		//sub string length is: end - start
+		String sub1 = str.substring(0,5);
+		System.out.println(sub1);
+		assertEquals(5,sub1.length());		
+
+		String sub2 = str.substring(2,7);
+		System.out.println(sub2);
+		assertEquals(5,sub2.length());
 	}
 }

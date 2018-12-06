@@ -72,7 +72,7 @@ public class PICalculate {
 	
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
 		Configuration conf = new Configuration();
-		Job job = new Job(conf, "calculate PI");
+		Job job = Job.getInstance(conf, "calculate PI");
 		job.setJarByClass(PICalculate.class);
 		
 		if(args.length != 3){

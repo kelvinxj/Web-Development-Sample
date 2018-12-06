@@ -15,6 +15,8 @@ object Hello{
 		//If…else struct
 		if(i == 1)
 			println("i is 1")
+		else if(i == 2)
+			println("i is 2")
 		else
 			println("i is not 1")
 			

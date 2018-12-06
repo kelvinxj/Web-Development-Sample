@@ -18,7 +18,7 @@ import org.apache.hadoop.mapreduce.Job;
 public class WriteFileHdfs {
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException{
 		Configuration conf = new Configuration();
-		Job job = new Job(conf, "test write file to HDFS");
+		Job job = Job.getInstance(conf, "test write file to HDFS");
 		job.setJarByClass(WriteFileHdfs.class);
 		
 		//test create a new file on HDFS
@@ -36,10 +36,10 @@ public class WriteFileHdfs {
 //		stream.flush();
 //		stream.sync();
 //		stream.close();
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(stream));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(stream,"utf-8"));
 		bw.write((new Date()).toString());
 		bw.newLine();
-		bw.write("You are a good guy!");
+		bw.write("中国,You are a good guy!");
 		bw.newLine();
 		bw.write("that's all right");
 		bw.newLine();
@@ -49,7 +49,7 @@ public class WriteFileHdfs {
 		bw.close();
 		
 		FSDataInputStream inputStream = fs.open(p);
-		BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+		BufferedReader br = new BufferedReader(new InputStreamReader(inputStream,"utf-8"));
 		String line = "";
 		while((line = br.readLine()) != null){
 			System.out.println(line);
