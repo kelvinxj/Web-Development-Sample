@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="kelvinTestProject" default="createjar">
+	<property name="build.dir" value="C:\Users\IBM_ADMIN\Desktop\memoryLeakTest"/>
+	<property name="jarName" value="MemoryLeakApp.jar"/>
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+	</target>
+	<target name="compile" depends="clean">		
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="." destdir="${build.dir}" includeAntRuntime="false" deprecation="on">
+		</javac>
+	</target>
+	<target name="createjar" depends="compile">
+		<jar destfile="${build.dir}/${jarName}" basedir="${build.dir}"></jar>
+	</target>
+</project>

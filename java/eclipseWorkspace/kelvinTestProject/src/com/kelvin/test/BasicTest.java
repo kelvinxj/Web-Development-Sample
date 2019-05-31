@@ -11,9 +11,17 @@ import java.util.TreeMap;
 
 
 
+
+
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.BlockJUnit4ClassRunner;
 
+//BlockJUnit4ClassRunner is the default JUnit4 test runner. 
+//it's not necessary to add @RunWith(BlockJUnit4ClassRunner.class)
+//@RunWith(BlockJUnit4ClassRunner.class)
+//@RunWith(MyTestRunner.class)
 public class BasicTest {
 
 	@Test
@@ -161,5 +169,25 @@ public class BasicTest {
 		assertNotEquals(type1, type2);
 		assertEquals(nameType.Latin,nameType.Latin);
 		assertEquals(nameType.DBCS,nameType.DBCS);
+	}
+	
+	@Test
+	public void test2018(){
+		int num = 0;
+		for(int i = 0;i<2018;i++){
+			if(i == 0){
+				num = 130;
+				System.out.println((i+1) + ":" + num);
+			}
+			else{
+				if(num % 2 == 0){
+					num = num/2 + 2;
+				}
+				else{
+					num = num * 2 -2;
+				}
+				System.out.println((i+1) + ":" + num);
+			}
+		}
 	}
 }

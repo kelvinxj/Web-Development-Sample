@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - . :/code #mount the project directory(current directory) on the host to /code inside the container, allowing you to modify the code on the fly
+    redis:
+         image: "redis:alpine"
