@@ -25,7 +25,7 @@ public class readFromRelativePath {
 			
 			Set<Object> keySet = properties.keySet();
 			for(Object key: keySet){
-				System.out.println("key is: " + key + "; value=" + properties.getProperty(key.toString()));
+				System.out.println("key : " + key + "; value=" + properties.getProperty(key.toString()));
 			}
 			
 		/*
