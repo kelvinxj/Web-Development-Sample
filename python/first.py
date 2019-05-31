@@ -83,9 +83,9 @@ fib(10)
 
 #Type convert:
 #Int to string
-
+print("This is a num:" + str(1))
 #String to int
-
+print(4+int("1"))
 	
 #Get type of object
 map={1:'map',2:'ChinaMap'}

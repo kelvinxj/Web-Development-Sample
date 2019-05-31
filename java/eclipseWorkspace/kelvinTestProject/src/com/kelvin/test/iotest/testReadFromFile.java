@@ -94,41 +94,6 @@ public class testReadFromFile {
 	}
 	
 	@Test
-	public void testReadFromPropertiesInPackage() throws ClassNotFoundException, IllegalAccessException, InstantiationException{
-		ResourceBundle bundle = ResourceBundle.getBundle("com.kelvin.test.iotest.myProperty");
-		Enumeration<String> keyIterator = bundle.getKeys();
-		
-		String key = "";
-		while(keyIterator.hasMoreElements()){
-			key = keyIterator.nextElement();
-			System.out.println("Key=" + key + "; Value=" + bundle.getString(key));
-		}
-		
-//		Locale locale = Locale.getDefault();
-//		ClassLoader classLoader = VM.callerClassLoader();
-//		Class<?> bundleClass = Class.forName("com.kelvin.test.iotest.myProperty", true, this.getClass().getClassLoader());
-//        if (ResourceBundle.class.isAssignableFrom(bundleClass)) {
-//            bundle = (ResourceBundle) bundleClass.newInstance();
-//        }
-		
-		URL url = this.getClass().getClassLoader().getResource("");
-		url = Thread.currentThread().getContextClassLoader().getResource("");
-	}
-	
-	@Test
-	public void testReadFromPropertiesInSourceCodeRoot(){
-		//mypropertyOutSide.properties should be in src folder
-		ResourceBundle bundle = ResourceBundle.getBundle("mypropertyOutSide");
-		Enumeration<String> keyIterator = bundle.getKeys();
-		
-		String key = "";
-		while(keyIterator.hasMoreElements()){
-			key = keyIterator.nextElement();
-			System.out.println("Key=" + key + "; Value=" + bundle.getString(key));
-		}		
-	}
-	
-	@Test
 	/*
 	 * read from file by character. use read(). it will return -1 when reach the end of the file.
 	 */
