@@ -1,0 +1,2 @@
+@rem mvn -X archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeCatalog=local -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.kelvin -DartifactId=testProject -DarchetypeCatalog=local -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
