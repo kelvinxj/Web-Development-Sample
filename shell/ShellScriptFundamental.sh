@@ -146,6 +146,13 @@ if [ -s ${MyFileName} ]; then
 	echo "${MyFileName} exists and contain one character at least."
 fi
 
+MyFolderName="testFolder"
+if [ -d ${MyFolderName} ]; then
+	echo " ${MyFolderName} exists"
+else
+	echo " ${MyFolderName} not exists"
+fi
+
 rm $MyFileName
 echo "----------------------------------------End of file atrributes check \
 ---------------------------"
