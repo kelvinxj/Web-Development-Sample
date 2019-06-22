@@ -1,23 +1,55 @@
 <?xml version="1.0"?>
-<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" 
-   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
-  <head>
-  </head>
-  <docTitle>
-    <text>EmptySampleBook</text>
-  </docTitle>
-<navMap>
-<navPoint id="navpoint-1" playOrder="1"><navLabel><text>Content</text></navLabel><content src="toc.html#toc"/></navPoint>
-<navPoint id="navpoint-2" playOrder="2"><navLabel><text>Chapter 1</text></navLabel><content src="chapter1.html"/></navPoint>
-<navPoint id="navpoint-3" playOrder="3"><navLabel><text>Section 1.1</text></navLabel><content src="chapter1.html#id1"/></navPoint>
-<navPoint id="navpoint-4" playOrder="4"><navLabel><text>Section 1.2</text></navLabel><content src="chapter1.html#id2"/></navPoint>
-<navPoint id="navpoint-5" playOrder="5"><navLabel><text>Section 1.3</text></navLabel><content src="chapter1.html#id3"/></navPoint>
-<navPoint id="navpoint-6" playOrder="6"><navLabel><text>Section 1.4</text></navLabel><content src="chapter1.html#id4"/></navPoint>
-<navPoint id="navpoint-7" playOrder="7"><navLabel><text>Chapter 2</text></navLabel><content src="chapter2.html"/></navPoint>
-<navPoint id="navpoint-8" playOrder="8"><navLabel><text>Section 2.1</text></navLabel><content src="chapter2.html#id1"/></navPoint>
-<navPoint id="navpoint-9" playOrder="9"><navLabel><text>Section 2.2</text></navLabel><content src="chapter2.html#id2"/></navPoint>
-<navPoint id="navpoint-10" playOrder="10"><navLabel><text>Section 2.3</text></navLabel><content src="chapter2.html#id3"/></navPoint>
-<navPoint id="navpoint-11" playOrder="11"><navLabel><text>Section 2.4</text></navLabel><content src="chapter2.html#id4"/></navPoint>
-</navMap>
+   <head>
+   </head>
+   <docTitle>
+       <text>KF8</text>
+   </docTitle>
+   <navMap>
+       <navPoint>
+           <navLabel><text>Table of Contents</text></navLabel>
+           <content src="toc.html"/>
+       </navPoint>
+       <navPoint>
+           <navLabel><text>Chapter 1</text></navLabel>
+           <content src="chapter1.html#h1"/>
+           <navPoint>
+               <navLabel><text>Section 1.1</text></navLabel>
+               <content src="chapter1.html#id1"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Section 1.2</text></navLabel>
+               <content src="chapter1.html#id2"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Section 1.3</text></navLabel>
+               <content src="chapter1.html#id3"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Section 1.4</text></navLabel>
+               <content src="chapter1.html#id4"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Chapter 2</text></navLabel>
+           <content src="chapter2.html#h1"/>
+           <navPoint>
+               <navLabel><text>Section 2.1</text></navLabel>
+               <content src="chapter2.html#id1"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Section 2.2</text></navLabel>
+               <content src="chapter2.html#id2"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Section 2.3</text></navLabel>
+               <content src="chapter2.html#id3"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Section 2.4</text></navLabel>
+               <content src="chapter2.html#id4"/>
+           </navPoint>
+      </navPoint>
+   </navMap>
 </ncx>

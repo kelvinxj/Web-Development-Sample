@@ -3,9 +3,14 @@ import xml.etree.ElementTree as ET
 def getAnchorName(xmlString):
     aName = ""
     root = ET.fromstring(xmlString)
-    for child in root:
-        if(child.tag == "a"):
+    links = list(root.iter("a"))
+    if(len(links) == 0):
+        print(xmlString + " has NO anchor")
+    for child in links:
+        if(child.attrib.get("name") != None):
             aName = child.attrib["name"]
+        else:
+            print("Warning: anchor in " + xmlString + " has NO name attribute")
     return aName
 
 def getAnchorText(xmlString):
@@ -16,6 +21,12 @@ def getAnchorText(xmlString):
             aText = "".join(child.itertext())
     return aText
 
+#the document should have following structure:
+#<h1><a name="ch1">Chapter1</a></h1>
+#   <h2><a name="sec1.1">Section 1.1</a></h2>
+#   <h2><a name="sec1.2">Section 1.2</a></h2>
+#<h1><a name="ch2">Chapter2</a></h1>
+#   <h2><a name="sec2.1">Section 2.1</a></h2>
 def createTocByFileNames(fileNameList):
     isShowH3 = False
     ncxFileName = "toc.ncx"
@@ -62,6 +73,7 @@ def createTocByFileNames(fileNameList):
                     f1.write('          </ul>\n')
                     f1.write('      </li>\n')
                 isFirstH1 = False
+                print("found H1: " + line)
                 aName = getAnchorName(line)
                 aText = getAnchorText(line)
                 f.write("       <navPoint>\n")
