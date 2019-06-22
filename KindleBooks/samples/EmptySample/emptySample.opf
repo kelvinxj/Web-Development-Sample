@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<package unique-identifier="uid" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:asd="http://www.idpf.org/asdfaf">
+	<metadata>
+		<dc-metadata  xmlns:dc="http://purl.org/metadata/dublin_core" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+			<dc:Title>Empty Kindle book sample</dc:Title>
+			<dc:Language>en</dc:Language>
+			<dc:Creator>XieJia</dc:Creator>
+			<dc:Copyrights>XieJia.com</dc:Copyrights>
+			<dc:Publisher>XieJia.com</dc:Publisher>
+			<x-metadata>
+				<EmbeddedCover>images/cover.jpg</EmbeddedCover>
+			</x-metadata>
+		</dc-metadata>
+	</metadata>
+	<manifest>
+		<item id="content" media-type="text/x-oeb1-document" href="toc.html"></item>
+		<item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+		<item id="chapter1" media-type="text/x-oeb1-document" href="chapter1.html"></item>
+		<item id="chapter2" media-type="text/x-oeb1-document" href="chapter2.html"></item>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="content"/>
+		<itemref idref="ncx"/>
+		<itemref idref="chapter1"/>
+		<itemref idref="chapter2"/>
+	</spine>
+	<guide>
+		<reference type="toc" title="Table of Contents" href="toc.html"/>
+		<reference type="text" title="Book" href="chapter1.html"/>
+	</guide>
+</package>

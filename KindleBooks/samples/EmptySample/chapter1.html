@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Text Styling</title>
+<!--
+<link type="text/css" href="styles.css" rel="Stylesheet"/>
+<link type="text/css" href="kf8.css" media="amzn-kf8" rel="Stylesheet"/>
+<link type="text/css" href="mobi.css" media="amzn-mobi" rel="Stylesheet"/>
+-->
+</head>
+<body>
+	<h1>Chapter 1</h1>
+	<p class="description">This Chapter1</p>
+
+	<h2 id="id1">Section 1.1</h2>
+	<p class="description">In general, do not specify the font style. Users prefer to select their own default reading settings.</p>
+	<h3>Font tag</h3>
+	<p class="description">Font face can be set. Users will see this font instead of their selected font. In addition to the available fonts, custom fonts can be added and used.</p>
+	<p class="subtitle">Example:</p>
+	<p class="exampleBorder">
+		<font face="Georgia" >Georgia, </font>
+		<font face="Caecilia" >Caecilia, </font>
+		<font face="Trebuchet" >Trebuchet, </font>
+		<font face="Verdana" >Verdana, </font>
+		<font face="Arial" >Arial, </font>
+		<font face="Times New Roman" >Times New Roman, </font>
+		<font face="Courier" >Courier, </font>
+		<font face="Lucida" >Lucida</font><br/>
+		<font color="red" size=1>Red size 1 text. </font>
+		<font color="blue" size=2>Blue size 2 text. </font>
+		<font color="green" size=4>Green size 4 text. </font>
+		<font color="purple" size=6>Purple size 6 text. </font>
+	</p>
+	<p class="subtitle">How To:</p>
+	<p class="howtoBorder">To set the font, use the <span class="key">font</span> tag and its <span class="key">face</span> attribute. To set the color and size, use the <span class="key">color</span> and <span class="key">size</span> attributes.<br/>
+	<code>&lt;font face="Georgia" color="green" size=4 &gt;</code><br/>
+	Font face can also be set by using the <span class="key">font-family</span> CSS styling property.<br/>
+	<code>
+		font-family: arial;<br/>
+		color: red;<br/>
+		font-size: 120%;
+	</code>
+	</p>
+	
+	<h3>CSS font styles</h3>
+	<p class="description">Font styles such as style, weight, and variant can be set by using CSS styling properties.</p>
+	<p class="subtitle">Example:</p>
+	<p class="exampleBorder">
+		<span class="normal_text"> Normal text.</span><br/>
+		<span class="italic_lighter_text"> Italic lighter text.</span><br/>
+		<span class="italic_bold_text"> Italic bold text.</span><br/>
+		<span class="bold_smallcaps_text"> Oblique bold small-caps text.</span><br/>
+	</p>
+	<p class="subtitle">How To:</p>
+	<p class="howtoBorder">
+	To set these font styles, use the <span class="key">font-style</span>, <span class="key">font-weight</span>, and <span class="key">font-variant</span> properties.<br/>
+	<code>&lt;span style="font-style:italic; font-weight: lighter; font-variant: normal"&gt;</code>
+	</p>
+	
+	<h2 id="id2">Section 1.2</h2>
+	<p class="description">The content can be formatted with other text styling, such as word spacing and text align.</p>
+	<p class="subtitle">Example:</p>
+	<p class="exampleBorder">
+		<span class="text_style1">Uppercase text with Word spacing 1em.</span><br/>
+		<span class="text_style2">Underlined text with letter spacing 0.2em, word spacing 2em.</span><br/>
+		<span class="text_style3">Capitalized line through text.</span>
+	</p>
+	<p class="subtitle">How To:</p>
+	<p class="howtoBorder">
+		To set this text styling, use the <span class="key">word-spacing</span>, <span class="key">text-transform</span>, <span class="key">letter-spacing</span>, and <span class="key">text-decoration</span> CSS properties.<br/>
+		<code>&lt;span style="letter-spacing: .2em; word-spacing: 2em; text-decoration:underline;"&gt;</code>
+	</p>
+	
+	<h2 id="id3">Section 1.3</h2>
+	<p class="description">Text content can be aligned to a desired position by using CSS styling.</p>
+	<p class="subtitle">Example:</p>
+	<div class="exampleBorder">
+	<p class="text_align_center">Center aligned text.<br/> Lorem ipsum sed ut nibh nibh. Vestibulum facilisis nulla id leo ullamcorper molestie. Donec sit amet mauris ut arcu vulputate faucibus. Sed eleifend fringilla mauris, eget fermentum nibh consequat eget.</p><br/>
+	<p class="text_align_left">Left aligned text.<br/> Lorem ipsum etiam euismod tortor ac massa hendrerit et rhoncus magna lobortis. Nulla et faucibus nibh. Aliquam sed arcu eget nisl vulputate fermentum. Cras sed arcu sed turpis placerat vehicula.</p><br/>
+	<p class="text_align_right">Right aligned text.<br/> Lorem ipsum curabitur nulla mauris, porta non elementum at, imperdiet a velit. Suspendisse in orci adipiscing lectus tempor molestie ac a nibh. Ut malesuada sapien luctus risus laoreet non lobortis erat porta. Mauris ante purus, tincidunt a condimentum sit amet, sagittis auctor turpis.</p>
+	</div>
+	<p class="subtitle">How To:</p>
+	<p class="howtoBorder">To set text alignment, use the <span class="key">text-align</span> property. To set text indentation, use the <span class="key">text-indent</span> property.<br/>
+	<code>text-align:right;</code><br/>
+	<code>text-indent:0em;</code>
+	</p>
+
+	<h2 id="id4">Section 1.4</h2>
+	<p class="description">Text can be shadowed to make the content more stylish.</p>
+	<p class="subtitle">Example:</p>
+	<div class="exampleBorder">
+		<p class="text_shadow"> Shadowed text.</p>
+	</div>
+	<p class="subtitle">How To:</p>
+	<p class="howtoBorder">To set text shadowing, use the <span class="key">text-shadow</span> CSS property.<br/>
+	<code>text-shadow:5px 5px #379027;</code></p>
+	
+</body>
+</html>
