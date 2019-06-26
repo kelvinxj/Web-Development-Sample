@@ -30,7 +30,8 @@ public class testReadFromFile {
 		InputStreamReader isr = new InputStreamReader(fs,"UTF-8");
 //		InputStreamReader isr = new InputStreamReader(fs);
 		//InputStreamReader isr = new InputStreamReader(fs);
-		BufferedReader bf = new BufferedReader(isr);
+		//BufferedReader bf = new BufferedReader(isr);
+		KelvinBufferedReader bf = new KelvinBufferedReader(isr,1);
 		
 		//read file by line
 		//Eclipse console may not support UTF-8 encoding. You can debug to see the
@@ -48,10 +49,13 @@ public class testReadFromFile {
 		//FileReader don't support encoding, so it will break unicode data.
 		//the only way to make it not break unicode data is change source code file 
 		//decode to unicode decoding(utf-8 or utf-16): eclipse Edit->Set Encoding to choose encoding
-		bf = new BufferedReader(new FileReader(filename));
+//		bf = new BufferedReader(new FileReader(filename));
+		bf = new KelvinBufferedReader(new FileReader(filename));
 		System.out.println("Method 2: using FileReader(unicode data broken):");
+		lineNumber = 0;
 		while((line = bf.readLine()) != null){
-			System.out.println(line);
+			lineNumber++;
+			System.out.println("Line " + lineNumber + ":" + line);
 		}
 		bf.close();
 		

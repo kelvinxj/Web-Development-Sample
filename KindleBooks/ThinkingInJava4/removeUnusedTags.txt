@@ -1,0 +1,17 @@
+1. remove "class=default":
+replace class=[^>]+ to ''
+
+2. remove "style=''":
+replace style='[^']+' to ''
+
+3. remove space between <p  >
+<p\s+> to <p>
+
+4. remove space between <span  >
+<span\s+> to <span>
+
+5. replace bad characters:
+0xa1
+0xb0
+0xae
+using HXD to replace Hex value to space

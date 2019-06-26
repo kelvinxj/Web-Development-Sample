@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+   </head>
+   <docTitle>
+       <text>KF8</text>
+   </docTitle>
+   <navMap>
+       <navPoint>
+           <navLabel><text>Table of Contents</text></navLabel>
+           <content src="toc.html"/>
+       </navPoint>
+       <navPoint>
+           <navLabel><text>I/O</text></navLabel>
+           <content src="IO.htm#IO"/>
+           <navPoint>
+               <navLabel><text>The File class</text></navLabel>
+               <content src="IO.htm#TheFileClass"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Checking for and creating directories</text></navLabel>
+               <content src="IO.htm#CheckingCreatingDirectories"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Input and output</text></navLabel>
+               <content src="IO.htm#InputAndOutput"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Types of InputStream</text></navLabel>
+               <content src="IO.htm#TypesOfInputStream"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Readers and Writers</text></navLabel>
+               <content src="IO.htm#ReadersAndWriters"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>RandomAccessFile</text></navLabel>
+               <content src="IO.htm#RandomAccessFile"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Standard I/O</text></navLabel>
+               <content src="IO.htm#StandardIO"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>New I/O</text></navLabel>
+               <content src="IO.htm#NewIO"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>File locking</text></navLabel>
+               <content src="IO.htm#FileLocking"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Compression</text></navLabel>
+               <content src="IO.htm#Compression"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Object serialization</text></navLabel>
+               <content src="IO.htm#ObjectSerailization"/>
+           </navPoint>
+      </navPoint>
+   </navMap>
+</ncx>
