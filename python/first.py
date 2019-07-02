@@ -24,6 +24,8 @@ else:
 	print("you are young")
 	
 #ogical operators(and, or, ==)
+print(True and False) #False
+print(True or False) #True
 print("True or False is: " + str(True or False)) #print True
 print("True and False is: " + str(True and False)) #print False
 print("True is False?" + str(True == False))#print False
@@ -109,6 +111,10 @@ print (len(str1))
 #concatenate two string:
 print ("Hello, " + "world!")
 
+#String contains:
+print("a" in "abc") #True
+print("a" not in "abc") #False
+
 #String match or not
 #Find a substring
 
@@ -120,28 +126,40 @@ print ("Hello, " + "world!")
 
 #String format
 
+#String trim:
+str1 = "    this is a string      "
+print(len(str1))
+print(len(str1.strip())
+
 
 #Regular expression:
 #Define a regular variable
+reg = "\.java:\d+"
 
 #Basic regular methods:
 #Match or not
+re.search(reg,"RemoteTestRunner.java:382") == None #False
 
 #Get subGroups
+matchs = re.search("\.java:(\d+)","RemoteTestRunner.java:382")
+#first group is matched part
+matchs.group(0)#.java:382
+#second group is part in "()"
+matchs.group(1)# 382
 
 #Collection:
 #List:
 #Define a list
-
+fruits = ["apple","pear","peach"]
 
 #Access item of list
-
+print(fruits[0]) # apple
 
 #Add an item to the end of list
-
+fruits.append("lychee") #['apple', 'pear', 'peach', 'lychee']
 
 #Add an item to beginning of list
-
+fruits.insert(0,"tomato") #['tomato', 'apple', 'pear', 'peach', 'lychee']
 
 #Delete an item to list
 #Check an item in list
