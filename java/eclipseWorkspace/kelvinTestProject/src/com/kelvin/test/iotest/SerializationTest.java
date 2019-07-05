@@ -14,7 +14,8 @@ import org.junit.Test;
 
 //this class should also be Serializable as MyObj is a member of SerializationTest
 public class SerializationTest implements Serializable{
-	private class MyObj implements Serializable{
+	
+	class MyObj implements Serializable{
 		public String name;
 		public int score;
 		public String show(){
