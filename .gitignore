@@ -26,3 +26,6 @@
 /scala/*.class
 /scala/target
 /scala/project
+/IntelliJProjects/*/out
+/IntelliJProjects/sbtPrj1/target
+/IntelliJProjects/sbtPrj1/project/target
