@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: BTM.jar lib/pdq.jar Services.jar CommonUtilities.jar Loggi
- ng.jar ConfigurationRepository.jar ConfigurationClient.jar DWLCommonS
- ervices.jar Party.jar CoreUtilities.jar ManagementCommon.jar Base.jar
-  lib/icu4j.jar
-

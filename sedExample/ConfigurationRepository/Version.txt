@@ -1,5 +1,0 @@
-
-Product:      IBM InfoSphere Master Data Management Server 101005
-Build Date:   05172013 1345
-Build Number: MDM1010FP-05172013-1345
-      
