@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Web
+Bundle-SymbolicName: com.sample.web;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: SAMPLE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.servlet,javax.servlet.http 
+Require-Bundle: org.eclipse.equinox.jsp.jasper.registry, org.eclipse.equinox.http.registry
