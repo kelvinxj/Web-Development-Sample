@@ -9,6 +9,7 @@ aStr="Hello, world"
 echo $aStr
 
 #using variable in another string, should use ${paramNumber}.
+#need to use double quote to print variable value
 echo "The string you set is:\"${aStr}\" and this is how to use a variable in string."
 
 #running a shell command and get the result in string

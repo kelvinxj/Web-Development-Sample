@@ -31,19 +31,19 @@ public class HelloWorldServlet extends HttpServlet {
 		
 		//if you don't call super.service, doGet/doPost will not be executed.
 		PrintWriter writer = response.getWriter();
-		writer.println("service() called.");
+		writer.println("service() called...");
 		super.service(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		PrintWriter writer = response.getWriter();
-//		writer.print("This page was requested by GET method<br/>");
-//		writer.print("<input type='button' value='click me'/>");
-//		writer.close();
-//	}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter writer = response.getWriter();
+		writer.print("This page was requested by GET method<br/>");
+		writer.print("<input type='button' value='click me'/>");
+		writer.close();
+	}
 
 	@Override
 	public void destroy() {

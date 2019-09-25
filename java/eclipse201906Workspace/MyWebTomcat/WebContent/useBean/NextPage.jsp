@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <jsp:useBean id="user" class="com.kelvin.web.bean.UserData" scope="application"/>
-<jsp:setProperty name="user" property="*"/>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-<%=user.getnme8() %>
- <a href="NextPage.jsp">Continue</a>
+You entered<br/>
+Name:<%=user.getUsername() %>
+Email: <%= user.getEmail() %><BR>
+Age: <%= user.getAge() %><BR>
 </body>
 </html>

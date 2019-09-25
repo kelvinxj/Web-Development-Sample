@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<!-- jsp directive import jave package -->
 <%@page import="java.util.Date, java.util.Properties, java.util.Set" %>
 <html>
 <head>
@@ -10,18 +9,8 @@
 </head>
 <body>
 JSP Page on Resin!<br/>
-<!-- jsp directive to include another page-->
-<%@include file="header.jsp" %>
-<%!
-    Date theDate = new Date();
-    Date getDate()
-    {
-        System.out.println( "In getDate() method" );
-        return theDate;
-    }
-%>
-<!-- this time will not be refreshed as this this evaluated in jsp page class initialized. -->
-Hello!  The time is now <%= getDate() %>
+<%Date myDate = new Date();%>
+<span>current time is=<%=myDate %></span>
 <%out.println("I'll show you a table contain all the system properties."); %>
 <table id="mainTable">
 <tr>
@@ -42,9 +31,5 @@ for(Object keyName : keys){
 	<td><%=p.getProperty(keyNameStr)%></td>
 </tr>
 <%} %>
-</table>
-
-<span>go to header page:</span>
-<jsp:forward page="header.jsp"/>
 </body>
 </html>

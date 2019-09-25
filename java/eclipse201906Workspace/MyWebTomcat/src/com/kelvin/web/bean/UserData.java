@@ -1,16 +1,13 @@
 package com.kelvin.web.bean;
 
 public class UserData {
-	//not a recommended way for a bean property
-	String Nme8;
-	
+	String username;
     String email;
     int age;
 
-    //this setter works but it is not recommended way for naming a setter method
-    public void setnme8( String value )
+    public void setUsername( String value )
     {
-        Nme8 = value;
+        username = value;
     }
 
     public void setEmail( String value )
@@ -23,8 +20,7 @@ public class UserData {
         age = value;
     }
 
-    //this getter works but it is not recommended way for naming a getter method
-    public String getnme8() { return Nme8; }
+    public String getUsername() { return username; }
 
     public String getEmail() { return email; }
 

@@ -19,6 +19,9 @@
 /java/eclipseWorkspace/.metadata
 /java/WebSphereProject/.metadata
 
+#ignore eclipse web project class folder:
+/java/eclipseWorkspace/MyWeb/WebContent/WEB-INF/classes
+
 #ignore eclipse build folder
 /java/eclipseWorkspace/kelvinTestProject/build
 /java/eclipseWorkspace/kelvinTestProject/bin

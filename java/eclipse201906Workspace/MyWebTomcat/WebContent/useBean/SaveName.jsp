@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=user.getnme8() %>
  <a href="NextPage.jsp">Continue</a>
 </body>
 </html>
