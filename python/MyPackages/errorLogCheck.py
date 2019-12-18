@@ -113,6 +113,56 @@ def findRequestBodyByErrorMessage(fileName, errorMessage, searchReg, printFileNa
                     print(timeStr + ":     " + searchPart)
     fileObj.close()
     
+#search key: <ReasonCode>109</ReasonCode>
+#fieldsList:["Detail", "RequestID"]
+def getErrorMessageAsTable(fileName,searchKey,fieldsList):
+    fileObj = open(fileName, "r", encoding="utf-8")
+    myTable = []
+    errorMsgRow = {}
+    needToCheckThisLine = False
+    for line in fileObj.readlines():
+        line = line.strip()
+        if line.startswith("</TCRMService>"):
+            #finished read exception xml, add error row to table
+            if(needToCheckThisLine):
+                myTable.append(errorMsgRow)
+        elif(line.startswith("<TCRMService")):
+            #new line begin
+            needToCheckThisLine = False
+            errorMsgRow = {}
+            errorMsgRow["searchKey"] = searchKey
+        else:
+            #other line, check error message
+            if(line.startswith(searchKey)):
+                needToCheckThisLine = True
+            else:
+                for field in fieldsList:
+                    #message in single line
+                    if(line.startswith("<" + field + ">") and line.endswith("</" + field + ">")):
+                        errorMsgRow[field] = line.replace("<" + field + ">","").replace("</" + field + ">","")
+                    #message in multiple line(message start)
+                    elif(line.startswith("<" + field + ">")):
+                        errorMsgRow[field] = line.replace("<" + field + ">","")
+                    #message in multiple line(message end)
+                    elif(line.endswith("</" + field + ">")):
+                        errorMsgRow[field] += (" " + line.replace("</" + field + ">",""))
+    fileObj.close()
+    return myTable
+
+def showErrorMessageTable(errorMsgTable):
+    allKeys = ""
+    fieldSeparator = "\t"
+    for key in errorMsgTable[0].keys():
+        allKeys += key + fieldSeparator
+    print(allKeys)
+    #i = 1
+    for item in errorMsgTable:    
+        singleRow = ""
+        for key in item.keys():
+            singleRow += item[key] + fieldSeparator
+        print(singleRow)
+        #i += 1
+    
 #check log file in Log1023
 #os.chdir(r"C:\Users\IBM_ADMIN\Documents\Work Document\TasksAndIssues\CurrentWorkWith\1597004LastUpdateDtNotMatch\Log1023")
 #checkFile("5","130628")

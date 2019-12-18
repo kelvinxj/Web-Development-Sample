@@ -2,9 +2,25 @@
 # -*- coding: utf-8 -*-
 #the first line is used only in unix when you want to make python file executable
 #the second is used to declare a encoding other than utf-8. if no this line, the code file is treated as UTF-8
+import re
 
 #Print "hello, world"
 print("Hello, world")
+
+#use \ to escapse:
+print ('It\'s a desk') #will print It's a desk
+
+#use raw string:
+print (r'It\'s a desk') #will print It\'s a desk
+
+#print string in multiple lines
+#if string end with "\", new line will not be printed
+print ("""abc\
+      , it\'s a long string""")
+      
+#without "\", new line will be printed
+print("""this is line one,
+        this is line two.""")
 
 #Define variables: string, int, array,Array accessing
 myName="this is a string"
@@ -115,6 +131,23 @@ print ("Hello, " + "world!")
 print("a" in "abc") #True
 print("a" not in "abc") #False
 
+#index a char in string:
+print (str1[0]) #print T
+
+#index from the last char:
+print (str1[-1])#print g
+
+#index of string
+print("Position of 4 in string is: " + str(str1.index('s'))) #return first index of 4, if 4 not exist in string, Excepiton thrown
+print("Position of i in string is: " + str(str1.find('i')))#return first index of "i", if "i" not exist in string, return -1
+
+
+#slicing a string
+str1='0123456'
+
+#print string from position 0 (included) to 2(excluded)
+print (str1[0:2])
+
 #String match or not
 #Find a substring
 
@@ -129,7 +162,13 @@ print("a" not in "abc") #False
 #String trim:
 str1 = "    this is a string      "
 print(len(str1))
-print(len(str1.strip())
+print(len(str1.strip()))
+print("String is: " + str1)
+print("Trim left    side space: " + str1.lstrip())
+print("Trim right side space: " + str1.rstrip())
+print("Trim both side space: " + str1.strip())
+str1= str1.replace("string","orange")
+print("Now the string is: " + str1)
 
 
 #Regular expression:
@@ -139,6 +178,16 @@ reg = "\.java:\d+"
 #Basic regular methods:
 #Match or not
 re.search(reg,"RemoteTestRunner.java:382") == None #False
+
+str1="abcdef"
+match = re.search("abc",str1)
+if(match):
+    print(str1 + " match " + "abc")
+
+#match ignore case:
+match = re.search("ABC", str1, re.IGNORECASE)
+if(match):
+    print(str1 + " match " + "ABC(ignore case)")
 
 #Get subGroups
 matchs = re.search("\.java:(\d+)","RemoteTestRunner.java:382")
@@ -161,32 +210,53 @@ fruits.append("lychee") #['apple', 'pear', 'peach', 'lychee']
 #Add an item to beginning of list
 fruits.insert(0,"tomato") #['tomato', 'apple', 'pear', 'peach', 'lychee']
 
-#Delete an item to list
-#Check an item in list
+#Delete an item from list
+fruits.remove("apple") #['tomato', 'pear', 'peach', 'lychee']
 
+#Check an item in list
+print("apple" in fruits) #False
 
 #Set:
 #Define a Set
+book={"book1","book2","book3"}
+print(book)
 
 
 #Access item Set
+#Can't access a set by index. using for:
+for myBook in book:
+    print("I have this book:" + myBook)
+    
 #Add an item to Set
-#Delete an item to Set
-#Check an item in Set
+book.add("Scary book")
+print(book)
 
+#remove  item from set. Items should exist in set ,otherwise, exception will be thrown
+book.remove("book1")
+#remove  item from set no matter item exist in a set
+book.discard("book8")
+
+#Check an item in Set
+print("book1" in book) #True
 
 #Map:
 #Define a Map
-
-
-#Access item of Map
-
+myMap = {}
 
 #Add an item to Map
+myMap["name"] = "name1"
+myMap["value"] = "value1"
 
+#Access item of Map
+print("name:" + myMap["name"])
+print("value:" + myMap["value"])
 
 #Delete an item to Map
 #Check an item in Map
+print("name" in myMap.keys()) #print True
+print("name1" in myMap.keys()) #print True
+print("value1" in myMap.values()) #print True
+
 
 
 #Tuple(if have)
