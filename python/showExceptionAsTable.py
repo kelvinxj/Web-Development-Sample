@@ -8,14 +8,18 @@ sys.path.append(r"C:\MySourceCode\github\MySource\python\MyPackages")
 import errorLogCheck
 
 searchKey = "<ReasonCode>130133</ReasonCode>"
-fieldsList = ["requestID","Throwable"]
+fieldsList = ["requestID","Throwable","requestTime"]
 fileName = r"C:\Users\JiaXie\CrashPlan\Desktop\IDMA1110-1112\prod2_130133\RequestResponseMessage.log.7"
 myTable = errorLogCheck.getErrorMessageAsTable(fileName,searchKey,fieldsList)
-errorLogCheck.showErrorMessageTable(myTable)
+
+#errorLogCheck.showErrorMessageTable(myTable)
 fileName = r"C:\Users\JiaXie\CrashPlan\Desktop\IDMA1110-1112\prod2_130133\RequestResponseMessage.log.3"
-myTable = errorLogCheck.getErrorMessageAsTable(fileName,searchKey,fieldsList)
-errorLogCheck.showErrorMessageTable(myTable)
+myTable2 = errorLogCheck.getErrorMessageAsTable(fileName,searchKey,fieldsList)
+
+#errorLogCheck.showErrorMessageTable(myTable)
 fileName = r"C:\Users\JiaXie\CrashPlan\Desktop\IDMA1110-1112\prod2_130133\RequestResponseMessage.log.15"
-myTable = errorLogCheck.getErrorMessageAsTable(fileName,searchKey,fieldsList)
-errorLogCheck.showErrorMessageTable(myTable)
+myTable3 = errorLogCheck.getErrorMessageAsTable(fileName,searchKey,fieldsList)
+
+newTable = myTable + myTable2 + myTable3
+errorLogCheck.showErrorMessageTable(newTable)
 #print(myTable)
