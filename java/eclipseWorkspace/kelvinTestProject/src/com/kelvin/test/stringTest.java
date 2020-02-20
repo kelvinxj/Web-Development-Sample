@@ -10,7 +10,7 @@ public class stringTest {
 	@Test
 	public void testStringDecode() throws UnsupportedEncodingException{
 		//String str = "abc中国";
-		String str = "Дмитрий";
+		String str = "eèéüДмитрий";
 //		byte[] bytes = str.getBytes("utf-8");
 //		for(byte ch: bytes){
 //			System.out.println(ch);
@@ -21,7 +21,24 @@ public class stringTest {
 		}
 		
 		String encoding = "utf-8";
-		byte[] contents = "Д".getBytes(encoding);
+		int intVal = 0;
+		str = "Д";
+		byte[] contents = str.getBytes(encoding);
+		System.out.println(str + " byte array by utf-8:");
+		for(int i = 0; i < contents.length; i++) {
+			intVal = (int)contents[i];
+			System.out.println((i+1) + ":" + intVal + ", " + Integer.toHexString(intVal));
+		}
+		
+		str = "张";
+		contents = str.getBytes(encoding);
+		System.out.println(str + " byte array by utf-8:");
+		intVal = 0;
+		for(int i = 0; i < contents.length; i++) {
+			intVal = (int)contents[i];
+			System.out.println((i+1) + ":" + intVal + ", " + Integer.toHexString(intVal));
+		}
+		
 		String myStr = new String(contents, encoding);
 		System.out.println(myStr);
 	}
