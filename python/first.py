@@ -104,6 +104,10 @@ fib(10)
 print("This is a num:" + str(1))
 #String to int
 print(4+int("1"))
+#Character to int
+print(ord('\n')) #print 10
+#int to Character
+print(chr(97)) #print lower case 'a'
 	
 #Get type of object
 map={1:'map',2:'ChinaMap'}
@@ -148,6 +152,7 @@ str1='0123456'
 #print string from position 0 (included) to 2(excluded)
 print (str1[0:2])
 
+str1 = "    this is a string      "
 #String match or not
 #Find a substring
 
@@ -155,18 +160,18 @@ print (str1[0:2])
 
 #endWith
 
-#String replace
 
 #String format
 
 #String trim:
-str1 = "    this is a string      "
 print(len(str1))
 print(len(str1.strip()))
 print("String is: " + str1)
 print("Trim left    side space: " + str1.lstrip())
 print("Trim right side space: " + str1.rstrip())
 print("Trim both side space: " + str1.strip())
+
+#String replace
 str1= str1.replace("string","orange")
 print("Now the string is: " + str1)
 

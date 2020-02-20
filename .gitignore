@@ -17,6 +17,7 @@
 
 #ignore eclispe workspace folder
 /java/eclipseWorkspace/.metadata
+/java/eclipseWorkspace/clientdb.xml
 /java/WebSphereProject/.metadata
 
 #ignore eclipse web project class folder:
@@ -25,6 +26,8 @@
 #ignore eclipse build folder
 /java/eclipseWorkspace/kelvinTestProject/build
 /java/eclipseWorkspace/kelvinTestProject/bin
+/java/eclipseWorkspace/com.sample.web/bin
+/java/eclipseWorkspace/EclipseHello/bin
 
 #ignore scala class file and build files
 /scala/*.class
@@ -33,3 +36,7 @@
 /IntelliJProjects/*/out
 /IntelliJProjects/sbtPrj1/target
 /IntelliJProjects/sbtPrj1/project/target
+
+
+#ignore pycache folder
+/python/__pycache__
