@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Hashtable;
 
+import javax.ejb.CreateException;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.rmi.PortableRemoteObject;
@@ -44,7 +45,7 @@ public class getEJB extends HttpServlet {
 			PrintWriter pw = response.getWriter();
 			pw.write("EJB object class name: " + className);
 			//create Session bean's remote interface
-			//theServiceControllerHome = (DWLServiceControllerHome) PortableRemoteObject.narrow(obj, DWLServiceControllerHome.class);
+			//DWLServiceControllerHome theServiceControllerHome = (DWLServiceControllerHome) PortableRemoteObject.narrow(ejbObj, DWLServiceControllerHome.class);
 			//DWLServiceController aDWLServiceController = theServiceControllerHome.create();
 		} catch (NamingException e) {
 			// TODO Auto-generated catch block
@@ -52,6 +53,11 @@ public class getEJB extends HttpServlet {
 			PrintWriter pw = response.getWriter();
 			pw.write(e.getMessage());
 			
+		}catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			PrintWriter pw = response.getWriter();
+			pw.write(e.getMessage());
 		}
 	}
 

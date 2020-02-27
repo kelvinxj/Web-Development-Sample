@@ -47,9 +47,16 @@ public class AccessDB extends HttpServlet {
 			ds = (DataSource)ctx.lookup("jdbc/DWLConfig");
 			Connection conn = ds.getConnection();
 			Statement stmt = conn.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from contact where cont_id = 111111111");
+			ResultSet rs = stmt.executeQuery("select * from contact where cont_id = 877257476915870110");
+			
+			boolean hasRow = false;
 			while(rs.next()){
-				pw.write("cont_id:" + rs.getString("cont_id") + "; name:" + rs.getString("contact_name"));
+				hasRow = true;
+				pw.write("cont_id:" + rs.getString("cont_id") + "<br/> name:" + rs.getString("contact_name"));
+			}
+			if(!hasRow) {
+				pw.write("No rows from DB<br/>");
+				pw.write("try to change conditions");
 			}
 		} catch (NamingException e) {
 			// TODO Auto-generated catch block

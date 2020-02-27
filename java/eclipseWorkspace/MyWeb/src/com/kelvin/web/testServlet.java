@@ -32,7 +32,7 @@ public class testServlet extends HttpServlet {
 		PrintWriter pw = response.getWriter();
 		String myName = (String)request.getParameter("name");
 		request.getSession().setAttribute("name", myName);
-		pw.write("Hello, WebSphere !, Session value:");
+		pw.write("Hello, WebSphere !, parameter's value:" + myName);
 		//this.getServletContext().getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
