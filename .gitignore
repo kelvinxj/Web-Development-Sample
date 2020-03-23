@@ -28,6 +28,7 @@
 /java/eclipseWorkspace/kelvinTestProject/bin
 /java/eclipseWorkspace/com.sample.web/bin
 /java/eclipseWorkspace/EclipseHello/bin
+/java/eclipseWorkspace/JavaEETutorial/build
 
 #ignore scala class file and build files
 /scala/*.class
