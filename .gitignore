@@ -18,6 +18,11 @@
 #ignore eclispe workspace folder
 /java/eclipseWorkspace/.metadata
 /java/eclipseWorkspace/clientdb.xml
+/java/eclipseWorkspace/JavaEETutorial/.settings
+/java/eclipseWorkspace/MyWebTomcat/.settings
+/java/eclipseWorkspace/producerMethod/.settings
+/java/eclipseWorkspace/MyWeb/.settings
+/java/eclipseWorkspace/MyWebEAR/.settings
 /java/WebSphereProject/.metadata
 
 #ignore eclipse web project class folder:

@@ -2,9 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<!-- <classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.39-bin.jar" sourcepath="C:/Program Files (x86)/MySQL/Connector.J 5.1/src.zip"/> -->
 	<classpathentry kind="lib" path="C:/MySourceCode/github/MySource/java/eclipseWorkspace/lib/db2jcc4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/libphonenumber-8.8.9.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/libphonenumber-8.8.9-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/libphonenumber/libphonenumber-8.8.9.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/libphonenumber-8.8.9-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/jackson-core-asl-1.9.13.jar"/>
 	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/jackson-mapper-asl-1.9.13.jar"/>
 	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/commons-cli-1.4/commons-cli-1.4.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/commons-cli-1.4/commons-cli-1.4-sources.jar"/>
@@ -19,5 +18,8 @@
 	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/JUnit/junit-4.12.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/JUnit/junit-4.12-sources.jar"/>
 	<classpathentry kind="lib" path="C:/MySourceCode/github/MySource/java/eclipseWorkspace/lib/myProperty.jar"/>
 	<classpathentry kind="lib" path="C:/MySourceCode/github/MySource/java/eclipseWorkspace/lib/myProperty2.jar"/>
+	<classpathentry kind="lib" path="lib/com.ibm.ws.ejb.thinclient_9.0.jar"/>
+	<classpathentry kind="lib" path="lib/com.ibm.ws.sib.client.thin.jms_9.0.jar"/>
+	<classpathentry kind="lib" path="lib/j2ee.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
