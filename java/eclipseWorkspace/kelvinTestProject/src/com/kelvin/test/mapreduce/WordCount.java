@@ -28,8 +28,6 @@ public class WordCount {
 				context.write(word, one);
 			}
 		}
-		
-		
 	}
 	
 	public static class Reduce extends Reducer<Text, IntWritable, Text, IntWritable>{
@@ -49,6 +47,7 @@ public class WordCount {
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
 		// TODO Auto-generated method stub
 		Configuration conf = new Configuration();
+		//comment this because Job Constructor is deprecated
 		//Job job = new Job(conf,"wordcount");
 		Job job = Job.getInstance(conf, "wordcount");
 		job.setJarByClass(WordCount.class);
