@@ -1,3 +1,4 @@
+package com.kelvin.test.mapreduce;
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
