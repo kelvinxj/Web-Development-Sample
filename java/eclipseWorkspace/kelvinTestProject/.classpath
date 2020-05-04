@@ -2,24 +2,24 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/MySourceCode/github/MySource/java/eclipseWorkspace/lib/db2jcc4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/libphonenumber/libphonenumber-8.8.9.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/libphonenumber-8.8.9-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/jackson-core-asl-1.9.13.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/jackson-mapper-asl-1.9.13.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/commons-cli-1.4/commons-cli-1.4.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/commons-cli-1.4/commons-cli-1.4-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/avro-1.8.2.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/avro-1.8.2-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/avro-mapred-1.8.2.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/Avro/avro-mapred-1.8.2-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/lib/mockito-all-1.8.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/lib/mrunit-1.0.0-hadoop1.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/src"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/MRUnit/apache-mrunit-1.0.0-hadoop1-bin/apache-mrunit-1.0.0-hadoop1/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/log4j/apache-log4j-1.2.17/log4j-1.2.17.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/log4j/apache-log4j-1.2.17/src"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Hadoop/hadoop-2.6.5/share/hadoop/common/hadoop-common-2.6.5.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/Hadoop/hadoop-2.6.5/share/hadoop/common/sources/hadoop-common-2.6.5-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/Hadoop/hadoop-2.6.5/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.5.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/Hadoop/hadoop-2.6.5/share/hadoop/mapreduce/sources/hadoop-mapreduce-client-core-2.6.5-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/JiaXie/CrashPlan/My document/MyTools/JUnit/junit-4.12.jar" sourcepath="C:/Users/JiaXie/CrashPlan/My document/MyTools/JUnit/junit-4.12-sources.jar"/>
-	<classpathentry kind="lib" path="C:/MySourceCode/github/MySource/java/eclipseWorkspace/lib/myProperty.jar"/>
-	<classpathentry kind="lib" path="C:/MySourceCode/github/MySource/java/eclipseWorkspace/lib/myProperty2.jar"/>
-	<classpathentry kind="lib" path="lib/com.ibm.ws.ejb.thinclient_9.0.jar"/>
-	<classpathentry kind="lib" path="lib/com.ibm.ws.sib.client.thin.jms_9.0.jar"/>
-	<classpathentry kind="lib" path="lib/j2ee.jar"/>
+	<classpathentry kind="lib" path="/Libs/db2jcc4.jar"/>
+	<classpathentry kind="lib" path="/Libs/libphonenumber-8.8.9.jar" sourcepath="/Libs/libphonenumber-8.8.9-sources.jar"/>
+	<classpathentry kind="lib" path="/Libs/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/Libs/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/Libs/commons-cli-1.4.jar" sourcepath="/Libs/commons-cli-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="/Libs/avro-mapred-1.8.2.jar" sourcepath="/Libs/avro-mapred-1.8.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Libs/mockito-all-1.8.5.jar"/>
+	<classpathentry kind="lib" path="/Libs/mrunit-1.0.0-hadoop1.jar" sourcepath="/Libs/apache-mrunit-1.0.0-hadoop1.zip"/>
+	<classpathentry kind="lib" path="/Libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Libs/log4j-1.2.17.jar" sourcepath="/Libs/apache-log4j-1.2.17-src.zip"/>
+	<classpathentry kind="lib" path="/Libs/hadoop-common-2.6.5.jar" sourcepath="/Libs/hadoop-common-2.6.5-sources.jar"/>
+	<classpathentry kind="lib" path="/Libs/hadoop-mapreduce-client-core-2.6.5.jar" sourcepath="/Libs/hadoop-mapreduce-client-core-2.6.5-sources.jar"/>
+	<classpathentry kind="lib" path="/Libs/junit-4.12.jar" sourcepath="/Libs/junit-4.12-sources.jar"/>
+	<classpathentry kind="lib" path="/Libs/myProperty.jar"/>
+	<classpathentry kind="lib" path="/Libs/myProperty2.jar"/>
+	<classpathentry kind="lib" path="/Libs/com.ibm.ws.ejb.thinclient_9.0.jar"/>
+	<classpathentry kind="lib" path="/Libs/com.ibm.ws.sib.client.thin.jms_9.0.jar"/>
+	<classpathentry kind="lib" path="/Libs/j2ee.jar"/>
+	<classpathentry kind="lib" path="/Libs/avro-1.8.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

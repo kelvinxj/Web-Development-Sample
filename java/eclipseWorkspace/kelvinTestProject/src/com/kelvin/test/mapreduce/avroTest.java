@@ -1,4 +1,4 @@
-package com.kelvin.test.avroExamples;
+package com.kelvin.test.mapreduce;
 
 import static org.junit.Assert.*;
 
