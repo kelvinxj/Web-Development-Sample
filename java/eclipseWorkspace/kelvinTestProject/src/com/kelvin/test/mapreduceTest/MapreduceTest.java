@@ -21,6 +21,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.Reducer.Context;
+import org.apache.hadoop.mrunit.MapOutputShuffler;
 import org.apache.hadoop.mrunit.mapreduce.MapDriver;
 import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.apache.hadoop.mrunit.types.Pair;
@@ -34,6 +35,7 @@ import com.kelvin.test.mapreduce.WordCount.Reduce;
 import com.kelvin.test.mapreduce.WordCount.WordCountMapper;
 
 public class MapreduceTest {
+	  private MapOutputShuffler<Text, IntWritable> shuffler;
 	/*
 	private static class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
 		private final static IntWritable one = new IntWritable(1);
@@ -61,35 +63,28 @@ public class MapreduceTest {
 		mapDriver = MapDriver.newMapDriver(mapper);
 		
 		WordCount.Reduce mrUnitReducer = new WordCount.Reduce();
-		reduceDriver = ReduceDriver.newReduceDriver(mrUnitReducer);
-	}
+		reduceDriver = ReduceDriver.newReduceDriver(mrUnitReducer);		
 
-	@Test
-	public void test() throws IOException {
-		mapDriver.withInput(new LongWritable(), new Text("welcome to China"));
-		//compare the output. pair "welcome 1" should at first position
-		mapDriver.withOutput(new Text("welcome"), new IntWritable(1));
-		mapDriver.withOutput(new Text("to"), new IntWritable(1));
-		mapDriver.withOutput(new Text("china"), new IntWritable(1));
-		
-		mapDriver.runTest();
+	    shuffler = new MapOutputShuffler<Text, IntWritable>(null, null, null);
 	}
 	
 	@Test
 	public void testMapperOutput() throws IOException{
 		mapDriver.withInput(new LongWritable(), new Text("Hi welcome to Acadgild"));
 		mapDriver.withInput(new LongWritable(), new Text("Acadgild is into e-learning"));
-		//compare the output. pair "welcome 1" should at first position
-		mapDriver.withOutput(new Text("to"), new IntWritable(1));
-		mapDriver.withOutput(new Text("welcome"), new IntWritable(1));
-		mapDriver.withOutput(new Text("china"), new IntWritable(1));
 		
+		//test mapper output:
 		System.out.println("After mapper:");
 		List<Pair<Text, IntWritable>> resultList = mapDriver.run();
 		for(Pair<Text, IntWritable> p : resultList){
 			System.out.println(String.format("%s %d", p.getFirst().toString(), p.getSecond().get()));
 		}
+	}
+	
+	@Test
+	public void testReducerOutput() throws IOException {
 		
+		//test reducer output:
 		Pair<Text,List<IntWritable>> pair;
 		List<IntWritable> valueList = new LinkedList<IntWritable>();
 		valueList.add(new IntWritable(1));
@@ -99,8 +94,88 @@ public class MapreduceTest {
 		
 		List<Pair<Text, List<IntWritable>>> pairList = new LinkedList<Pair<Text, List<IntWritable>>>();
 		pairList.add(pair);
+
+		valueList = new LinkedList<IntWritable>();
+		valueList.add(new IntWritable(3));
+		valueList.add(new IntWritable(2));
+		pair = new Pair<Text, List<IntWritable>>(new Text("word2"), valueList);
+		pairList.add(pair);
 		
 		System.out.println("reducer result:");
+		reduceDriver.addAll(pairList);
+		List<Pair<Text, IntWritable>> reduceResult = reduceDriver.run();
+		for(Pair<Text, IntWritable> p: reduceResult){
+			System.out.println(p);
+		}
+	}
+	
+	@Test
+	public void testWordcountFlow() throws IOException{
+		mapDriver.withInput(new LongWritable(), new Text("Hi welcome to Acadgild"));
+		mapDriver.withInput(new LongWritable(), new Text("Acadgild is into e-learning"));
+		
+		//test mapper output:
+		System.out.println("After mapper:");
+		List<Pair<Text, IntWritable>> resultList = mapDriver.run();
+		for(Pair<Text, IntWritable> p : resultList){
+			System.out.println(String.format("%s %d", p.getFirst().toString(), p.getSecond().get()));
+		}
+		
+		//test shuffler
+		shuffler.shuffle(resultList);
+		System.out.println("After shuffle:");
+		for(Pair<Text, IntWritable> p : resultList){
+			System.out.println(String.format("%s %d", p.getFirst().toString(), p.getSecond().get()));
+		}
+		
+		//test reducer
+		//send mapper output to reducer
+		Pair<Text,List<IntWritable>> pair = new Pair<Text, List<IntWritable>>(new Text(""), new LinkedList<IntWritable>());
+		String currentKey = "";
+		String previousKey = "";
+		List<IntWritable> valueList = new LinkedList<IntWritable>();
+		boolean firstValue = false;
+		List<Pair<Text,List<IntWritable>>> pairList = new LinkedList<Pair<Text, List<IntWritable>>>();
+		for(Pair<Text, IntWritable> p : resultList){
+			if(currentKey == "") {
+				firstValue = true;
+				currentKey = p.getFirst().toString();
+				valueList = new LinkedList<IntWritable>();
+				valueList.add(p.getSecond());
+				pair = new Pair<Text, List<IntWritable>>(new Text(currentKey), valueList);
+			}
+			else {
+				firstValue = false;
+				currentKey = p.getFirst().toString();
+			}
+			
+			//if currentKey == oldKey, add IntWritable to list
+			if(!firstValue) {
+				if(currentKey.equalsIgnoreCase(previousKey)) {
+					pair.getSecond().add(p.getSecond());
+				}
+				//eles means find new key
+				else {
+					pairList.add(pair);
+					//create new pair
+					valueList = new LinkedList<IntWritable>();
+					valueList.add(p.getSecond());
+					pair = new Pair<Text, List<IntWritable>>(new Text(currentKey), valueList);
+				}
+			}
+			previousKey = currentKey;
+		}
+		pairList.add(pair);
+		System.out.println("send to reducer:");
+		for(Pair<Text,List<IntWritable>> obj: pairList) {
+			String key = obj.getFirst().toString();
+			String value = " ";
+			for(IntWritable intValue: obj.getSecond()) {
+				value += intValue.toString() + " ";
+			}
+			System.out.println("key: " + key + "; value: " + value);
+		}
+		
 		reduceDriver.addAll(pairList);
 		List<Pair<Text, IntWritable>> reduceResult = reduceDriver.run();
 		for(Pair<Text, IntWritable> p: reduceResult){
