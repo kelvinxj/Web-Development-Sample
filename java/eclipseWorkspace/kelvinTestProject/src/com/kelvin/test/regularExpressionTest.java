@@ -1,4 +1,6 @@
 package com.kelvin.test;
+import static org.junit.Assert.*;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,14 +15,31 @@ public class regularExpressionTest {
 	@Test
 	public void testStringMatches(){
 		String str = "11";
-		System.out.println(str.matches("\\d{2}"));
+		System.out.println(str.matches("\\d{1}"));
+		
+		//java regular expression need to match all string to get groups
+		str = "123abcasdfadsf";
+		
+		String regx = "a(bc).*";
+		Pattern p = Pattern.compile(regx);				
+		assertEquals(false, Pattern.matches(regx ,str));
+		assertEquals(false, str.matches(regx));
+		assertEquals(1,p.matcher(str).groupCount());
+
+		regx = "abc";
+		p = Pattern.compile(regx);				
+		assertEquals(false, Pattern.matches(regx ,str));
+		assertEquals(false, str.matches(regx));
+		assertEquals(0,p.matcher(str).groupCount());
 	}
 	
 	@Test
 	public void getMatchedPart(){
 		String str = "2018-01-29 21:48:21,365 : <ns:TCRMAdminContEquivBObj><ns:AdminPartyId>8501e85cdbd1aac</ns:AdminPartyId><ns:AdminSystemType>100007</ns:AdminSystemType><ns:TCRMExtension><ns:XAdminContEquivBObjExt><ns:XStatusType>100007</ns:XStatusType></ns:XAdminContEquivBObjExt></ns:TCRMExtension></ns:TCRMAdminContEquivBObj";
-		Pattern p = Pattern.compile("AdminPartyId>([^<]*)");
+		String regExp = "AdminPartyId>([^<]*)";
+		Pattern p = Pattern.compile(regExp);
 		Matcher m = p.matcher(str);
+		assertEquals(false, str.matches(regExp));
 		if(m.find()){
 			System.out.println("Whole string: " + str);
 			System.out.println("First group(entire match): " + m.group(0));
