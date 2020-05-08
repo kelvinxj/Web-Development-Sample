@@ -43,6 +43,10 @@
 /IntelliJProjects/sbtPrj1/target
 /IntelliJProjects/sbtPrj1/project/target
 
+#ignore log4j log file
+/java/eclipseWorkspace/kelvinTestProject/Customer.log
+/java/eclipseWorkspace/kelvinTestProject/Customer1.log
+
 
 #ignore pycache folder
 /python/__pycache__
