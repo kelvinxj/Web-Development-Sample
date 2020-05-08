@@ -1,4 +1,4 @@
-package com.kelvin.test.mapreduce;
+package com.kelvin.bigdata.mapreduce;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -38,7 +38,7 @@ public class PICalculate {
 			double xPosition = Double.parseDouble(values[0].trim());
 			double yPosition = Double.parseDouble(values[1].trim());
 			
-			double distance = Math.sqrt(Math.pow(xPosition, 2) + Math.pow(yPosition, 2));
+			double distance = Math.sqrt(Math.pow(xPosition-0.5, 2) + Math.pow(yPosition-0.5, 2));
 			
 			if(distance <= 0.5)
 				context.write(one, one);
@@ -95,16 +95,26 @@ public class PICalculate {
 		FileInputFormat.setInputPaths(job, inputPath);
 		inputPath.getFileSystem(conf).delete(inputPath, true);
 		//create points file
-		int numOfPoints = Integer.parseInt(args[0]);
+		//splitCount means to split a line(length is 1) to splitCount parts
+		int splitsCount = Integer.parseInt(args[0]);
 		Path pointsFile = new Path(inputPath,"points.txt");
 		FSDataOutputStream stream = pointsFile.getFileSystem(conf).create(pointsFile);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(stream));
 		Random rd = new Random();
-		for(int i = 0; i <= numOfPoints; i++){
-			double x = rd.nextDouble()/2;
-			double y = rd.nextDouble()/2;
-			bw.write(x + ";" + y);
-			bw.newLine();
+		
+		double step = 1.0/splitsCount;
+		double x = 0,y = 0;
+		for(int i = 0; i <= splitsCount; i++){
+			for(int j = 0;j<=splitsCount; j++) {
+//				double x = rd.nextDouble()/2;
+//				double y = rd.nextDouble()/2;
+//				System.out.println("step is: " + step + ";x=" + x + ";y=" + y);
+				bw.write(x + ";" + y);
+				bw.newLine();
+				x+=step;
+			}
+			x=0;
+			y+=step;
 		}
 		bw.flush();
 		bw.close();
@@ -124,5 +134,13 @@ public class PICalculate {
 			System.out.println(line);
 		}
 		br.close();
+	}
+	
+	private static double getNextX() {
+		return 1.0;
+	}
+	
+	private static double getNextY() {
+		return 1.0;
 	}
 }

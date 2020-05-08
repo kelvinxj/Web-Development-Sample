@@ -28,9 +28,7 @@ import org.apache.hadoop.mrunit.types.Pair;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.kelvin.test.mapreduce.PICalculate;
 import com.kelvin.test.mapreduce.WordCount;
-import com.kelvin.test.mapreduce.PICalculate.mapper;
 import com.kelvin.test.mapreduce.WordCount.Reduce;
 import com.kelvin.test.mapreduce.WordCount.WordCountMapper;
 
@@ -232,20 +230,20 @@ public class MapreduceTest {
 		System.out.print("PI:" + 4 * pointsInCircleCount/totalPointsCount);
 	}
 	
-	@Test
-	public void testCalculatePIMapper() throws IOException{
-		LongWritable one = new LongWritable(1);
-		PICalculate.mapper mapper = new PICalculate.mapper();
-		MapDriver<LongWritable, Text, IntWritable, IntWritable> mapDriver = MapDriver.newMapDriver(mapper);
-		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("1,1")));
-		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("0.1,0.1")));
-		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("0.2,0.1")));
-		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("0.2,0.1")));
-		
-		List<Pair<IntWritable, IntWritable>> result = mapDriver.run();
-		for(Pair<IntWritable, IntWritable> p : result){
-			System.out.println(String.format("%d %d", p.getFirst().get(), p.getSecond().get()));
-		}
-	}
+//	@Test
+//	public void testCalculatePIMapper() throws IOException{
+//		LongWritable one = new LongWritable(1);
+//		PICalculate.mapper mapper = new PICalculate.mapper();
+//		MapDriver<LongWritable, Text, IntWritable, IntWritable> mapDriver = MapDriver.newMapDriver(mapper);
+//		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("1,1")));
+//		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("0.1,0.1")));
+//		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("0.2,0.1")));
+//		mapDriver.addInput(new Pair<LongWritable, Text>(one, new Text("0.2,0.1")));
+//		
+//		List<Pair<IntWritable, IntWritable>> result = mapDriver.run();
+//		for(Pair<IntWritable, IntWritable> p : result){
+//			System.out.println(String.format("%d %d", p.getFirst().get(), p.getSecond().get()));
+//		}
+//	}
 
 }
