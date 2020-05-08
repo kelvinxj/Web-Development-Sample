@@ -29,17 +29,24 @@ import org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader;
 /*
  * not finished.
  * logic:
- * if line begin with 2020
- * 	key = time: 2020
- * 	if(exceptionStart)
- * 		set value
- * 		break;
- * else if line begin with "<?xml"
- * 	exceptionStart = true;
- * else
- * 	exceptin line. read this line. 
- * 	if(exceptionStart)
- * 		append to exceptoinMsg
+ * while (getFilePosition() <= end{
+ * 	if line begin with 2020
+ * 		key = time: 2020
+ * 	else if line begin with "<?xml"
+ * 		exceptionStart = true;
+ * 		exceptoinMsg = "";
+ * 		append to exceptionMsg;
+ * else if line begin with "</TCRMService>"
+ * 		exceptionFinished.
+ *  	set value = exceptionMsg
+ *  	break;
+ * else 
+ * 		if(exceptionStart)
+ * 			exceptin line. read this line.
+ * 			append to exceptoinMsg
+ *		else
+ *		//not a complete exception message, ignore this line
+ * }
  */
 public class ExceptionLineRecordReader extends RecordReader<Text, Text> {
 
@@ -178,25 +185,72 @@ public class ExceptionLineRecordReader extends RecordReader<Text, Text> {
 	      value = new Text();
 	    }
 	    int newSize = 0;
-	    // We always read one extra line, which lies outside the upper
+	    // No need to read one extra line, which lies outside the upper
 	    // split limit i.e. (end - 1)
-	    while (getFilePosition() <= end || in.needAdditionalRecordAfterSplit()) {
+	    String line = "";
+	    boolean exceptionStart = false;
+	    String exceptionMsg = "";
+	    while (getFilePosition() <= end) {
 	      if (pos == 0) {
 	        newSize = skipUtfByteOrderMark();
 	      } else {
 	        newSize = in.readLine(value, maxLineLength, maxBytesToConsume(pos));
 	        pos += newSize;
 	      }
+//	      System.out.println("new size: " + newSize);
+//	      System.out.println("cucrrent: " + pos + "; end: " + end);
+	    	 /* while (getFilePosition() <= end{
+	    		 * if line begin with 2020
+	    		 * 		key = time: 2020
+	    		 * else if line begin with "<?xml"
+	    		 * 		exceptionStart = true;
+	    		 * 		exceptoinMsg = line;
+	    		 * 		append to exceptionMsg;
+	    		 * else if line begin with "</TCRMService>"
+	    		 * 		exceptionFinished.
+	    		 *  	set value = exceptionMsg
+	    		 *  	break;
+	    		 * else 
+	    		 * 		if(exceptionStart)
+	    		 * 			exceptin line. read this line.
+	    		 * 			append to exceptoinMsg
+	    		 *		else
+	    		 *		//not a complete exception message, ignore this line
+	    		 */
+	      line = value.toString().trim();
+//	      System.out.println("line is: " + line);
+	      if(line.startsWith("2020")) {
+	    	  key.set("2020");
+	    	  exceptionStart = false;
+	      }
+	      else if(line.startsWith("<?xml")) {
+	    	  exceptionStart = true;
+	    	  exceptionMsg = line;
+	      }
+	      else if(line.startsWith("</TCRMService>")) {
+	    	  exceptionMsg += line;
+	    	  value.set(exceptionMsg);
+	    	  break;
+	      }
+	      else {
+	    	  if(exceptionStart)
+		    	  exceptionMsg += line;
+	      }
 
-	      if ((newSize == 0) || (newSize < maxLineLength)) {
+	      if ((newSize == 0) 
+//	    		  || (newSize < maxLineLength)
+	    		  ) {
+	    	System.out.println("new size is: " + newSize + "; maxLineLength: " + maxLineLength);
 	        break;
 	      }
 
 	      // line too long. try again
-	      LOG.info("Skipped line of size " + newSize + " at pos " + 
-	               (pos - newSize));
+//	      LOG.info("Skipped line of size " + newSize + " at pos " + 
+//	               (pos - newSize));
 	    }
-	    if (newSize == 0) {
+	    System.out.println("exception is: " + exceptionMsg);
+	    
+	    if (exceptionMsg.length() == 0) {
 	      key = null;
 	      value = null;
 	      return false;
