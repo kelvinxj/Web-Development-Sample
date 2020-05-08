@@ -14,17 +14,17 @@ import org.apache.hadoop.mapreduce.lib.input.LineRecordReader;
 
 import com.google.common.base.Charsets;
 
-public class ExceptionFileInputFormat extends FileInputFormat<LongWritable, Text>{
+public class ExceptionFileInputFormat extends FileInputFormat<Text, Text>{
 
 	@Override
-	public RecordReader<LongWritable, Text> createRecordReader(InputSplit split, TaskAttemptContext context)
+	public RecordReader<Text, Text> createRecordReader(InputSplit split, TaskAttemptContext context)
 			throws IOException, InterruptedException {
 	    String delimiter = context.getConfiguration().get(
 	            "textinputformat.record.delimiter");
 	        byte[] recordDelimiterBytes = null;
 	        if (null != delimiter)
 	          recordDelimiterBytes = delimiter.getBytes(Charsets.UTF_8);
-	        return new LineRecordReader(recordDelimiterBytes);
+	        return new ExceptionLineRecordReader(recordDelimiterBytes);
 	}
 
 	@Override

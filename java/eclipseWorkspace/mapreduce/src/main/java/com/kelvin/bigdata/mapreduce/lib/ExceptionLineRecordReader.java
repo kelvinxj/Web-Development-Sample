@@ -26,7 +26,22 @@ import org.apache.hadoop.mapreduce.lib.input.LineRecordReader;
 import org.apache.hadoop.mapreduce.lib.input.SplitLineReader;
 import org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader;
 
-public class ExceptionLineRecordReader extends RecordReader<LongWritable, Text> {
+/*
+ * not finished.
+ * logic:
+ * if line begin with 2020
+ * 	key = time: 2020
+ * 	if(exceptionStart)
+ * 		set value
+ * 		break;
+ * else if line begin with "<?xml"
+ * 	exceptionStart = true;
+ * else
+ * 	exceptin line. read this line. 
+ * 	if(exceptionStart)
+ * 		append to exceptoinMsg
+ */
+public class ExceptionLineRecordReader extends RecordReader<Text, Text> {
 
 	  private static final Log LOG = LogFactory.getLog(ExceptionLineRecordReader.class);
 	  public static final String MAX_LINE_LENGTH = 
@@ -39,7 +54,7 @@ public class ExceptionLineRecordReader extends RecordReader<LongWritable, Text> 
 	  private FSDataInputStream fileIn;
 	  private Seekable filePosition;
 	  private int maxLineLength;
-	  private LongWritable key;
+	  private Text key;
 	  private Text value;
 	  private boolean isCompressedInput = false;
 	  private Decompressor decompressor;
@@ -156,9 +171,9 @@ public class ExceptionLineRecordReader extends RecordReader<LongWritable, Text> 
 
 	  public boolean nextKeyValue() throws IOException {
 	    if (key == null) {
-	      key = new LongWritable();
+	      key = new Text();
 	    }
-	    key.set(pos);
+//	    key.set(pos);
 	    if (value == null) {
 	      value = new Text();
 	    }
@@ -191,7 +206,7 @@ public class ExceptionLineRecordReader extends RecordReader<LongWritable, Text> 
 	  }
 
 	  @Override
-	  public LongWritable getCurrentKey() {
+	  public Text getCurrentKey() {
 	    return key;
 	  }
 
