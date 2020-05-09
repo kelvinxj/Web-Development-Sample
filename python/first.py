@@ -162,6 +162,7 @@ str1 = "    this is a string      "
 
 
 #String format
+print("Hello, {0}, today is:{1}".format("xiejia","Sunday"))
 
 #String trim:
 print(len(str1))
