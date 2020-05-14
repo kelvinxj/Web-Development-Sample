@@ -9,22 +9,28 @@ begin=""
 end=""
 usingTimeRange = True
 if(len(sys.argv) == 1):
+    print("usage: python chart.py dataFileName")
+    sys.exit(1)
+elif(len(sys.argv) == 2):
     usingTimeRange = False
 else:
-    begin=sys.argv[1]
-    end=sys.argv[2]
+    begin=sys.argv[2]
+    end=sys.argv[3]
     usingTimeRange = True
 tempArr = []
-fileObj = open(r'C:\Users\xiejia-lihui\Desktop\nohup.out')
+fileName = sys.argv[1]
+fileObj = open(fileName)
 for line in fileObj.readlines():
-    time = line.split(' ')[0]
-    temp = float(line.split(' ')[1])/1000
-    #print(temp)
-    if not(usingTimeRange):
-        tempArr.append(temp)
-    else:
-        if time >= begin and time <= end:
+    arr = line.split(' ')
+    if(len(arr) == 2):
+        time = arr[0]
+        temp = float(arr[1])/1000
+        #print(temp)
+        if not(usingTimeRange):
             tempArr.append(temp)
+        else:
+            if time >= begin and time <= end:
+                tempArr.append(temp)
 fileObj.close()
 plt.plot(tempArr)
 plt.ylabel('CPU temperature')
