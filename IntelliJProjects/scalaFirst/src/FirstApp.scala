@@ -96,6 +96,17 @@ object FirstApp{
     showNameAgain("Jary")
     //if you want  to only pass lastName:
     showNameAgain(lastName="Tomlinson")
+	
+	//case match:
+	def checkTuple(arg: Tuple2[String,String]):Int={
+		arg._2 match{
+			case "1"=>1
+			case "0"=>1
+			case _=>0
+		}
+	}
+	println(checkTuple(("id1","p")))
+	println(checkTuple(("id1","1")))
 
     //Get type of object
     println("i=" + i + ", type is " + i.getClass) //i=1, type is int
