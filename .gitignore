@@ -42,6 +42,7 @@
 /IntelliJProjects/*/out
 /IntelliJProjects/sbtPrj1/target
 /IntelliJProjects/sbtPrj1/project/target
+/IntelliJProjects/ideaProjects/target
 
 #ignore log4j log file
 /java/eclipseWorkspace/kelvinTestProject/Customer.log
