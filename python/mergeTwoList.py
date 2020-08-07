@@ -10,7 +10,7 @@ fileName2 = sys.argv[2]
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
 
 #print("file1: "+ fileName1 + "; file2:" + fileName2)
-keyFieldIndex = 1
+keyFieldIndex = 0
 key1 = set()
 fileObj = open(fileName1,"r",encoding="utf-8")
 for line in fileObj.readlines():

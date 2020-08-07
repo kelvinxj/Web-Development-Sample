@@ -1,0 +1,3 @@
+compare Spark with hadoop
+spark do all the processing in memory
+hadoop use disk to process data, hadoop slow
