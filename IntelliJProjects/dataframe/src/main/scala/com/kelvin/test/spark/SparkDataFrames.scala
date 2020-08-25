@@ -54,6 +54,7 @@ object SparkDataFrames {
     val canceledFlights = flights.filter(flights("cancelled")>0)
     canceledFlights.cache()
     canceledFlights.show
+    flights.select("abc")
 
     //DataFrame API: orderBy
     flights.orderBy(flights("dest").desc).show
