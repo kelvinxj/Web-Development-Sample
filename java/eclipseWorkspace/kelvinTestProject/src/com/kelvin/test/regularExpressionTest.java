@@ -39,7 +39,9 @@ public class regularExpressionTest {
 		String regExp = "AdminPartyId>([^<]*)";
 		Pattern p = Pattern.compile(regExp);
 		Matcher m = p.matcher(str);
+		//str.matches(regExp) return false because the regExp not match all string, only match a part: "AdminPartyId>8501e85cdbd1aac"
 		assertEquals(false, str.matches(regExp));
+		//the group info only can be retrieved after call m.find()
 		if(m.find()){
 			System.out.println("Whole string: " + str);
 			System.out.println("First group(entire match): " + m.group(0));
