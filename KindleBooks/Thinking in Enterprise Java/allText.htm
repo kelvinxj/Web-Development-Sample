@@ -1,0 +1,2141 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>Thinking in Enterprise Java</title>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+
+
+<p><b>Thinking in </b><b>Enterprise</b><b>
+Java 
+by Bruce Eckel et. Al.</b></p>
+
+<h5 style='margin-left:0in;text-indent:0in'><b>Revision 1.1, 5-06-2003</b></h5>
+
+<h5 style='margin-left:0in;text-indent:0in'><b>Please note this document is
+under development and incomplete. Updates to this document can be found at <a
+href="http://www.mindview.net/">http://www.Mindview.net</a> 
+
+Best viewed with Mozilla! (free at <a href="http://www.mozilla.org/">www.Mozilla.org</a>)
+(Even though this document was created with MS Word, IE6 garbles lines with
+footnote markers on them. Mozilla seems to do a much better job).</b></h5>
+
+<p><b>___________________________________________</b></p>
+
+<p><b>Note</b>: This document requires the installation of the
+fonts Georgia, Verdana and Andale Mono (code font) for proper viewing. These
+can be found at: <a
+href="http://sourceforge.net/project/showfiles.php?group_id=34153&amp;release_id=105355">http://sourceforge.net/project/showfiles.php?group_id=34153&amp;release_id=105355</a>
+</p>
+
+<p>Modifications in Revision 1.1:</p>
+
+<p>·;;;;;;;;
+Removed superscripts to improve viewing with IE</p>
+
+<p>Modifications in Revision 1.0:</p>
+
+<p>·;;;;;;;;
+Raw assembly of initial document. Please don't expect too much at
+this point, we're just getting started.</p>
+
+<p>·;;;;;;;;
+Some material is carried forward from Thinking in Java 2nd
+edition, some material is new.</p>
+
+<p>·;;;;;;;;
+No feedback mechanism in place at this time</p>
+
+
+
+<h1><a name="_Toc39473024">XML</a></h1>
+
+<p>Java gives you portable code and Exensible Markup Language (XML)
+gives you portable data<a href="#_ftn8" name="_ftnref8" title="">[8]</a>. </p>
+
+<p>XML is a standard adopted by the World Wide Web Consortium
+(W3C) to complement HTML for data exchange on the Web.  In this chapter, we
+will describe XML and the tools and APIs to access XML from Java.</p>
+
+<p>Most readers will have seen HTML, the language for
+describing Web pages.  Unlike many we will not criticize HTML; it has been
+wildly successful by any measure.  HTML was not the first tag language but it
+is  certainly the most commonly used, most successful, and most widely
+understood.</p>
+
+<p>If HTML is so successful, why do we need XML, what's so
+great about it and why will it be more successful?  There are several reasons. 
+</p>
+
+<p>Firstly, XML makes data exchange easy.  In XML, the data and
+the descriptions of how it should be structured (the markup) are stored as text
+that you can easily read and edit.  Secondly, the XML markup can be customized
+and standardized.  This brings extraordinary power to XML.   HTML is a markup
+language designed to describe web pages, but its major weakness is that it
+blends data and presentation  When a group of users with common interestsagree
+on the tags for a particular markup language built with XML , what they are
+doing is creating a customized markup language.  Hundreds of such languages are
+being standardized including:</p>
+
+<p>·;;;;;;;;
+Bank Internet Payment System (BIPS)</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>Financial
+     Information eXchange protocol (FIX)</li>
+ <li class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>Telecommunications
+     Interchange Markup (TIM)</li>
+ <li class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>Mathematics 
+     Markup Language (MathML)</li>
+</ul>
+
+<p>In fact, you can add extensions to markup languages created
+by someone else.  Extensible Hypertext Markup Language (XHTML) is an XML
+version of HTML that allows elements to be added to pages a browser displays as
+normal HTML.</p>
+
+<p>XML is also great because XML documents are
+self-describing.  Here is a simple XML document:</p>
+
+
+
+<p>&lt;?xml version=";1.0";
+encoding=";UTF-8";?&gt; </p>
+
+<p>&lt;phonenumber
+country=";us";&gt;</p>
+
+<p>   &lt;areacode&gt;215&lt;/areacode&gt;</p>
+
+<p>   &lt;number&gt;6424748&lt;/number&gt;</p>
+
+<p>&lt;/phonenumber&gt;</p>
+
+
+
+<p>;</p>
+
+<p>Each XML element has a tag and you can quickly figure out
+what this data represents, even years later.  This means XML documents are
+self-documenting.</p>
+
+<p>Thirdly,  XML has syntax that allows the author of the XML
+document to give structure to the data.  The nesting of data elements into
+other elements is important because data is rarely simple. XML is simple in
+design but can represent complex data.  With HTML you could represent a long
+purchase order but sharing that purchase order with other programs or
+organizations would be difficult - they don't know your structure.  HTML was
+designed for presentation not definition of structure.  In XML you can build in
+the semantic rules that specify the structure of the purchase order document. 
+Another XML document would be created to describe how best to display that
+purchase order.  XML separates structure and presentation.</p>
+
+<h2><a name="_Toc39473025">What is XML?</a></h2>
+
+<p>XML gives you the ability to describe “semistructured”
+data.  Having just said that XML allows you to structure data this may sound a
+bit confusing.  Semistructured data is defined as “schema-less” or
+self-describing”.  This means that there is no separate description of the type
+or structure of data.  </p>
+
+<p>As you have seen throughout this book, when we store or
+program a piece of data, we first describe the structure of that data and then
+create instances of that type.  With semistructured data we directly describe
+the data using a simple syntax.  XML is specifically designed to describe data
+or content, not presentation.  This is its fundemental difference from HTML.</p>
+
+<p>Let's use an example.  If I say I have data that describes a
+restaurant's menu, it will most likely bring to mind a favorite restaurant and
+their menu.  But look at the problem a bit harder and you realize that all
+menus do the same thing – describe a restaurant's fare – but each menu does it
+a bit differently.  Many Chinese restaurants use numbers and separate their
+entrees by contents – seafood, meat, poultry, pork or vegetarian.  Other
+restaurants structure their menus by the meal – breakfast, lunch or dinner.</p>
+
+
+
+<p>&lt;?xml version='1.0'?&gt;</p>
+
+<p>&lt;?xml:stylesheet
+type=";text/xsl"; href=";tij_menu.xsl"; ?&gt;</p>
+
+<p>&lt;restaurant</p>
+
+<p> xmlns:xsi=";http://www.w3.org/2001/XMLSchema-instance";</p>
+
+<p> xsi:noNamespaceSchemaLocation=";tij_menu.xsd";&gt;</p>
+
+<p>  &lt;name&gt;TIJ's
+Restaurant&lt;/name&gt;</p>
+
+<p>  &lt;address&gt;</p>
+
+<p>    &lt;addr1&gt;108 Java Sapien
+Avenue&lt;/addr1&gt;</p>
+
+<p>    &lt;city&gt;Wayne&lt;/city&gt;</p>
+
+<p>    &lt;state&gt;PA&lt;/state&gt;</p>
+
+<p>    &lt;country&gt;USA&lt;/country&gt;</p>
+
+<p>  &lt;/address&gt;</p>
+
+<p>  &lt;phone&gt;610-687-1234&lt;/phone&gt;</p>
+
+<p>  &lt;menu&gt;</p>
+
+<p>    &lt;menugroup
+desc=";Starters";&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Nachos&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$7.25&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;cheddar and
+monterey jack cheese, salsa, sour cream and guacamole.  add jalapenos or black
+olives $.50 each&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Portabello Mushroom
+Cap&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$8.75&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;Stuffed with
+crabmeat, andouille sausage and smoked tomato sauce&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Chicken
+Wings&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$4.95&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;A dozen
+chicken Wings with blue cheese sauce.  Two dozen for $8.75&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Quesadilla&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$6.25&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;Chicken, black
+beans, guacamole, salsa, fresca and sour cream&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>    &lt;/menugroup&gt;</p>
+
+<p>    &lt;menugroup desc=";Salads, Big
+Salads, and Soups";&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;House
+Salad&lt;/name&gt;</p>
+
+<p>       
+&lt;price&gt;$4.75/$8.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;Small or large
+house salad with balsamic herbed vinaigrette&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Mesclun
+Salad&lt;/name&gt;</p>
+
+<p>       
+&lt;price&gt;$7.25/$13.50&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;with marinated
+mushrooms, roasted peppers, artichokes, fresh mossarella and balsamic
+vinaigrette&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Grilled Chicken
+Salad&lt;/name&gt;</p>
+
+<p>       
+&lt;price&gt;$6.75/$11.25&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;soy sesame
+marinade, mixed greens, red and green peoppers, carrots, red onion, crispy
+fried wontons and honey ginger dressing&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Chicken Soup of the
+Day&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$2.30/$3.95&lt;/price&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>    &lt;/menugroup&gt;</p>
+
+<p>    &lt;menugroup
+desc=";Pizza";&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Duck Confit
+Pizza&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$9.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;with
+caramelized onion, fresh thyme and goat cheese&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;The Salty
+Pizza&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$8.50&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;with
+proscuitto, black olives cotija cheese, tomatoes and
+anchovies&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Traditional
+Pizza&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$7.50&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;red sauce and
+mozzarella cheese&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Toppings&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$.50&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;Pepperoni,
+Sausage, Chicken, Grilled Portabello, Roasted Peppers, Sun Dried Tomatoes,
+Roasted Garlic, Broccoli Rabe, Spinach, Shrimp, Proscuitto, Black Olives, Goat
+Cheese, Bacon, Roasted Veggies, Green Peppers, Onions,
+Mushrooms&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>    &lt;/menugroup&gt;</p>
+
+<p>    &lt;menugroup
+desc=";Entrees";&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Grilled Rib Eye
+Steak&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$18.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;with
+buttermilk biscuits, vegetable of the day and button mushroom
+gravy&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Pork
+Tenderloin&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$16.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;dry rubbed
+with swiss chard, maple whipped sweet potatoes and apple bourbon
+sauce&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Grilled
+Chicken&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$16.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;with mushroom
+risotto pesto sauce and tomato salsa&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Center Cut
+Sirlion&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$16.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;with cheddar
+cheese mashed potatoes, horseradish sour cream and vegetable of the
+day&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>    &lt;/menugroup&gt;</p>
+
+<p>    &lt;menugroup
+desc=";Kids";&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Hot Dog&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$3.50&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;on roll; with
+American Chees $3.75&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Grilled Cheese
+Sandwich&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$3.25&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;The
+classic!&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Chicken Fingers&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$5.00&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;Finger licking
+good&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>    &lt;/menugroup&gt;</p>
+
+<p>    &lt;menugroup
+desc=";Beverages";&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>       
+&lt;name&gt;Milkshake&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$3.50&lt;/price&gt;</p>
+
+<p>        &lt;description&gt;vanilla,
+chocolate or strawberry; double thick, $5.00&lt;/description&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Orange Cream Soda
+Float&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$5.00&lt;/price&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>      &lt;menuitem&gt;</p>
+
+<p>        &lt;name&gt;Chocolate
+Milk&lt;/name&gt;</p>
+
+<p>        &lt;price&gt;$2.50&lt;/price&gt;</p>
+
+<p>      &lt;/menuitem&gt;</p>
+
+<p>    &lt;/menugroup&gt;</p>
+
+<p>  &lt;/menu&gt;</p>
+
+<p>&lt;/restaurant&gt;</p>
+
+
+
+<p>;</p>
+
+<p>I don't know if this structure will define all menus for all
+restaurants but it does describe the menu for a favorite restaurant nearby and
+it should be able to accommodate most menus.</p>
+
+<p>XML allows users to define tags to indicate structure.  In
+this menu &lt;restaurant&gt; contains &lt;menu&gt;, so our restaurant could
+have more than one menu - one for lunch and one for dinner.  &lt;menu&gt;
+contains &lt;menugroups&gt; and &lt;menugroups&gt; contain &lt;menuitems&gt;,
+which represent the food served.  There may be a need for more data surrounding
+the menu items - say calories of the serving.</p>
+
+<p>Unlike HTML, an XML document does not provide any
+instructions on how it is to be displayed.  This type of information would be
+included separately in a stylesheet.  Stylesheets in a specification language,
+XSL (XML Stylesheet Language) are used to translate XML data to HTML for
+presenation.</p>
+
+<p>At this point I should also explain that XML is much more
+than simple rules for constructing data.  XML comprises a whole host of
+specifications that complement it.  An area of specification we will look at
+DTDs and  XML Schema.  These specifications allow you to describe the structure
+an XML document should take.  Basically, it removes the “semi” from
+semistructured data.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473026">XML
+Elements</a></h3>
+
+<p>The basic component in XML is the element.  This is a piece
+of text bounded by matching tags such as &lt;menu&gt; and &lt;/menu&gt; . 
+Inside these tags an element may contain “raw” text, other elements or a
+combination of the two.</p>
+
+<p>In the menu example, &lt;menuitem&gt; is called a start-tag
+and &lt;/menuitem&gt;  is called an end-tag.  Start- and end-tags are also
+called markups because they markup or explain the data.  One of the rules of
+XML is that these tags must be balanced.  This means that they should be closed
+in the inverse order in which they are opened, like parentheses.  Tags in XML
+are defined by users; there are no predefined tags as in HTML.  The text
+between a start-tag and the corresponding end-tag, including the embedded tags
+is called an element and the structures between the tags are referred to as the
+content.   A subelement is the relation between an element and its component
+elements.  Therefore, &lt;price&gt; ... &lt;/price&gt; is a subelement of
+&lt;menuitem&gt; … &lt;/menuitem&gt; in our example.</p>
+
+<p>One element surrounds all the others - &lt;restaurant&gt; …
+&lt;/restaurant&gt;.  This is the root element.</p>
+
+<p>We use repeated elements with the same tag to represent
+collections.  In the menu example, &lt;menu&gt; contains one or more
+&lt;menugroup&gt; elements and a &lt;menugroup&gt; could contain one or more
+&lt;menuitem&gt; elements.</p>
+
+<p>An element can also be empty and an empty element may be
+abbreviated.  This is done by putting a ‘/' at the end of the start tag as in -
+&lt;menuitem/&gt;.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473027">XML
+Attributes</a></h3>
+
+<p>XML allows us to associate attributes with elements.   An
+attribute is a name-value pair that acts similar to a “property” in data
+models.  In our menu example we have an attribute named “desc” within the
+menugroup element.</p>
+
+<p>There are differences between attributes and tags.  A given
+attribute may only occur once within a tag, while subelements with the same tag
+may be repeated.  The value associated with an attribute must be a string while
+an element may also have subelements as well as values.  Therefore, attributes
+should never be used when a piece of data could be represented as a collection.</p>
+
+<p>Attributes bring a certain level of confusion as to how to
+represent  information as an element or an attribute.  For example, we could
+represent our menugroup as:</p>
+
+
+
+<p>&lt;menugroup
+desc=";Beverages";&gt;</p>
+
+
+
+<p>;</p>
+
+<p>or </p>
+
+
+
+<p>&lt;menugroup&gt;</p>
+
+<p>   &lt;desc&gt;Beverages&lt;/desc&gt;</p>
+
+<p>&lt;/menugroup&gt;</p>
+
+
+
+<p>;</p>
+
+<p>Either format represents the data but as your data becomes
+more complex you will need to be more selective.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473028">Character
+Sets</a></h3>
+
+<p>The actual characters in the XML document are stored as
+numerical codes.  The most common set is the American Standard Code for
+Information Interchange (ASCII).  ASCII codes extend from 0 to 255 to fit
+within a single byte.</p>
+
+<p>XML is the text-based format for data specification that
+will power the next generation of the World Wide Web.  We have a problem here
+and that is “Worldwide”.  Many scripts are not handled in ASCII, these include
+Japanese, Arabic, Hebrew, Bengali and many others languages.</p>
+
+<p>For this reason the default character set specified for XML
+by the W3C is Unicode, not ASCII.  But in practice, Unicode support, like many
+parts of the XML technology, is not fully supported on most platforms.  Windows
+95/98 does not offer full support for Unicode, although Windows NT, Windows
+2000 and XP come closer.  Most often this means that XML documents are written
+in simply ASCII, or in UTF-8, which is a compressed version of Unicode that
+uses 8-bits to represent characters.</p>
+
+<p>In our example, the first line states:</p>
+
+
+
+<p>&lt;?xml version=";1.0";
+encoding=";UTF-8";?&gt; </p>
+
+
+
+<p>;</p>
+
+<p>this is specifying the use of UTF-8 character encoding.</p>
+
+<p>The default for XML processors today is to assume that your
+document is in UTF-8, so if you omit the encoding specification, UTF-8 is
+assumed.  For more information on character sets take a look at the list posted
+by the Internet Assigned Number Authority (IANA) at 
+www.isi.edu/in-notes/iana/assignments/character-sets.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473029">XML
+Technologies</a></h3>
+
+<p>XML starts out so simply and quickly becomes difficult.  XML
+is difficult for one main reason – there is so much to it.  The term XML covers
+a vast array of technologies that fall under the XML unbrella term.  Some of
+the terminology that is pushed around with XML includes: namespaces,
+transformations or XSLT, XPath, XLinks, XPointers, SAX and DOM.  There seem to
+be more and more terms every year, as well as more and more books covering
+these new topics and technologies.  I cannot cover them all but I will try to
+give you the basics.</p>
+
+<h2><a name="_Toc39473030">JAXP – Processing XML</a></h2>
+
+<p>The Java API for XML Processing (JAXP) provides a standard
+API for parsng and transforming XML documents.  This API is designed to be
+independent from any particular XML processor implementation.  In the summer of
+2002 Sun released the Java XML Pack.  This included a reference version of
+Xerces 2, as its default XML parser and Xalan as its default XSLT engine, both
+are from Apache.</p>
+
+<p>We will use these same tools because they are widely used,
+most up-to-specification and they are free from the apache web site – <a
+href="http://www.apache.org/">www.apache.org</a>.  So everyone can download them.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473031"></a><a
+name="_Ref36266663"></a><a name="_Ref36266761"></a>XML Namespaces</h3>
+
+<p>XML is all about data.  Structuring data, defining data and
+sharing data.  XML gives you considerable freedom in defining your own tags but
+what happens when you define a tag that is already defined by a grammar you
+want to use.</p>
+
+<p>For example, two popular XML programs are XHTML and MathML. 
+What happens if you want to display equations inside a XHTML document?  Some
+tags in MathML overlap with XHTML.</p>
+
+<p>The answer is namespaces.  Creating namespaces allows you to
+separate one set of tags from another thus avoiding conflicts.  Namespaces work
+by letting you preppend a name followed by a colon to tag and attribute names
+changing those names so that they don't conflict.</p>
+
+<p>The namespace example that is seen most often is the
+namespace definition of XML Schema within an XML document.</p>
+
+
+
+<p>&lt;restaurant</p>
+
+<p> xmlns:xsi=";http://www.w3.org/2001/XMLSchema-instance";</p>
+
+<p> xsi:noNamespaceSchemaLocation=";tij_menu.xsd";&gt;</p>
+
+
+
+<p>;</p>
+
+<p>The XML Schema instance namespace is defined and associated
+with a URL.  This namespace can now be abbreviated with xsi and it is used for
+specifying information in the XML document about a schema.  That is exactly
+what we are doing here with xsi:noNamespaceSchemaLocation.  This attribute is
+prefaced with xsi.</p>
+
+<p>The XML schema defines a set of new names and that describe
+the elements, types, attributes, whose definitions are written in the schema. 
+This document then must be built according the schema rules.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473032">Well-Formed
+and Valid XML</a></h3>
+
+<p>There are few constrainsts on XML documents, tags have to
+match and nest properly, and attributes have to be unique.  A document is said
+to be well formed when it meets these simple rules.  It does little more than
+ensure that XML data will parse into a labeled tree.</p>
+
+<p>A more strict set of rules can be applied if the XML must
+abide by an underlying grammar.  An XML Application is a specification of the
+syntax and semantics of a data structure.  MathML and Scalable Vector Graphics
+are both XML Applications.  A document type definition DTD or XML Schema
+provide the structure rules by which an XML document must abide to be “valid”. 
+DTDs are somewhat unsatisfactory and the XML Schema is now becoming the
+standard for defining an XML grammar.</p>
+
+<p>Here's the schema for the tij_menu.xml example –
+tij_menu.xsd:</p>
+
+
+
+<p>&lt;xsd:schema
+xmlns:xsd=";http://www.w3.org/1999/XMLSchema";&gt;</p>
+
+<p>  &lt;xsd:annotation&gt;</p>
+
+<p>    &lt;xsd:documentation&gt;</p>
+
+<p>      TIJ Restaurant Menu Schema.</p>
+
+<p>    &lt;/xsd:documentation&gt;</p>
+
+<p>  &lt;/xsd:annotation&gt;</p>
+
+<p>;</p>
+
+<p>   &lt;xsd:element
+name=";restaurant"; 
+        type=";restaurantType";/&gt;</p>
+
+
+
+<p>   &lt;xsd:complexType
+name=";restaurantType";&gt;</p>
+
+<p>     &lt;xsd:element
+name=";name"; type=";xsd:string";/&gt;</p>
+
+<p>     &lt;xsd:element
+name=";address"; type=";addressType";/&gt;</p>
+
+<p>     &lt;xsd:element
+name=";phone"; type=";xsd:string";/&gt;</p>
+
+<p>     &lt;xsd:element
+name=";menu"; type=";menuType";/&gt;</p>
+
+<p>   &lt;/xsd:complexType&gt;  </p>
+
+
+
+<p>   &lt;xsd:complexType
+name=";menuType";&gt;</p>
+
+<p>     &lt;xsd:attribute
+name=";desc"; type=";xsd:string";/&gt;</p>
+
+<p>     &lt;xsd:element
+name=";menugroup"; 
+          type=";menugroupType"; minOccurs=";1";</p>
+
+<p>          maxOccurs=”unbounded”/&gt;</p>
+
+<p>  &lt;/xsd:complexType&gt;</p>
+
+<p>;</p>
+
+<p>   &lt;xsd:complexType
+name=";menugroupType";&gt;</p>
+
+<p>     &lt;xsd:element
+name=";menuitem"; minOccurs=";1";</p>
+
+<p>                  maxOccurs=”unbounded”&gt;</p>
+
+<p>         &lt;xsd:complexType&gt;</p>
+
+<p>         &lt;xsd:element
+name=";name"; type=";xsd:string"; 
+              minOccurs=";1";/&gt;</p>
+
+<p>         &lt;xsd:element
+name=";price"; type=";xsd:string"; 
+              minOccurs=";0";/&gt;</p>
+
+<p>         &lt;xsd:element
+name=";description"; 
+              type=";xsd:string"; minOccurs=";0";/&gt;</p>
+
+<p>      &lt;/xsd:complexType&gt;         </p>
+
+<p>    &lt;/xsd:element&gt;</p>
+
+<p>   &lt;/xsd:complexType&gt;</p>
+
+<p>&lt;/xsd:schema&gt;</p>
+
+
+
+<p>;</p>
+
+<p>XML Schema provides a rich grammatical structure for XML
+documents that overcomes the limitations of DTD.  The goal is to ensure that an
+XML document is built according to guidelines laid out by a schema.  This
+allows the sharing of similar data, whether purchase orders or menus.  If we
+wanted to start a menu service that allowed users to browse menus of
+restaurants in their area, we may want all submitting menus to come in a
+specified format.  Or ask for all menu submissions to come with their own
+schema description so we could transform it.</p>
+
+<p> In tij_menu.xml, &lt;restaurant&gt; is the root element and
+it contains various subelements.  In schema terms, elements that enclose
+subelements or have attributes are complex types.  Elements that enclose only
+simple data such as numbers, strings or dates – but have no subelements – are
+simple types.  Attributes are always simple types because attributes values
+cannot contain any structure.  If we look at the document as a tree, simple
+types have no subnodes, while complex types can.</p>
+
+<p>The difference between simple and complex types is an
+important one because you declare simple and complex types differently.  You
+declare complex types yourself, and the XML Schema specification comes with
+many simple types already declared.</p>
+
+
+
+<p>&lt;xsd:element
+name=";price"; type=";xsd:string";&gt; </p>
+
+
+
+<p>;</p>
+
+<p>This is an example of a simple type declaration.  The types
+are usually string, integer, decimal, time, etc.  Suppose this isn't the right
+structure for price, we can do better.  We decide to add the attribute currency
+to price.  Not allowed, an element of simple type cannot have an attribute.  So
+we have to change price to a complex type.</p>
+
+
+
+<p>&lt;xsd:complexType name=”price”&gt;</p>
+
+<p>  &lt;xsd:base=”decimal”/&gt;</p>
+
+<p>  &lt;xsd:attribute name=”currency”
+type=”string”/&gt;</p>
+
+<p>&lt;/xsd:complexType&gt;</p>
+
+
+
+<p>;</p>
+
+<p>Elements that embed other elements must be complex types. 
+From the schema above you can quickly see that &lt;restaurant&gt; contains
+&lt;menu&gt; - &lt;menu&gt; contains &lt;menugroup&gt; and &lt;menugroup&gt;
+contains &lt;menuitem&gt;.  Constraint can be place on element values by using
+minOccurs and maxOccurs.  By default these values are 1 for an element.  The
+tij_menu.xml needs to have many &lt;menuitem&gt; within a &lt;menugroup&gt; so
+we set the maxOccurs constraint to unbounded.</p>
+
+<p>Creating well-formed and valid XML documents is two step
+process.  Learning to write XML as we have seen is easy, there are very few
+rules.  Next you must learn the XML application(s) you will be using.  This is
+typically a standard or specification that has been defined by some outside
+organization you would like your data to adhere to.  Data wants to be read and
+creating valid xml documents puts your data into a format that other programs
+can understand. </p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473033">Validating
+Parsers: SAX and DOM</a></h3>
+
+<p>Having the right tools to enforce quality control can make
+life much easier.  This is one of the great strengths of XML and since the goal
+of XML is to be a universal language that operates in the same manner all the
+time, standards for data integrity must be high.</p>
+
+<p>The key to this level of integrity is the validating
+parser.  A validating parser checks your XML document for well-formedness,
+these are usually missing end tags or misspellings.  As its name implies this
+parser goes beyond checking for well-formed documents to check for mistakes
+that are more difficult to find, missing elements or improper order of elements
+based upon a document model put forth in a DTD or XML Schema.</p>
+
+<p>Another great aspect about open source validating parsers is
+that the best ones are free.  The parser I will use for this chapter is the
+Apache Xerces.  There are both Java and C++ versions and it supports document
+models produced in DTDs as well XML Schema. (http://xml.apache.org)</p>
+
+<p>XML has been progressing so quickly it is difficult to keep
+up.  This is true with the tools we will be using.  Xerces 2.1.0 is a
+significant re-architecture from Xerces 1.4.  It had to happen because the XML
+environment has evolved so quickly.  Xerces 2 works with SAX 2.0, DOM Level 2,
+adds some DOM Level 3, ….  - it's endless and the Apache team does an admirable
+job keeping up with all the revisions and new technologies.</p>
+
+<p>So what exactly does a parser do?  It tears apart an XML
+document and allows you to deal with it programmatically.  There are two
+methods to programmatically deal with an XML document, you can deal with the
+events that happen as the document is parsed or you can break the XML document
+into a common representation of the content and model that all tools can
+manipulate. </p>
+
+<p>Simple API for XML (SAX) is the interface for parsing a
+document and then inserting application code at important events within the a
+document's parsing.  SAX is event based XML document manipulation; it allows a
+document to be handled sequentially, without having to first read the entire
+document into memory.</p>
+
+<p>The Document Object Model or DOM is a standard
+representation of the content and model of XML documents across all programming
+languages and tools.  Bindings exist for JavaScript, Java, C++, CORBA, Python,
+Perl and other languages, allowing DOM to be a cross-platform and
+cross-language specification.</p>
+
+<p>In its most fundamental form, DOM is a tree model.  While
+SAX gives you an event-by-event perception of the parsing lifecycle, DOM gives
+you a complete in-memory representation of the document.  Both have strengths
+and weaknesses, as we shall see.</p>
+
+<h4 style='margin-left:36.05pt;text-indent:0in'><a name="_Toc39473034">SAX</a></h4>
+
+<p>That's the basics.  Let's look at the details, we'll start
+with a simple SAX program that validates our tij_menu.xml:</p>
+
+
+
+<p>import java.io.*;</p>
+
+<p>import org.xml.sax.*;</p>
+
+<p>import org.xml.sax.helpers.*;</p>
+
+<p>;</p>
+
+<p>public class validate2 {</p>
+
+<p>  static public void main(String[] argv)
+{</p>
+
+
+
+<p>    if (argv.length == 0) {</p>
+
+<p>      System.out.println(</p>
+
+<p>        ";Usage: java validate2
+file:&lt;filename&gt; or \n";</p>
+
+<p>        + ";or java validate2
+uri";);</p>
+
+<p>    }</p>
+
+
+
+<p>    XMLReader parser = null;</p>
+
+<p>    // try to activate validation</p>
+
+<p>    try {</p>
+
+<p>      parser =
+XMLReaderFactory.createXMLReader(</p>
+
+<p>              
+";org.apache.xerces.parsers.SAXParser";);</p>
+
+<p>      // these features must be set to</p>
+
+<p>      // validate schemas</p>
+
+<p>      parser.setFeature(</p>
+
+<p>         
+";http://xml.org/sax/features/validation";,</p>
+
+<p>          true);</p>
+
+<p>      parser.setFeature(</p>
+
+<p>  
+";http://apache.org/xml/features/validation/schema";,</p>
+
+<p>   true);</p>
+
+<p>    } catch (SAXException e) {</p>
+
+<p>      System.err.println(</p>
+
+<p>         ";Cannot activate
+validation.";); </p>
+
+<p>    }</p>
+
+<p>;</p>
+
+<p>    // parse the document</p>
+
+<p>    try {</p>
+
+<p>      System.out.println(argv[0]);</p>
+
+<p>      parser.parse(argv[0]);</p>
+
+<p>    } catch (SAXParseException e) {</p>
+
+<p>         System.out.println(e.getMessage()</p>
+
+<p>           + "; at line "; +
+e.getLineNumber()</p>
+
+<p>           + ";, column "; +
+e.getColumnNumber());</p>
+
+<p>    } catch (SAXException e) {</p>
+
+<p>        System.err.println(</p>
+
+<p>          ";XML exception reading
+document.";);</p>
+
+<p>    } catch (IOException e) {</p>
+
+<p>        System.err.println(</p>
+
+<p>          ";I/O exception reading XML
+document:\n";</p>
+
+<p>          + e.getMessage());</p>
+
+<p>    }</p>
+
+<p>  }</p>
+
+<p>}</p>
+
+
+
+<p>;</p>
+
+<p>The command line to run this example looks like this:</p>
+
+
+
+<p>java validate2 file:tij_menu.xml</p>
+
+
+
+<p>;</p>
+
+<p>The import statements bring in the Java classes that we will
+need.  These include the org.xml.sax classes, which supports the W3C Simple API
+for XML.  SAX provides a common interface for the many different XML parsers. 
+This standard interface is event based and provides a simpler, lower-level
+access to the XML document.</p>
+
+<p>The first step is to parse the XML document.  To parse the
+XML Document you need an XMLReader object, which we just call parser.  We get
+this through the XMLReaderFactory and supplying the Xerces main SAX parser
+class, org.apache.xerces.parsers.SAXParser.  This class implements the
+org.xml.sax.XMLReader interface.  Each XML parser should have at least one
+class that implements this interface.</p>
+
+<p>In order to obtain full schema validation we need to set two
+features on using the setFeature() method of the parser.  Validation and
+SchemaValidation must be set to on.  Without SchemaValidation this program will
+be looking for DTDs.</p>
+
+<p>Lastly, we need to call the parse method of our XMLReader
+parser.  That's it.</p>
+
+<p>There is great deal more you can do as you parse a document
+with SAX.  This functionality is setup through handlers.  A handler is nothing
+more than a set of callbacks that SAX defines to let programmers insert
+application code at important events within a document's parsing.  These events
+take place as the document is parsed, not after it is finished.  In SAX 2.0
+there are four core handler interfaces defined in SAX 2.0:
+org.xml.sax.ContentHandler, org.xml.sax.ErrorHandler, org.xml.sax.DTDHandler,
+and org.xml.sax.EntityResolver.  The implementation classes for these
+interfaces are registered with setContentHandler(), setErrorHandler(),
+setDTDHandler, and setEntityResolver().  The XMLReader will invoke the callback
+method on the appropriate handlers during parsing.  The ContentHandler
+interface has callbacks for events such as the start and end of the document,
+start and end of an element, and a processing instruction.</p>
+
+<h4 style='margin-left:36.05pt;text-indent:0in'><a name="_Toc39473035">DOM</a></h4>
+
+<p>The world according to DOM is completely different from
+SAX.  The focus of DOM is the output from the parsing process.  Using SAX our
+program will react at specific points in the parsing process, with DOM the data
+is unusable until the entire document is parsed.  The output of a DOM parse is
+intended to be used with the DOM interface defined in org.w3c.dom.Document
+object.  This document object is supplied to you in tree format, and all of
+this is built upon the DOM org.w3c.dom.Node interface.  Deriving from this
+interface, DOM provides several XML-specific interfaces - Element, Document,
+Attr, and Text.  Your DOM-aware application can now move and manipulate various
+aspects of the tree.</p>
+
+<p>Before the details, you should know a little about the
+evolution of DOM.  The first version of DOM was not an official specification,
+just the object model that Navigator 3 and Explorer 3 implemented in their
+browsers.  Of course, these object models weren't totally compatible, so I
+guess that's why this is termed DOM Level 0.</p>
+
+<p>DOM Level 1 as an attempt to get some level of compatibility
+across browers.  The goal was to get it out quickly before the two sides went
+off in opposite directions.  Given these constraints, DOM Level 1 is a
+surprisingly good specification and it covers most of what programmers need to
+process XML.</p>
+
+<p>DOM Level 2 cleaned up DOM 1 interfaces.  Namespace support
+was added to the Element and Attr interfaces and a number of support interfaces
+were added for events, traversal, ranges, views, and style sheets.  Right now,
+2002, all major XML parsers support DOM Level 2 and that should be your coding
+standard.</p>
+
+<p>DOM Level 3 is coming.  Xerces 2 is starting to support
+parts of DOM Level 3.  DOM 3 will provide for parser-independent methods to
+create a new Document object, either by parsing a file or by building on from
+scratch in memory.  DOM 3 will add support for DTDs and schemas.  So from the
+looks of it DOM 3 adds new functionality and your DOM 2 code should continue to
+work.</p>
+
+<p>Here is an example NodeWalker.java, it uses the DOM:</p>
+
+
+
+<p>import
+org.apache.xerces.parsers.DOMParser;</p>
+
+<p>import org.w3c.dom.*;</p>
+
+<p>;</p>
+
+<p>public class NodeWalker {</p>
+
+<p>  static String outStr[] = new
+String[250];</p>
+
+<p>  static int lineNum = 0;</p>
+
+<p>;</p>
+
+<p>  static public void main(String[] argv)
+{</p>
+
+<p>    try {</p>
+
+<p>      // Xerces Parser</p>
+
+<p>      DOMParser parser = new
+DOMParser();   </p>
+
+<p>      parser.parse(argv[0]);  </p>
+
+<p>      Document doc =
+parser.getDocument();</p>
+
+
+
+<p>      walker(doc.getDocumentElement());</p>
+
+<p>    } catch (Exception e) {</p>
+
+<p>      e.printStackTrace(System.err);</p>
+
+<p>    }</p>
+
+<p>;</p>
+
+<p>    // output</p>
+
+<p>    System.out.println(";Num of
+line:"; + lineNum);</p>
+
+<p>    for(int i=0; i &lt; lineNum; i++){</p>
+
+<p>      System.out.println(outStr[i]);</p>
+
+<p>    }</p>
+
+<p>  }</p>
+
+
+
+<p>  public static void walker(Node node) {</p>
+
+
+
+<p>    if (node == null) {</p>
+
+<p>      return;</p>
+
+<p>    }</p>
+
+<p>    int type = node.getNodeType();</p>
+
+
+
+<p>    switch(type) {</p>
+
+<p>      case Node.ELEMENT_NODE: {</p>
+
+<p>        // Name of this node</p>
+
+<p>        outStr[lineNum] =
+node.getNodeName();</p>
+
+<p>        lineNum++;</p>
+
+
+
+<p>        // attributes of this node</p>
+
+<p>        int length =
+(node.getAttributes() != null) ?</p>
+
+<p>             
+node.getAttributes().getLength() : 0;</p>
+
+<p>        for (int i = 0; i &lt; length;
+i++) {</p>
+
+<p>          Attr attrib = </p>
+
+<p>              
+(Attr)node.getAttributes().item(i);</p>
+
+<p>          outStr[lineNum] = attrib.getNodeName();</p>
+
+<p>          lineNum++;</p>
+
+<p>        }</p>
+
+
+
+<p>        // children of this node</p>
+
+<p>        NodeList children =
+node.getChildNodes();</p>
+
+<p>        if (children != null) {</p>
+
+<p>          length = children.getLength();</p>
+
+<p>          for (int i = 0; i &lt; length;
+i++) {</p>
+
+<p>            walker(children.item(i));</p>
+
+<p>          }</p>
+
+<p>        }</p>
+
+<p>        break;</p>
+
+<p>      }</p>
+
+
+
+<p>      case Node.TEXT_NODE: {</p>
+
+<p>        String str =
+node.getNodeValue().trim();</p>
+
+<p>        if (str.indexOf(";\n";)
+&lt; 0 &amp;&amp;</p>
+
+<p>            str.length() &gt; 0) {</p>
+
+<p>          outStr[lineNum] = str;</p>
+
+<p>          lineNum++;</p>
+
+<p>        }</p>
+
+<p>        break;</p>
+
+<p>      }</p>
+
+<p>    }</p>
+
+<p>  }     </p>
+
+<p>}</p>
+
+
+
+<p>;</p>
+
+<p>Notice that the parse() method returns void.  This change
+allows an application to use a DOM parser class and a SAX parser class
+interchangeably; however, it requires an additional method to obtain the
+Document object result from the XML parsing.  In Apache Xerces, this method is
+named getDocument().</p>
+
+<p>The parse method translates the stream of characters from
+the XML file into stream of tokens.  These tokens are built into a temporaty
+structure in memory that a program can move through and manipulate.  DOM is an
+API for XML documents.  It offers an object-oriented view of the XML document ,
+as opposed to an abstract data type view.    This means that each document
+component defines an interface specifying its behaviour;  the data can only be
+accessed via this interface.  DOM defines a Node interface, and subclasses
+Element, Attribute, and CharacterData interfaces inheriting from Node. 
+NodeWalker only switches on  Node.ELEMENT_NODE and Node.TEXT_NODE, we could add
+other nodes including CDATA_SECTION, and PROCESSING_INSTRUCTION_NODE.  The Node
+interface defines methods for accessing a node's components.  For example,
+parentNode() returns the parent node; childNodes() returns the set of
+children.  In addition there are methods for modifying the node and for
+creating new nodes.  Therefore, an application can completely restructure the
+document via the DOM. </p>
+
+<p>The Document interface is based on the Node interface, which
+supports the W3C Node object.  Nodes represent a single node in the document
+tree and everything, text, comments and tags, is treated as a node.  The node
+interface has all the methods that you can use to work with nodes and move
+through the DOM.  Let's look at the following code from the example:</p>
+
+
+
+<p>      for (Node node = 
+           doc.getDocumentElement().getFirstChild();</p>
+
+<p>           node != null;
+           node = node.getNextSibling()) {</p>
+
+
+
+<p>;</p>
+
+<p>This for loop gets started by using the document interface
+method getDocumentElement() to return the root node of the document.  The
+getFirstChild() method of the node interface will return the node of the first
+child element of the root.  As long as there is no null value returned the for
+loop will keep rolling along.  The node is incremented using the 
+getNextSibling() method which returns the node immediately following the
+calling node.</p>
+
+<h4 style='margin-left:36.05pt;text-indent:0in'><a name="_Toc39473036">Plus and
+Minus of SAX and DOM</a></h4>
+
+<p>Right away you should realize that DOM may require a sizeabe
+memory commitment depending upon how large your XML documents are and how many
+documents will be open at any time.  SAX handles the document sequentially and
+does not need to read the entire document into memory.  However, the advantage
+of DOM and having the entire tree loaded into memory is that you now have the
+entire document available for random access.  This is the ying and yang of DOM
+and SAX, every strength is a weakness – every weakness a strength.</p>
+
+<p>SAX is generally viewed as being able to parse an XML
+document of any size.  You can also build your oun data structure if a tree
+will not suit your needs.  Another advantage of SAX is its usefulness when you
+only want a small subset of data from a document.</p>
+
+<p>DOM strength lies in the structure.  More complex searches
+are possible with DOM.  One of the most important aspects of DOM is the ability
+to serialize data to for reconstruction in another program.</p>
+
+<h2><a name="_Toc39473037">XML Serialization</a></h2>
+
+<p>You should see that XML gives you lots of tools to
+manipulate and work with your data and the goal of XML is portable data, you
+will find that the much of the XML manipulation will become boilerplate code. 
+As you progress you will want to get rid of the boilerplate and directly
+serialize to and from XML.</p>
+
+<p>Serialization means outputting the XML.  This could be a
+file, an OutputStream, or a Writer.  As you have read in earlier chapters,
+there are more output forms available in Java, but these three cover the most
+widely used.</p>
+
+<p>One area in which DOM has been quite weak is serialization,
+the outputting of an in-memory DOM Document object into a text file.  In fact,
+it's even possible to use DOM to create Document objects that cannot be
+serialized as well-formed XML files.  Serialization has been left to the vendor
+to implement in classes such as Xerces's XMLSerializer.  However, DOM Level 3
+adds several classes for writing XML documents into files, onto the network, or
+anything else you can hook an OutputStream to.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473038">Xerces
+Serialization</a></h3>
+
+<p>The Apache XML Project's Xerces-J includes the
+org.apache.xml.serialize package for writing DOM Document objects onto output
+streams.  Although this class is bundled with Xerces, it works with any DOM
+Level 2 implementation.  It does not depend on the details of the Xerces
+implementation classes, only the standard DOM interfaces.</p>
+
+<p>The mechanics for serializing documents with org.apache.xml.serialize
+are as follows:</p>
+
+<p>1.;;;;;; Configure
+an OutputFormat object with the serialization options you want.</p>
+
+<p>2.;;;;; Connect
+an OutputStream to the location where you want to store the data.</p>
+
+<p>3.;;;;; Use
+the OutputStream and OutputFormat to construct the new XMLSerializer object</p>
+
+<p>4.;;;;; Pass
+the Document object you want to serialize to the XMLSerializer's serialize()
+method.</p>
+
+<p>Here is an example that will take the tij_menu.xml and
+serialize it to system.out:</p>
+
+
+
+<p>import
+org.apache.xerces.parsers.DOMParser;</p>
+
+<p>import org.apache.xml.serialize.XMLSerializer;</p>
+
+<p>import
+org.apache.xml.serialize.OutputFormat;</p>
+
+<p>import org.w3c.dom.Document;</p>
+
+<p>;</p>
+
+<p>public class menuSerializer {</p>
+
+<p>  static public void main(String[] argv)
+{</p>
+
+<p>    try {</p>
+
+<p>      // Xerces Parser</p>
+
+<p>      DOMParser parser = new
+DOMParser();   </p>
+
+<p>      parser.parse(";file:tij_menu.xml";); 
+</p>
+
+<p>      Document doc =
+parser.getDocument();</p>
+
+<p>;</p>
+
+<p>      // serialize document</p>
+
+<p>      OutputFormat format = new
+OutputFormat(doc);</p>
+
+<p>      XMLSerializer output = new
+XMLSerializer(</p>
+
+<p>                               
+System.out, format);</p>
+
+<p>      output.serialize(doc);</p>
+
+<p>    } catch (Exception e) {</p>
+
+<p>        e.printStackTrace();</p>
+
+<p>    }</p>
+
+<p>  }</p>
+
+<p>}</p>
+
+
+
+<p>;</p>
+
+<p>XMLSerializer has several constructors you can pick from
+depending upon whether you are writing to an OutputStream or a Writer and
+whether or not you want to provide an OutputFormat when you create the
+serializer:</p>
+
+
+
+<p>public XMLSerializer();</p>
+
+<p>public XMLSerializer(OutputFormat
+format);</p>
+
+<p>public XMLSerializer(Writer out,
+OutputFormat format);</p>
+
+<p>public XMLSerializer(OutputStream out,</p>
+
+<p>                     OutputFormat
+format);</p>
+
+
+
+<p>;</p>
+
+<p>You should probably define the format and the stream or
+writer when you construct the XMLSerializer.  You can also change them through
+these methods:</p>
+
+
+
+<p>public void setOutputFormat(OutputFormat
+format);</p>
+
+<p>public void
+setOutputByteStream(OutputStream out);</p>
+
+<p>public void
+setOutputCharStream(Writer out);</p>
+
+
+
+<p>;</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473039">DOM
+Level 3 Serialization</a></h3>
+
+<p>DOM Level 3 will finally add a standard Load and Save
+package so that it will be possible to write completely implementation
+independent DOM programs.  This package, org.w3c.dom.ls is identified by the
+feature strings LS-Load and LS-Save.  The loading is done through DOMBuilder
+interface and the saving is based on DOMWriter interface.  DOMWriter is more
+powerful than XMLSerializer because it is not limited to outputting documents,
+document fragments and elements.  DOMWriter can output to any kind of node at
+all and filters can be installed to control output.</p>
+
+<p>The specification for this is still in a state of flux.  The
+latest work from the W3C can be found in Document Object Model (DOM) Level 3
+Abstract Schemas and Load and Save Specification and in Xerces-J 2.0.2.</p>
+
+<h2><a name="_Toc39473040">XPath</a></h2>
+
+<p>To do…</p>
+
+<h2><a name="_Toc39473041">XML Transformations</a></h2>
+
+<p>In the beginning of this chapter we said that Java provides
+portable code and XML provides portable data.  So far we have gone over XML,
+what it is, how to define it, how to structure it, how to manipulate it and how
+to output it.  But if we want XML to be portable data we have to be able to
+transform our XML so it can be read by another application, displayed or
+printed.  Extensible Stylesheet Language (XSL) provides facilities to access
+and manipulate the data in XML documents.</p>
+
+<p>XSL is itself an XML dialect and provides two distinct and
+useful mechanisms for handling and manipulating XML documents.  Many of the
+same constructs are shared between the two mechanisms, but each plays a
+distinct role.  One is concerned with formatting data, the other is concerned
+with data transformation.  When XSL is used as a formatting language, the
+stylesheets consist of formatting objects that prepare an XML document for
+presentation, usually in a brower.</p>
+
+<p>When XSL is used for transformation, XSL takes the form of
+Extensible Stylesheet Language Transformation (XSLT).  An XSLT stylesheet is
+composed of template rules that match specific portions of an XML document and
+allow the transformation of the XML document content.  Not only can XSLT
+transform an XML document from one dialect to another (often HTML), but it
+provides many other capabilities for extracting data from an XML document and
+manipulating that data. </p>
+
+<p>Java API for XML Processing (JAXP) Summer 2002 Pack comes
+with another Apache tool named Xalan.  Xalan is the Apache.org tool for
+performing transformation.  Two tools are needed to perform a transformation, a
+parser and an XSLT processor.  We will use these Apache.org tools.</p>
+
+<p>An XSLT document, referred to as a stylesheet, consists of a
+series of template rules.  Each template rule matches against elements,
+attributes, or both within the target XML document.  The basic construct for a
+template rule is:</p>
+
+
+
+<p>&lt;xsl:template match=”pattern”&gt;</p>
+
+<p>  … rule body …</p>
+
+<p>&lt;/xsl:template&gt;</p>
+
+
+
+<p>;</p>
+
+<p>The template rule has a start tag (&lt;xsl:template&gt;) and
+an end tag (&lt;/xsl:template&gt;).  Normally, each template start tag has a
+match attribute that specifies the portion of the input XML document that the template
+rule is intended to match against.</p>
+
+<p>A template rule body can consist of the following:</p>
+
+<p>1.;;;;;; More
+detailed selection or match conditions and other logic</p>
+
+<p>2.;;;;; A
+specific type of action or actions to be performed</p>
+
+<p>3.;;;;; Text
+that becomes part of the results along with the selected target XML documents
+content</p>
+
+<p>From this snippet you see the mechanics of an XSLT
+transformation.    First, the XML must be parsed and the XML document takes the
+form of a tree.  The nodes of that tree become important in creating matches. 
+Second, this tree is passed to the XSLT processor.  The XSLT processor compares
+the nodes in the tree to the instructions in the style sheet.  When the XSLT
+processor finds a match, it outputs the fragment.  Lastly, the output is
+serialized to another format such as HTML, or a new XML file.</p>
+
+<p>Let's build an example.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473042">XML to
+HTML: Displaying a menu</a></h3>
+
+<p>Going back to the menu example, suppose we joined forces
+with a travel bureau and we wanted to display all the restaurants in their
+database as well as all ours.  They can output XML for us but it does not use
+the same tags and structure so it is virtually unreadable to our server.  This
+means we have to transform it.</p>
+
+<p>Let's start as simply as possible.  menu0.xsl is the most
+basic xsl style sheet:</p>
+
+
+
+<p>&lt;?xml version=";1.0";?&gt;</p>
+
+<p>&lt;xsl:stylesheet
+version=";1.0";</p>
+
+<p>   
+xmlns:xsl=";http://www.w3.org/1999/XSL/Transform";&gt;</p>
+
+
+
+<p>&lt;/xsl:stylesheet&gt;</p>
+
+
+
+<p>;</p>
+
+<p>We will run it against our tij_menu.xml file with the Xalan
+XSLT process using the following command line:</p>
+
+
+
+<p>java org.apache.xalan.xslt.Process</p>
+
+<p>     -in tij_menu.xml </p>
+
+<p>     -xsl file:menu0.xsl</p>
+
+<p>     -out menu0.html</p>
+
+
+
+<p>;</p>
+
+<p>I can't print the output here because it is too large but I
+can describe it.  menu0.html is simply every piece of text that was not a tag
+or attribute.  Every text node was printed out.  We need to get control of this
+process.  To get control of the transformation process we need to understand
+the structure of our input document, move through the elements and attributes
+transforming them to our desired output format.</p>
+
+<h3 style='margin-left:18.05pt;text-indent:0in'><a name="_Toc39473043">The Root
+Node</a></h3>
+
+<p>The root node is the XPath node that contains the entire XML
+document; it is the best place to start.  In the tij_menu.xml example, the root
+node will contain the &lt;restaurant&gt; element.   In an XPath expression, the
+root node is specified with a single slash - /.</p>
+
+<p>The root node is different because it has no parent.  It
+always has at least one child.  The string value of the root node is the
+concatenation of all the text nodes of the root node's decendants.  Let's begin
+our transformation of tij_menu.xml to menu.html by adding a template to act on
+the root node.  Here is menu1.xsl:</p>
+
+
+
+<p>&lt;?xml version=";1.0";?&gt;</p>
+
+<p>&lt;xsl:stylesheet
+version=";1.0";</p>
+
+<p>               
+xmlns:xsl=";http://www.w3.org/1999/XSL/Transform";&gt;</p>
+
+
+
+<p>  &lt;xsl:template
+match=";/";&gt;</p>
+
+<p>    &lt;HTML&gt;</p>
+
+<p>   
+&lt;HEAD&gt;&lt;TITLE&gt;Menu&lt;/TITLE&gt;&lt;/HEAD&gt;</p>
+
+<p>    &lt;BODY&gt;</p>
+
+<p>;</p>
+
+<p>    &lt;/BODY&gt;</p>
+
+<p>    &lt;/HTML&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+
+
+<p>&lt;/xsl:stylesheet&gt;</p>
+
+
+
+<p>;</p>
+
+<p>Now our output is tamer but we have nothing from our
+tij_menu.xml file.  All the text from the child text nodes has been lost.  Here
+is menu1.html:</p>
+
+
+
+<p>&lt;HTML&gt;</p>
+
+<p>&lt;HEAD&gt;</p>
+
+<p>&lt;META
+http-equiv=";Content-Type"; content=";text/html;
+charset=UTF-8";&gt;</p>
+
+<p>&lt;TITLE&gt;Menu&lt;/TITLE&gt;</p>
+
+<p>&lt;/HEAD&gt;</p>
+
+<p>&lt;BODY&gt;&lt;/BODY&gt;</p>
+
+<p>&lt;/HTML&gt;</p>
+
+
+
+<p>Our simple xsl file has drilled in only as far as the root
+element.  We have printed out what is obviously the shell of an HTML file.  The
+task now is dig into the structure of our tij_menu.xml data.  Since we are
+dealing with the tree structure of an XML document and we have just processed
+the root node – this means we must apply these template rules to the children
+of a node we have matched.  This is done with the &lt;xsl:apply-templates&gt;
+element. </p>
+
+<p>At this point we need to add two pieces to our XSL file. 
+First, we need more rules to process the different elements in the menu. 
+Second, we need to have the processor carry on once it is inside a rule.</p>
+
+
+
+<p>&lt;?xml version=";1.0";?&gt;</p>
+
+<p>&lt;xsl:stylesheet
+version=";1.0";</p>
+
+<p>               
+xmlns:xsl=";http://www.w3.org/1999/XSL/Transform";&gt;</p>
+
+
+
+<p>  &lt;xsl:template
+match=";/";&gt;</p>
+
+<p>    &lt;HTML&gt;</p>
+
+<p>   
+&lt;HEAD&gt;&lt;TITLE&gt;Menu&lt;/TITLE&gt;&lt;/HEAD&gt;</p>
+
+<p>    &lt;BODY&gt;</p>
+
+<p>    &lt;xsl:apply-templates/&gt;</p>
+
+<p>    &lt;/BODY&gt;</p>
+
+<p>    &lt;/HTML&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>  &lt;xsl:template
+match=";restaurant";&gt;</p>
+
+<p>    &lt;center&gt;&lt;h2&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";name";/&gt;&lt;/h2&gt;&lt;h3&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";address/addr1";/&gt;&lt;br/&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";address/city";/&gt;,</p>
+
+<p>    &lt;xsl:value-of
+select=";address/state";/&gt;</p>
+
+<p>    Phone:  &lt;xsl:value-of
+select=";phone";/&gt;&lt;br/&gt;&lt;/h3&gt;</p>
+
+<p>    &lt;/center&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>&lt;/xsl:stylesheet&gt;</p>
+
+
+
+<p>;</p>
+
+<p>Inside our root rule I have added the
+&lt;xsl:apply-templates/&gt; tag.  This will transform all the children of the
+root element.  Since the root element contains only one element,
+&lt;restaurant&gt;,  a rule will be added to  handle &lt;restaurant&gt;.</p>
+
+<p>&lt;xsl:template match=”restaurant”&gt; is the rule that
+will fire when the XSLT processor passes over the &lt;restaurant&gt; tag.  Once
+in the tag we need to transform the data.  This data will make up the header
+for our restaurant menu – restaurant name, addresss, and phone number.</p>
+
+<p>The output from the transformation looks like this:</p>
+
+
+
+<p>&lt;HTML&gt;</p>
+
+<p>&lt;HEAD&gt;</p>
+
+<p>&lt;META
+http-equiv=";Content-Type"; content=";text/html;
+charset=UTF-8";&gt;</p>
+
+<p>&lt;TITLE&gt;Menu&lt;/TITLE&gt;</p>
+
+<p>&lt;/HEAD&gt;</p>
+
+<p>&lt;BODY&gt;</p>
+
+<p>&lt;center&gt;</p>
+
+<p>&lt;h2&gt;TIJ's Restaurant&lt;/h2&gt;</p>
+
+<p>&lt;h3&gt;108 Java Sapien
+Avenue&lt;br&gt;Wayne,</p>
+
+<p>    PA&lt;br&gt;</p>
+
+<p>    Phone:  610-687-1234&lt;br&gt;</p>
+
+<p>&lt;/h3&gt;</p>
+
+<p>&lt;/center&gt;</p>
+
+<p>&lt;/BODY&gt;</p>
+
+<p>&lt;/HTML&gt;</p>
+
+
+
+<p>;</p>
+
+<p>Now let's build the menu.  Each restaurant has at least one
+&lt;menu&gt; element, &lt;menu&gt; elements have &lt;menugroup&gt;s and
+&lt;menugroup&gt; elements have &lt;menuitem&gt;s.  So we have to add the rest
+of the rules to handle those elements.</p>
+
+
+
+<p>&lt;?xml version=";1.0";?&gt;</p>
+
+<p>&lt;xsl:stylesheet
+version=";1.0";</p>
+
+<p>               
+xmlns:xsl=";http://www.w3.org/1999/XSL/Transform";&gt;</p>
+
+<p>;</p>
+
+
+
+<p>  &lt;xsl:template
+match=";/";&gt;</p>
+
+<p>    &lt;HTML&gt;</p>
+
+<p>   
+&lt;HEAD&gt;&lt;TITLE&gt;Menu&lt;/TITLE&gt;&lt;/HEAD&gt;</p>
+
+<p>    &lt;BODY&gt;</p>
+
+<p>    &lt;xsl:apply-templates/&gt;</p>
+
+<p>    &lt;/BODY&gt;</p>
+
+<p>    &lt;/HTML&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>  &lt;xsl:template
+match=";restaurant";&gt;</p>
+
+<p>    &lt;center&gt;&lt;h2&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";name";/&gt;&lt;/h2&gt;&lt;h3&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";address/addr1";/&gt;&lt;br/&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";address/city";/&gt;,</p>
+
+<p>    &lt;xsl:value-of
+select=";address/state";/&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";address/zip";/&gt;&lt;/h3&gt;</p>
+
+<p>    &lt;/center&gt;</p>
+
+<p>    &lt;xsl:apply-templates
+select=";menu";/&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>  &lt;xsl:template match=";menu";&gt;</p>
+
+<p>    &lt;h2&gt;Menu&lt;/h2&gt;</p>
+
+<p>    &lt;dl&gt;</p>
+
+<p>    &lt;xsl:apply-templates
+select=";menugroup";/&gt;</p>
+
+<p>    &lt;/dl&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>  &lt;xsl:template
+match=";menugroup";&gt;</p>
+
+<p>    &lt;dt&gt;&lt;h3&gt;</p>
+
+<p>    &lt;spacer
+type=";horizontal"; size=";25";/&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";@desc";/&gt;&lt;/h3&gt;&lt;/dt&gt;</p>
+
+<p>    &lt;xsl:apply-templates
+select=";menuitem";/&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>  &lt;xsl:template
+match=";menuitem";&gt;</p>
+
+<p>    &lt;dd&gt;&lt;b&gt;</p>
+
+<p>    &lt;spacer
+type=";horizontal"; size=";25";/&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";name";/&gt;:&lt;/b&gt;&lt;br/&gt;</p>
+
+<p>    &lt;ul&gt;</p>
+
+<p>    &lt;xsl:apply-templates
+select=";description";/&gt;</p>
+
+<p>    Price:&lt;xsl:value-of
+select=";price";/&gt;&lt;br/&gt;</p>
+
+<p>    &lt;/ul&gt;</p>
+
+<p>    &lt;/dd&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+<p>;</p>
+
+<p>  &lt;xsl:template
+match=";description";&gt;</p>
+
+<p>    &lt;xsl:value-of
+select=";text()";/&gt;&lt;br/&gt;</p>
+
+<p>  &lt;/xsl:template&gt;</p>
+
+
+
+<p>&lt;/xsl:stylesheet&gt;</p>
+
+
+
+<p>;</p>
+
+<p>The &lt;menu&gt; element has not text nodes only &lt;menugroup&gt;
+elements.  So the goal with the menu template is to set up the menugroups so
+they will be framed correctly and call the menugroup template.</p>
+
+<p>The menugroup has an attribute describing what type of
+menugroup it is.  This is in the desc attribute of the &lt;menugroup&gt;
+element.  An ‘@' symbol must be placed in front of the attribute name in order
+to select the value using the value-of tag - &lt;xsl:value-of
+select=";@desc";/&gt; .  Other than that the rest of the rule is
+setting up the for the element list within menugroup – &lt;menuitem&gt;.</p>
+
+<p>The rule for &lt;menuitem&gt; bolds the name of the food
+then creates an unorder list for the rest of the elements in &lt;menuitem&gt;. 
+Since some menu items have descriptions and some do not – a rule was created
+specifically for description.  If a menu item has a description it will be
+called and the text node of the  description will be pulled out by the text()
+method placed in the select attribute's field.</p>
+
+<p>Here is what the final the HTML form looked like.</p>
+
+<p>;</p>
+
+<p><img border=0 width=504 height=363
+src="TIEJv1.1_files/image007.jpg"></p>
+
+<p>It's nothing fancy but you should have a good idea of the
+capabilities of XSLT.</p>
+
+<h2><a name="_Toc39473044">XLink and XPointer</a></h2>
+
+<p>To do</p>
+
+
+
+<h2><a name="_Toc39473045">Summary</a></h2>
+
+<p> This chapter has
+introduced some but not all of the components that Sun references in its
+JAX-Pack Summer 2002.  The goal of XML is to provide portability of data, thus
+enabling applications that were developed completely separate from one another
+to share the same information.  XML is an umbrella term that covers many
+technologies built from XML's simple roots.  These technologies have continued
+to evolve and standardize quickly.  In your local bookstore there will be many
+shelves of XML books and most will be outdated before long.  If you want to
+find more information or stay current on developments in the XML community you
+should point your browser to the W3C - <a href="http://www.w3.org/">www.w3.org</a> and the XML
+work being done in the Apache community - www.apache.org.</p>
+
+
+
+
+
+<hr align=left size=1 width="33%">
+
+
+
+<p><a
+href="#_ftnref1" name="_ftn1" title=""><sup><sup>[1]</sup></sup></a> This
+means a maximum of just over four billion numbers, which is rapidly running
+out. The new standard for IP addresses will use a 128-bit number, which should
+produce enough unique IP addresses for the foreseeable future.</p>
+
+
+
+
+
+<p><a
+href="#_ftnref2" name="_ftn2" title=""><sup><sup>[2]</sup></sup></a> Many
+brain cells died in agony to discover this information.</p>
+
+
+
+
+
+<p><a
+href="#_ftnref3" name="_ftn3" title=""><sup><sup>[3]</sup></sup></a> Created
+by Dave Bartlett.</p>
+
+
+
+
+
+<p><a
+href="#_ftnref4" name="_ftn4" title=""><sup><sup>[4]</sup></sup></a> Dave
+Bartlett was instrumental in the development of this material, and also the JSP
+section.</p>
+
+
+
+
+
+<p><a
+href="#_ftnref5" name="_ftn5" title=""><sup><sup>[5]</sup></sup></a> A
+primary tenet of Extreme Programming (XP). See <i>www.xprogramming.com</i>.</p>
+
+
+
+
+
+<p><a href="#_ftnref6" name="_ftn6" title="">[6]</a> This chapter was
+written by Jeremy Meyer.</p>
+
+
+
+
+
+<p><a
+href="#_ftnref7" name="_ftn7" title=""><sup><sup>[7]</sup></sup></a> This
+chapter was created by Andrea Provaglio.</p>
+
+
+
+
+
+<p><a href="#_ftnref8" name="_ftn8" title="">[8]</a> This chapter was
+created by Dave Bartlett.</p>
+
+
+
+
+</body>
+
+</html>

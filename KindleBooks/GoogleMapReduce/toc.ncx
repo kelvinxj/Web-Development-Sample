@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" 
+   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+  </head>
+  <docTitle>
+    <text>KF8</text>
+  </docTitle>
+<navMap>
+<navPoint id="navpoint-1" playOrder="1">
+	<navLabel><text>Table of Contents</text></navLabel>
+	<content src="toc.html"/>
+</navPoint>
+<navPoint id="navpoint-1" playOrder="1">
+	<navLabel><text>1 Introduction</text></navLabel>
+	<content src="text.html#_Toc500453257"/>
+</navPoint>
+<navPoint id="navpoint-2" playOrder="1">
+	<navLabel><text>2 Programming Model</text></navLabel>
+	<content src="text.html#_Toc500453258"/>
+	<navPoint id="navpoint-3" playOrder="1">
+		<navLabel><text>2.1 Example</text></navLabel>
+		<content src="text.html#_Toc500453259"/>
+	</navPoint>
+	<navPoint id="navpoint-3" playOrder="1">
+		<navLabel><text>2.1 Types</text></navLabel>
+		<content src="text.html#_Toc500453260"/>
+	</navPoint>
+	<navPoint id="navpoint-3" playOrder="1">
+		<navLabel><text>2.3 More Example</text></navLabel>
+		<content src="text.html#_Toc500453261"/>
+	</navPoint>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>3 Implementation</text></navLabel>
+	<content src="text.html#_Toc500453262"/>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>3.1 Executioin Overview</text></navLabel>
+		<content src="text.html#_Toc500453263"/>
+	</navPoint>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>3.2 Master Data Structure</text></navLabel>
+		<content src="text.html#_Toc500453264"/>
+	</navPoint>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>3.3 Fault Tolerance</text></navLabel>
+		<content src="text.html#_Toc500453265"/>
+	</navPoint>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>3.4 Locality</text></navLabel>
+		<content src="text.html#_Toc500453266"/>
+	</navPoint>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>3.5 Task Granularity</text></navLabel>
+		<content src="text.html#_Toc500453267"/>
+	</navPoint>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>3.6 Backup Tasks</text></navLabel>
+		<content src="text.html#_Toc500453268"/>
+	</navPoint>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>4 Refinements</text></navLabel>
+	<content src="text.html#_Toc500453269"/>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.1 Partitioning Function</text></navLabel>
+		<content src="text.html#_Toc500453270"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.2 Ordering Guarantees</text></navLabel>
+		<content src="text.html#_Toc500453271"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.3 Combiner Function</text></navLabel>
+		<content src="text.html#_Toc500453272"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.4 Input and Output Types</text></navLabel>
+		<content src="text.html#_Toc500453273"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.5 Side-effects</text></navLabel>
+		<content src="text.html#_Toc500453274"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.6 Skipping Bad Records</text></navLabel>
+		<content src="text.html#_Toc500453275"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.7 Local Execution</text></navLabel>
+		<content src="text.html#_Toc500453276"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.8 Status Information</text></navLabel>
+		<content src="text.html#_Toc500453277"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>4.9 Counters</text></navLabel>
+		<content src="text.html#_Toc500453278"/>
+	</navPoint>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>5 Performance</text></navLabel>
+	<content src="text.html#_Toc500453279"/>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>5.1 Cluster Configuration</text></navLabel>
+		<content src="text.html#_Toc500453280"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>5.2 Grep</text></navLabel>
+		<content src="text.html#_Toc500453281"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>5.3 Sort</text></navLabel>
+		<content src="text.html#_Toc500453282"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>5.4 Effect of Backup Tasks</text></navLabel>
+		<content src="text.html#_Toc500453283"/>
+	</navPoint>
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>5.5 Machine Failures</text></navLabel>
+		<content src="text.html#_Toc500453284"/>
+	</navPoint>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>6 Experience</text></navLabel>
+	<content src="text.html#_Toc500453285"/>	
+	<navPoint id="navpoint-" playOrder="1">
+		<navLabel><text>6.1 Large-Scale Indexing</text></navLabel>
+		<content src="text.html#_Toc500453286"/>
+	</navPoint>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>7 Related Work</text></navLabel>
+	<content src="text.html#_Toc500453287"/>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>8 Conclusions</text></navLabel>
+	<content src="text.html#_Toc500453288"/>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>Acknowledgements</text></navLabel>
+	<content src="text.html#_Toc500453289"/>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>References</text></navLabel>
+	<content src="text.html#_Toc500453290"/>
+</navPoint>
+<navPoint id="navpoint-" playOrder="1">
+	<navLabel><text>Word Frequency</text></navLabel>
+	<content src="text.html#_Toc500453291"/>
+</navPoint>
+</navMap>
+</ncx>

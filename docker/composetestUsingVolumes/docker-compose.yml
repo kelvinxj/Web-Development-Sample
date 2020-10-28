@@ -1,0 +1,15 @@
+version: '3'
+services: 
+    myubuntu: 
+        image: "ubuntu"
+        tty: true
+        volumes: 
+            #- /home/docker/host-data:/usr/hostdata
+            - hostdata:/usr/hostdata
+volumes:
+    hostdata:
+        driver: local
+        driver_opts:
+            type: 'none'
+            o: 'bind'
+            device: '/home/docker/host-data'

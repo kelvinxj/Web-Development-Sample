@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+   </head>
+   <docTitle>
+       <text>KF8</text>
+   </docTitle>
+   <navMap>
+       <navPoint>
+           <navLabel><text>Table of Contents</text></navLabel>
+           <content src="toc.html"/>
+       </navPoint>
+       <navPoint>
+           <navLabel><text>Introduction to Enterprise Programming</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472930"/>
+           <navPoint>
+               <navLabel><text>Prerequisites</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472931"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Summary</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472932"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Network programming with Sockets & Channels</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472933"/>
+           <navPoint>
+               <navLabel><text>Identifying a machine</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472934"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Sockets</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472938"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Serving multiple clients</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472940"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Datagrams</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472941"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Selector Based Multiplexing in JDK1.4</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472944"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>More to networking</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472945"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Exercises</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472946"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Remote Method Invocation (RMI)</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472947"/>
+           <navPoint>
+               <navLabel><text>Remote interfaces</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472948"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Implementing the remote interface</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472949"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Creating stubs and skeletons</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472951"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Using the remote object</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472952"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Summary</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472953"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Exercises</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472954"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Connecting to Databases</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472955"/>
+           <navPoint>
+               <navLabel><text>Getting the example to work</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472956"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Summary</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472965"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Exercises</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472966"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Servlets</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472967"/>
+           <navPoint>
+               <navLabel><text>Summary</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472974"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Exercises</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472975"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>JavaServer Pages</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472976"/>
+           <navPoint>
+               <navLabel><text>Exercises</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472985"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Enterprise JavaBeans</text></navLabel>
+           <content src="TIEJv1.1.htm#_Toc39472997"/>
+           <navPoint>
+               <navLabel><text>Enterprise JavaBean Flavors</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472998"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>EJB Roles</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39472999"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>The Basic APIs</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473000"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>EJB Container internals</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473003"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Software</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473004"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>The example application</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473005"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Your first Enterprise JavaBean</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473006"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>An EJB client application</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473015"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Simplifying EJB Development</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473016"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Implementing a session bean</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473017"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>EJB Local Interfaces</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473018"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Bulk accessors and value objects</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473019"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Finder Methods and EJB-QL</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473020"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Entity Relationships</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473021"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Summary</text></navLabel>
+               <content src="TIEJv1.1.htm#_Toc39473022"/>
+           </navPoint>
+      </navPoint>
+   </navMap>
+</ncx>
