@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 #plt.plot([1,2,3,4])
 #plt.ylabel('some numbers')
 #plt.show()
+#usage: python chart.py
+#usage: python chart.py 11:00 12:00
 begin=""
 end=""
 usingTimeRange = True
