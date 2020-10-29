@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+   </head>
+   <docTitle>
+       <text>KF8</text>
+   </docTitle>
+   <navMap>
+       <navPoint>
+           <navLabel><text>Chapter 1</text></navLabel>
+           <content src="text.html#chapter1"/>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Chapter 2</text></navLabel>
+           <content src="text.html#chapter2"/>
+           <navPoint>
+               <navLabel><text>Chapter 2.1</text></navLabel>
+               <content src="text.html#chapter21"/>
+           </navPoint>
+           <navPoint>
+               <navLabel><text>Chapter 2.2</text></navLabel>
+               <content src="text.html#chapter22"/>
+           </navPoint>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Chapter 3</text></navLabel>
+           <content src="text.html#chapter3"/>
+      </navPoint>
+       <navPoint>
+           <navLabel><text>Chapter 4</text></navLabel>
+           <content src="text.html#chapter4"/>
+      </navPoint>
+   </navMap>
+</ncx>

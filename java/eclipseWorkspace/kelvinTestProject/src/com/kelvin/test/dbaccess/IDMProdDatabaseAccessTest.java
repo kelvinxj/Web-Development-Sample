@@ -165,23 +165,7 @@ public class IDMProdDatabaseAccessTest {
 				executeSqlWriteResults(conn, stmt, sb.toString(), resultFileName);
 			}
 			br.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+		} catch (SQLException | IOException | IllegalAccessException | InstantiationException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		finally{
@@ -189,7 +173,6 @@ public class IDMProdDatabaseAccessTest {
 				try {
 					rs.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			if(stmt != null){

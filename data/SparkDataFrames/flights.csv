@@ -1,0 +1,4 @@
+1-year,2-month,3-dayOfMonth,4-dayOfWeek,5-ActualDepartureTime,6-ScheduleDepartureTime,7-actualArrivalTime,8-scheduleArrivalTime,9-CarrierCode,10-flightNum,11-planeTailNum,12-actualElapsedTime,13-crsElapsedTime,14-airTime,15-ArrivalDelay,16-DepartureDelay,17-OriginAirportCode,18-DestAirportCode,19-Miles,20-taxiInTime,21-TaxiOutTime,22-flightCanceled?,23-CacellationReason,24-diverted,25-CarrierDelay,26-weatherDelay,27-nasDelay,28-SecurityDelay,29-lateAircraftDelay
+2008,1,1,2,2057,2052,2312,2258,AS,234,N306AS,135,126,112,14,5,SEA,SJC,697,7,16,1,A,0,NA,NA,NA,NA,NA
+2008,11,1,2,2057,2052,2312,2258,AS,234,N309AS,135,126,112,14,5,SEA,SJC,697,7,16,1,A,0,NA,NA,NA,NA,NA
+2008,1,1,2,703,715,958,951,AS,572,N302AS,175,156,144,7,-12,SEA,PSP,987,6,25,0,,0,NA,NA,NA,NA,NA

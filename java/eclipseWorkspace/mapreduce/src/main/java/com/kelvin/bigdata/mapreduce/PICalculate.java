@@ -134,13 +134,30 @@ public class PICalculate {
 			System.out.println(line);
 		}
 		br.close();
-	}
-	
-	private static double getNextX() {
-		return 1.0;
-	}
-	
-	private static double getNextY() {
-		return 1.0;
+		
+//		double splitsCount = 10000;
+//		double step = 1.0/splitsCount;
+//		double x = 0,y = 0;
+//		double totalPointsCount = 0;
+//		double totalPointsInCirclrCount = 0;
+//		double distance = 0;
+//		for(long i = 0; i <= splitsCount; i++){
+//			for(long j = 0;j<=splitsCount; j++) {
+////				double x = rd.nextDouble()/2;
+////				double y = rd.nextDouble()/2;
+////				System.out.println("step is: " + step + ";x=" + x + ";y=" + y);
+//				totalPointsCount++;
+//				distance = Math.sqrt(Math.pow(x-0.5, 2) + Math.pow(y-0.5, 2));
+//				if(distance <= 0.5)
+//					totalPointsInCirclrCount++;
+//				x+=step;
+//			}
+//			x=0;
+//			y+=step;
+//		}
+//		
+//		double PI = 4 * totalPointsInCirclrCount/totalPointsCount;
+//		
+//		System.out.println("PI is: " + PI);
 	}
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" 
+   "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+  </head>
+  <docTitle>
+    <text>KF8</text>
+  </docTitle>
+<navMap>
+<navPoint id="navpoint-1" playOrder="1">
+	<navLabel><text>温家宝考察三台</text></navLabel>
+	<content src="text.html#a1"/>
+</navPoint>
+<navPoint id="navpoint-2" playOrder="1">
+	<navLabel><text>解放三台</text></navLabel>
+	<content src="text.html#a2"/>
+</navPoint>
+<navPoint id="navpoint-3" playOrder="1">
+	<navLabel><text>三台县人民医院院长黄希炘</text></navLabel>
+	<content src="text.html#a3"/>
+</navPoint>
+<navPoint id="navpoint-3" playOrder="1">
+	<navLabel><text>著名作家沙汀在三台县</text></navLabel>
+	<content src="text.html#a4"/>
+</navPoint>
+<navPoint id="navpoint-3" playOrder="1">
+	<navLabel><text>三台县凤凰山</text></navLabel>
+	<content src="text.html#a5"/>
+</navPoint>
+</navMap>
+</ncx>
