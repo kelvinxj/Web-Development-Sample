@@ -24,6 +24,7 @@
 /java/eclipseWorkspace/producerMethod/.settings
 /java/eclipseWorkspace/MyWeb/.settings
 /java/eclipseWorkspace/MyWebEAR/.settings
+/java/eclipseWorkspace/Servers/.settings
 /java/WebSphereProject/.metadata
 
 #ignore eclipse web project class folder:
