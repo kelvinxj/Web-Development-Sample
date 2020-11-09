@@ -25,6 +25,7 @@
 /java/eclipseWorkspace/MyWeb/.settings
 /java/eclipseWorkspace/MyWebEAR/.settings
 /java/eclipseWorkspace/Servers/.settings
+java/eclipseWorkspace/Servers/Tomcat v9.0 Server at localhost-config/server.xml
 /java/WebSphereProject/.metadata
 
 #ignore eclipse web project class folder:
