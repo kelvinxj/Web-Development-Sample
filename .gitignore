@@ -17,6 +17,7 @@
 
 #ignore eclispe workspace folder
 /java/eclipseWorkspace/.metadata
+/java/eclipseWorkspace/.sonarlint
 /java/eclipseWorkspace/clientdb.xml
 /java/eclipseWorkspace/JavaEETutorial/.settings
 /java/eclipseWorkspace/MyWebTomcat/.settings

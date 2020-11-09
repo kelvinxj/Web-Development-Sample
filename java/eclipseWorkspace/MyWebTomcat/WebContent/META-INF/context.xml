@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Note: "Context" should be first letter capitalized!, "context" is not acceptable-->
 <Context>
+	<!-- MySQL dirver com.mysql.jdbc.Driver is deprecated in MySQL 8, use com.mysql.cj.jdbc.Driver instead -->
     <Resource  
         name="jdbc/world" 
 		auth="Container" 
         type="javax.sql.DataSource"
-        url="jdbc:mysql://localhost/world"
-        driverClassName ="com.mysql.jdbc.Driver"  
+        url="jdbc:mysql://localhost:3306/world?useSSL=false"
+        driverClassName ="com.mysql.cj.jdbc.Driver"  
         username="xiejia"  
         password="Lihui2020"
         maxActive="15"

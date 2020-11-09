@@ -45,6 +45,9 @@ for(Object keyName : keys){
 </table>
 
 <span>go to header page:</span>
+<%if(1==2) {
+//the line below will never executed:%>
 <jsp:forward page="header.jsp"/>
+<%} %>
 </body>
 </html>
