@@ -8,5 +8,6 @@
  </head>
  <body>
  <h1> Home Page of Spring MVC </h1>
+ <span>Business method execution result: ${message}</span>
  </body>
  </html>

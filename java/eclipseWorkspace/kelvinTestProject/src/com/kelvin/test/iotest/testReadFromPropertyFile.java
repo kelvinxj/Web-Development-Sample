@@ -19,7 +19,7 @@ import java.util.Set;
 
 import org.junit.Test;
 
-import com.ibm.jvm.io.ConsoleInputStream;
+//import com.ibm.jvm.io.ConsoleInputStream;
 public class testReadFromPropertyFile {	
 	
 	@Test
@@ -59,8 +59,8 @@ public class testReadFromPropertyFile {
 	
 	@Test
 	public void testReadPropertiesFromJarFile() throws ClassNotFoundException, IllegalAccessException, InstantiationException{
-		//bundleInJar.properties file is in myProperty.jar.
-		//myProperty.jar is in this projects's class path
+		//bundleInJar.properties file is in myProperty.jar
+		//myProperty.jar is in this projects's class path(Libs project.)
 		
 		//if bundleInJar.properties in both myProperty.jar and myProperty2.jar
 		//property with the same key in first jar loaded by java program will be used

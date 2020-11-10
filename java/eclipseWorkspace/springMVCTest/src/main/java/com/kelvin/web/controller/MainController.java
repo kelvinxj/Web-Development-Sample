@@ -1,21 +1,40 @@
 package com.kelvin.web.controller;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.support.RequestContextUtils;
 
+import com.kelvin.web.beans.IBusinessService;
 import com.kelvin.web.model.User;
 
 @Controller
-public class MainController {
+public class MainController extends BaseController{
 	
-	@RequestMapping("/home_page")
-	public String showPage() {
-		return "homepage";
+	@RequestMapping("/abc/*")
+	public ModelAndView showPage(HttpServletRequest request) {
+		IBusinessService businessService;
+		
+		//get Application context
+		//method 1: get it by baseController which extends from ApplicationContextAware
+		ApplicationContext appContext = this.getAppContext();
+		
+		//method2: get it by RequestContextUtils class method(need to get servletContext first)
+		//ServletContext servletContext = request.getServletContext();
+		//appContext = RequestContextUtils.findWebApplicationContext(request, servletContext);
+		
+		businessService = appContext.getBean("businessServiceBean", IBusinessService.class);
+		ModelAndView mav = new ModelAndView("homepage");
+		mav.addObject("message", businessService.businessMethod1());
+		return mav;
 	}
 
 	@RequestMapping("/about_us")

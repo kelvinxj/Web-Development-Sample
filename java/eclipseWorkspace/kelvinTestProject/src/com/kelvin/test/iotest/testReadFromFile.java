@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 
 import org.junit.Test;
 
-import com.ibm.jvm.io.ConsoleInputStream;
+//import com.ibm.jvm.io.ConsoleInputStream;
 public class testReadFromFile {	
 	@Test
 	public void testReadNonPropertyFileByLine() throws IOException {
@@ -59,8 +59,8 @@ public class testReadFromFile {
 		}
 		bf.close();
 		
-		String encoding = ConsoleInputStream.getEncoding(new FileInputStream(filename));
-		System.out.println(encoding);
+		//String encoding = ConsoleInputStream.getEncoding(new FileInputStream(filename));
+		//System.out.println(encoding);
 	}
 	
 	@Test
