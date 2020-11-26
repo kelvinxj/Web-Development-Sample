@@ -1,12 +1,24 @@
 package com.kelvin.web.controller;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+import java.util.Map;
+
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,10 +29,14 @@ import com.kelvin.web.beans.IBusinessService;
 import com.kelvin.web.model.User;
 
 @Controller
-public class MainController extends BaseController{
+public class MainController extends BaseController{	
+	
+	@Autowired
+	@Qualifier("dbDataSource")
+	private DataSource dataSource;
 	
 	@RequestMapping("/abc/*")
-	public ModelAndView showPage(HttpServletRequest request) {
+	public ModelAndView showPage(HttpServletRequest request) throws SQLException {
 		IBusinessService businessService;
 		
 		//get Application context
@@ -31,10 +47,51 @@ public class MainController extends BaseController{
 		//ServletContext servletContext = request.getServletContext();
 		//appContext = RequestContextUtils.findWebApplicationContext(request, servletContext);
 		
+		useDataSource(dataSource);
 		businessService = appContext.getBean("businessServiceBean", IBusinessService.class);
 		ModelAndView mav = new ModelAndView("homepage");
 		mav.addObject("message", businessService.businessMethod1());
 		return mav;
+	}
+
+	private void useDataSource(DataSource ds) throws SQLException {
+		String sql = "";
+		String countryName = "China";
+		String cityName = "";
+		/* traditional way: use java datasource object
+		Connection conn = ds.getConnection();
+		Statement stmt = conn.createStatement();
+		if(countryName == null){
+			sql = "select t1.name as cityName, t2.name as countryName  " 
+					+" from city t1 inner join country t2 " 
+					+" on t1.countryCode = t2.code";
+		}
+		else{
+			sql = "select t1.name as cityName, t2.name as countryName  " 
+					+" from city t1 inner join country t2 " 
+					+" on t1.countryCode = t2.code where t2.name like '"+countryName + "%'";
+		}
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		while(rs.next()){
+			cityName = rs.getString(1);
+			countryName = rs.getString(2);
+		}
+		*/
+		
+		/*Spring way to access datasource*/
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(ds);
+		sql = "select t1.name as cityName, t2.name as countryName  " 
+				+" from city t1 inner join country t2 " 
+				+" on t1.countryCode = t2.code where t2.name like '"+countryName + "%'";
+		List<Map<String,Object>> empRows = jdbcTemplate.queryForList(sql);
+		
+		for(Map<String, Object> row: empRows) {
+			cityName = row.get("cityName").toString();
+			countryName = row.get("countryName").toString();
+		}
+		
+		System.out.println("City: " + cityName + "; Country: " + countryName);
 	}
 
 	@RequestMapping("/about_us")

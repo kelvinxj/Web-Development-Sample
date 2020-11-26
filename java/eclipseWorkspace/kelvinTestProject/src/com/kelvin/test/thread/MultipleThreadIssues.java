@@ -140,5 +140,4 @@ public class MultipleThreadIssues {
 		//unlock
 		return result;
 	}
-
 }
