@@ -197,6 +197,20 @@ do
 		break
 	fi
 done
+
+#looping with for:
+for i in {4..12}
+do
+	echo $i
+done
+
+#looping with for and shell command
+echo "file name in current folder:"
+for i in $(ls .)
+do
+	echo "file name: $i"
+done
+
 #useing condition in while:
 #while([ $waitTime -lt 4 ])
 

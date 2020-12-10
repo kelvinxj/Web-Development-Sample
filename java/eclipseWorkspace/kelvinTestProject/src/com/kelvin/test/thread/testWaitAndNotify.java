@@ -41,7 +41,7 @@ class Printer{
 	int noOfPapers = 100;
 	
 	public synchronized void printPages(int numPages) {
-		for (int i =0; i < noOfPapers; i++) {
+		for (int i =0; i < numPages; i++) {
 			//print pages
 		}
 		
