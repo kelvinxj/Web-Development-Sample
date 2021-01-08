@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.List;
 import java.util.Map;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -36,7 +38,7 @@ public class MainController extends BaseController{
 	private DataSource dataSource;
 	
 	@RequestMapping("/abc/*")
-	public ModelAndView showPage(HttpServletRequest request) throws SQLException {
+	public ModelAndView showPage(HttpServletRequest request) throws Exception {
 		IBusinessService businessService;
 		
 		//get Application context
@@ -46,6 +48,14 @@ public class MainController extends BaseController{
 		//method2: get it by RequestContextUtils class method(need to get servletContext first)
 		//ServletContext servletContext = request.getServletContext();
 		//appContext = RequestContextUtils.findWebApplicationContext(request, servletContext);
+		
+		InitialContext cxt = new InitialContext();
+		if ( cxt == null ) {
+		   throw new Exception("Uh oh -- no context!");
+		}
+
+		//works: DataSource ds = (DataSource) cxt.lookup( "java:/comp/env/jdbc/world");
+		//not work: DataSource ds = (DataSource) cxt.lookup( "jdbc/world");
 		
 		useDataSource(dataSource);
 		businessService = appContext.getBean("businessServiceBean", IBusinessService.class);
