@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xmlns:mvc = "http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation =
+               "http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/mvc
+  http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+>
+    <bean class="com.gupaoedu.pojo.UserBean" id="user" c:_0="777" c:_1="test1">
+        <!--constructor injection-->
+<!--        <constructor-arg name="id" value="666"/>-->
+<!--        <constructor-arg name="userName" value="test"/>-->
+<!--        <constructor-arg index="0" value="666"/>-->
+<!--        <constructor-arg index="1" value="test"/>-->
+    </bean>
+
+    <bean class="com.gupaoedu.pojo.UserBean" id="user1" p:id="888" p:userName="test2">
+        <!--Value injection-->
+<!--        <property name="id" value="666"/>-->
+<!--        <property name="userName" value="test1"/>-->
+    </bean>
+</beans>

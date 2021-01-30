@@ -1,0 +1,52 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xmlns:mvc = "http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation =
+               "http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/mvc
+  http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+>
+    <bean class="com.gupaoedu.pojo.Cat" id="cat" p:nick="huahua" p:color="black"/>
+
+    <bean class="com.gupaoedu.pojo.UserBean" id="user1">
+        <!--inject value-->
+        <property name="cat" ref="cat">
+            <!--indject cat-->
+<!--            <bean class="com.gupaoedu.pojo.Cat"/>-->
+        </property>
+        <property name="favourites">
+            <array>
+                <value>basketball</value>
+                <value>hiking</value>
+                <value>shopping</value>
+            </array>
+        </property>
+        <property name="cats">
+            <list>
+                <bean class="com.gupaoedu.pojo.Cat" p:nick="xiaoHua" p:color="red"/>
+                <bean class="com.gupaoedu.pojo.Cat" p:nick="xiaoHua2" p:color="green"/>
+                <bean class="com.gupaoedu.pojo.Cat" p:nick="xiaoHua3" p:color="yellow"/>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="name1" value="zhangSan1"/>
+                <entry key="name2" value="zhangSan2"/>
+                <entry key="name3" value="zhangSan3"/>
+            </map>
+        </property>
+        <property name="props">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">123</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

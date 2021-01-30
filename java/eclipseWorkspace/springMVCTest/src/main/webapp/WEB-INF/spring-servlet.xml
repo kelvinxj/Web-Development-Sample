@@ -26,6 +26,18 @@
   </bean>
   <bean id="businessServiceBean" class="com.kelvin.web.beans.BusinessServiceImpl2"/>
   
+  <!--Use Simple Url handler mapping-->
+  <!-- /hello 路径的请求交给 id 为 helloController 的控制器处理-->
+  <!-- <bean id="simpleUrlHandlerMapping"
+          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/hello">helloController</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="helloController" class="com.kelvin.web.controller.HelloController"></bean> -->
+  
   <!-- two ways to inject jndi datasource -->
   <!-- 1 -->
   <!-- <bean id="dbDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">

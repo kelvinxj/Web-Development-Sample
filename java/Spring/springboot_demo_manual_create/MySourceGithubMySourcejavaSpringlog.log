@@ -1,0 +1,14 @@
+2021-01-17 21:52:43.293  INFO 19316 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 19316 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
+2021-01-17 21:52:43.293  INFO 19316 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-01-17 21:52:45.228  INFO 19316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-01-17 21:52:45.259  INFO 19316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-17 21:52:45.259  INFO 19316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-17 21:52:45.380  INFO 19316 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-01-17 21:52:45.380  INFO 19316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2009 ms
+2021-01-17 21:52:45.655  INFO 19316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-17 21:52:45.665 DEBUG 19316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-17 21:52:45.797 DEBUG 19316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2021-01-17 21:52:45.828 DEBUG 19316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-17 21:52:45.846 DEBUG 19316 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-17 21:52:45.929  INFO 19316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/springboot'
+2021-01-17 21:52:45.950  INFO 19316 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.285 seconds (JVM running for 3.866)

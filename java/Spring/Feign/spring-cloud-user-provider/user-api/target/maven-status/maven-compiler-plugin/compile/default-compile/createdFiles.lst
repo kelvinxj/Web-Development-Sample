@@ -1,0 +1,4 @@
+com\gupaoedu\User.class
+com\gupaoedu\IUserService.class
+com\gupaoedu\App.class
+com\gupaoedu\IUserServiceFeign.class
