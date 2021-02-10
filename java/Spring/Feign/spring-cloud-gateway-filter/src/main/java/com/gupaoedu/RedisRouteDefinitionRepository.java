@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+//@Component
 public class RedisRouteDefinitionRepository implements RouteDefinitionRepository {
 
     private final static String gateway_route_key="gateway_dynamic_route";

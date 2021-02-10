@@ -4,6 +4,7 @@ import com.gupaoedu.dao.IUserDao;
 import com.gupaoedu.pojo.User;
 import com.gupaoedu.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 

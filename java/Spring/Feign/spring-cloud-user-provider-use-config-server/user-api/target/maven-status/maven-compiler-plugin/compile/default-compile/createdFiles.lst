@@ -1,5 +1,5 @@
-com\gupaoedu\User.class
-com\gupaoedu\IUserService.class
-com\gupaoedu\App.class
-com\gupaoedu\IUserServiceFeign.class
-com\gupaoedu\IUserServiceFeign$DefaultFallback.class
+com\gupaoapi\IUserServiceFeign$DefaultFallback.class
+com\gupaoapi\IUserServiceFeign.class
+com\gupaoapi\IUserService.class
+com\gupaoapi\App.class
+com\gupaoapi\User.class

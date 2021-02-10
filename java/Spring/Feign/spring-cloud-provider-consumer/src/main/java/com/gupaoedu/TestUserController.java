@@ -1,5 +1,7 @@
 package com.gupaoedu;
 
+import com.gupaoapi.IUserServiceFeign;
+import com.gupaoapi.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;

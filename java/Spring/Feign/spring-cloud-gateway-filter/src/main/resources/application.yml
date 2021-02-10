@@ -9,6 +9,17 @@ spring:
           lower-case-service-id: true
           enabled: true
       routes:
+        - id: basic_route_demo
+          uri: http://localhost:8088/
+          predicates:
+            #if request is basic/user?name=kelvin, post
+            - Path=/basic/**
+            - Query=name,kelvin
+            - Method=post
+            #            - Header=key,value
+            #            - Cookie=token,123
+          filters:
+            - StripPrefix=1
         - id: loadbalance_route_demo
           # spring.application.name=spring-cloud-user-provider
           uri: lb://spring-cloud-user-provider
@@ -22,7 +33,7 @@ spring:
             #if request is gateway/get?name=kelvin
             - Path=/gateway/**
             - Query=name,kelvin
-            - Method=get
+            - Method=post
 #            - Header=key,value
 #            - Cookie=token,123
             - Auth=Authorization  #need to add Authorization=XXXX to request header
@@ -36,6 +47,7 @@ spring:
           filters:
             - StripPrefix=1
             - GpDefine=GP_Kelvin
+
 
 #        - id: retry_route
 #          uri: http://localhost:8088/

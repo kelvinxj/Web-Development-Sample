@@ -8,9 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 //if you need to use Feign interface, you need specify package of IUserServiceFeign
-// in user-api project, that is "com.gupaoedu"
-@EnableFeignClients(basePackages = "com.gupaoedu")
-@ComponentScan(basePackages = {"com.gupaoedu"})
+// in user-api project, that is "com.gupaoapi"
+@EnableFeignClients(basePackages = {"com.gupaoedu","com.gupaoapi"})
+//@ComponentScan(basePackages = {"com.gupaoedu"})
 @EnableCircuitBreaker
 public class DemoApplication {
 

@@ -1,7 +1,7 @@
 package com.example.demo;
 
-import com.gupaoedu.IUserService;
-import com.gupaoedu.User;
+import com.gupaoapi.IUserService;
+import com.gupaoapi.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,5 +24,17 @@ public class UserServiceImpl implements IUserService {
         logger.info("received user " + user);
         logger.info("user name:" + user.getName());
         return "SAVE SUCCESS. saved user name:" + user.getName();
+    }
+
+    @Override
+    public User query() {
+//        try {
+//            TimeUnit.SECONDS.sleep(2);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        User user = new User();
+        user.setName("New user");
+        return user;
     }
 }

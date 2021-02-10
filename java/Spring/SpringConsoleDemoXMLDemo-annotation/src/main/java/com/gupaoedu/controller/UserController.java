@@ -19,7 +19,8 @@ public class UserController {
 //    @Autowired //get bean by type, if you need to get bean by name, use @Qualifier with it.
 //    @Qualifier("userServiceImpl")
     //or use jdk @Resource annotation(get bean by type and name)
-    @Resource(type=com.gupaoedu.service.IUserService.class)
+    //@Resource(type=com.gupaoedu.service.IUserService.class)
+    @Autowired
     private IUserService userService;
 //    public IUserService getUserService() {
 //        return userService;
