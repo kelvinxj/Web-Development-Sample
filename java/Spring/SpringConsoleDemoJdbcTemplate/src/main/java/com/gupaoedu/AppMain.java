@@ -11,6 +11,11 @@ public class AppMain {
 
         IUserService service = ac.getBean(IUserService.class);
 
-        service.addUser(new User());
+        User user = new User();
+        user.setName("user1");
+        user.setAge(18);
+        int key = service.addUser(user);
+
+        System.out.println(user.toString() + "; id=" + key);
     }
 }

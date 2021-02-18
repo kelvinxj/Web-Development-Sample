@@ -17,7 +17,7 @@ public class JavaConfig {
     public DataSource dataSource(){
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/world?useSSL=false");
+        ds.setUrl("jdbc:mysql://localhost:3306/mydb?useSSL=false");
         ds.setUsername("xiejia");
         ds.setPassword("Lihui2020");
         ds.setSchema("world");
