@@ -3,7 +3,9 @@ package com.gupaoedu.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.LinkedList;
@@ -15,7 +17,7 @@ public class UserController {
     @RequestMapping("/show")
     public String showInfo(Model model){
         model.addAttribute("msg","Hello, Thymeleaf...111");
-        return "index";
+        return "index.html";
     }
 
     @RequestMapping("/show1")

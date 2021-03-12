@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kelvin.mapper.BlogMapper">
+    <cache
+            type="org.apache.ibatis.cache.impl.PerpetualCache"
+            size="1024"
+            eviction="LRU"
+    />
+    <select id="selectBlogById" parameterType="int" resultType="blog">
+        select bid,name,author_id as authorId from blog where bid=#{id}
+    </select>
+
+    <select id="selectBlogByAuthorIdAndBlogName" resultType="blog">
+        select bid,name,author_id as authorId from blog where author_id=#{authorId} and name like '%${name}%'
+    </select>
+</mapper>

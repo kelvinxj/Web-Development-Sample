@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.gupaoedu.ConFig.FileWebConfig",
+      "sourceType": "com.gupaoedu.ConFig.FileWebConfig"
+    },
+    {
+      "name": "user",
+      "type": "com.gupaoedu.bean.User",
+      "sourceType": "com.gupaoedu.bean.User"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application-context",
+      "type": "org.springframework.context.ApplicationContext",
+      "sourceType": "com.gupaoedu.ConFig.FileWebConfig"
+    },
+    {
+      "name": "servlet-context",
+      "type": "javax.servlet.ServletContext",
+      "sourceType": "com.gupaoedu.ConFig.FileWebConfig"
+    },
+    {
+      "name": "user.address",
+      "type": "java.lang.String",
+      "sourceType": "com.gupaoedu.bean.User"
+    },
+    {
+      "name": "user.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.gupaoedu.bean.User"
+    },
+    {
+      "name": "user.username",
+      "type": "java.lang.String",
+      "sourceType": "com.gupaoedu.bean.User"
+    }
+  ],
+  "hints": []
+}

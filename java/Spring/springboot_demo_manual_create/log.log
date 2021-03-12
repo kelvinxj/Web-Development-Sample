@@ -1,640 +1,139 @@
-2021-01-18 09:30:30.284  INFO 22312 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 22312 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 09:30:30.300  INFO 22312 --- [main] com.gupaoedu.GpSpringBootApplication     : The following profiles are active: prod
-2021-01-18 09:30:32.783  INFO 22312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2021-01-18 09:30:32.799  INFO 22312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 09:30:32.799  INFO 22312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 09:30:32.937  INFO 22312 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 09:30:32.937  INFO 22312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2517 ms
-2021-01-18 09:30:33.253  INFO 22312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 09:30:33.269 DEBUG 22312 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 09:30:33.416 DEBUG 22312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2021-01-18 09:30:33.416  INFO 22312 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 09:30:33.453 DEBUG 22312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 09:30:33.469 DEBUG 22312 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 09:30:33.600  INFO 22312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path '/springboot'
-2021-01-18 09:30:33.622  INFO 22312 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.213 seconds (JVM running for 5.048)
-2021-01-18 09:31:44.560  INFO 17688 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 17688 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 09:31:44.576  INFO 17688 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 09:31:47.135  INFO 17688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 09:31:47.166  INFO 17688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 09:31:47.166  INFO 17688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 09:31:47.282  INFO 17688 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 09:31:47.282  INFO 17688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2622 ms
-2021-01-18 09:31:47.652  INFO 17688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 09:31:47.667 DEBUG 17688 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 09:31:47.836 DEBUG 17688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2021-01-18 09:31:47.836  INFO 17688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 09:31:47.883 DEBUG 17688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 09:31:47.902 DEBUG 17688 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 09:31:47.999  INFO 17688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 09:31:48.030  INFO 17688 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.208 seconds (JVM running for 5.063)
-2021-01-18 09:32:07.507  INFO 17688 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 09:32:07.507  INFO 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 09:32:07.507 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 09:32:07.507 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 09:32:07.507 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 09:32:07.507 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7b77d0e
-2021-01-18 09:32:07.507 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6c33c73f
-2021-01-18 09:32:07.507 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 09:32:07.507  INFO 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 09:32:07.518 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello", parameters={}
-2021-01-18 09:32:07.518 DEBUG 17688 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#hello()
-2021-01-18 09:32:07.550 DEBUG 17688 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
-2021-01-18 09:32:07.550 DEBUG 17688 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello, SpringBoot...maven, User{username='kelvin', age=18, address='北京海淀'}"]
-2021-01-18 09:32:07.565 DEBUG 17688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:32:11.017 DEBUG 17688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello1", parameters={}
-2021-01-18 09:32:11.017 DEBUG 17688 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#query()
-2021-01-18 09:32:11.056 DEBUG 17688 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-01-18 09:32:11.072 DEBUG 17688 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [User{username='kelvin', age=18, address='北京海淀'}]
-2021-01-18 09:32:11.072 DEBUG 17688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:36:09.558  INFO 22748 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 22748 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 09:36:09.562  INFO 22748 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 09:36:11.679  INFO 22748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 09:36:11.701  INFO 22748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 09:36:11.701  INFO 22748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 09:36:11.833  INFO 22748 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 09:36:11.833  INFO 22748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2208 ms
-2021-01-18 09:36:12.102  INFO 22748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 09:36:12.118 DEBUG 22748 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 09:36:12.255 DEBUG 22748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 09:36:12.255  INFO 22748 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 09:36:12.286 DEBUG 22748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 09:36:12.296 DEBUG 22748 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 09:36:12.387  INFO 22748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 09:36:12.406  INFO 22748 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.491 seconds (JVM running for 4.148)
-2021-01-18 09:36:28.422  INFO 22748 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 09:36:28.422  INFO 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 09:36:28.422 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 09:36:28.422 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 09:36:28.422 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 09:36:28.422 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@66e44fb9
-2021-01-18 09:36:28.422 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6e3ada5
-2021-01-18 09:36:28.422 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 09:36:28.422  INFO 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 09:36:28.437 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello1", parameters={}
-2021-01-18 09:36:28.437 DEBUG 22748 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#query()
-2021-01-18 09:36:28.514 DEBUG 22748 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-01-18 09:36:28.514 DEBUG 22748 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [User{username='kelvin', age=18, address='北京海淀'}]
-2021-01-18 09:36:28.530 DEBUG 22748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:36:31.530 DEBUG 22748 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello2", parameters={}
-2021-01-18 09:36:31.530 DEBUG 22748 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#queryUser1()
-2021-01-18 09:36:31.530 DEBUG 22748 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-01-18 09:36:31.530 DEBUG 22748 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.gupaoedu.controller.UserController$User1@4851340e]
-2021-01-18 09:36:31.530 DEBUG 22748 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:50:55.364  INFO 6608 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 6608 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 09:50:55.364  INFO 6608 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 09:50:57.602  INFO 6608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 09:50:57.633  INFO 6608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 09:50:57.633  INFO 6608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 09:50:58.380  INFO 6608 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 09:50:58.380  INFO 6608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2934 ms
-2021-01-18 09:50:58.682  INFO 6608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 09:50:58.682 DEBUG 6608 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 09:50:58.841 DEBUG 6608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 09:50:58.841  INFO 6608 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 09:50:58.882 DEBUG 6608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 09:50:58.892 DEBUG 6608 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 09:50:59.021  INFO 6608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 09:50:59.034  INFO 6608 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.326 seconds (JVM running for 5.214)
-2021-01-18 09:56:43.312  INFO 6608 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 09:56:43.312  INFO 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 09:56:43.312 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 09:56:43.312 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 09:56:43.312 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 09:56:43.312 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1bdc8d5e
-2021-01-18 09:56:43.312 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3d6eefaa
-2021-01-18 09:56:43.312 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 09:56:43.312  INFO 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 09:56:43.328 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index2.html", parameters={}
-2021-01-18 09:56:43.348 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:56:43.380 DEBUG 6608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:56:43.411 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img1/test.png", parameters={}
-2021-01-18 09:56:43.411 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:56:43.411 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 09:56:43.411 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 09:56:43.411 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 09:56:43.411 DEBUG 6608 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2021-01-18 09:56:43.449 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-01-18 09:56:43.464 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Jan 18 09:56:43 CST 2021, status=404, error=Not Found, message=, path=/springboot/img (truncated)...]
-2021-01-18 09:56:43.511 DEBUG 6608 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 09:56:45.199 DEBUG 6608 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index2.html", parameters={}
-2021-01-18 09:56:45.199 DEBUG 6608 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:56:45.214 DEBUG 6608 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img1/test.png", parameters={}
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Jan 18 09:56:45 CST 2021, status=404, error=Not Found, message=, path=/springboot/img (truncated)...]
-2021-01-18 09:56:45.229 DEBUG 6608 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 09:57:01.488 DEBUG 6608 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index1.html", parameters={}
-2021-01-18 09:57:01.488 DEBUG 6608 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:57:01.501 DEBUG 6608 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:57:01.516 DEBUG 6608 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img/test.png", parameters={}
-2021-01-18 09:57:01.516 DEBUG 6608 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:57:01.532 DEBUG 6608 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:57:26.080  INFO 3948 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 3948 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 09:57:26.080  INFO 3948 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 09:57:28.359  INFO 3948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 09:57:28.388  INFO 3948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 09:57:28.388  INFO 3948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 09:57:28.514  INFO 3948 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 09:57:28.514  INFO 3948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2350 ms
-2021-01-18 09:57:28.811  INFO 3948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 09:57:28.811 DEBUG 3948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 09:57:28.954 DEBUG 3948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 09:57:28.954  INFO 3948 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 09:57:28.985 DEBUG 3948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 09:57:28.995 DEBUG 3948 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 09:57:29.097  INFO 3948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 09:57:29.115  INFO 3948 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.836 seconds (JVM running for 4.766)
-2021-01-18 09:57:35.687  INFO 3948 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 09:57:35.687  INFO 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 09:57:35.687 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 09:57:35.687 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 09:57:35.687 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 09:57:35.687 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72a8220a
-2021-01-18 09:57:35.687 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@b638d11
-2021-01-18 09:57:35.687 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 09:57:35.687  INFO 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 09:57:35.702 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index2.html", parameters={}
-2021-01-18 09:57:35.718 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:57:35.734 DEBUG 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2021-01-18 09:57:35.740 DEBUG 3948 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img1/test.png", parameters={}
-2021-01-18 09:57:35.756 DEBUG 3948 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:57:35.772 DEBUG 3948 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 09:58:09.185 DEBUG 3948 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index.html", parameters={}
-2021-01-18 09:58:09.185 DEBUG 3948 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 09:58:09.200 DEBUG 3948 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2021-01-18 10:01:22.305 DEBUG 3948 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index2.html", parameters={}
-2021-01-18 10:01:22.313 DEBUG 3948 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:01:22.314 DEBUG 3948 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2021-01-18 10:01:22.345 DEBUG 3948 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img1/test.png", parameters={}
-2021-01-18 10:01:22.353 DEBUG 3948 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:01:22.353 DEBUG 3948 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2021-01-18 10:08:33.933  INFO 9300 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 9300 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:08:33.948  INFO 9300 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:08:36.037  INFO 9300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:08:36.052  INFO 9300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:08:36.052  INFO 9300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:08:36.168  INFO 9300 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:08:36.168  INFO 9300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2141 ms
-2021-01-18 10:08:36.469  INFO 9300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:08:36.485 DEBUG 9300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:08:36.632 DEBUG 9300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:08:36.632  INFO 9300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:08:36.673 DEBUG 9300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:08:36.683 DEBUG 9300 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:08:36.775  INFO 9300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:08:36.783  INFO 9300 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.497 seconds (JVM running for 4.111)
-2021-01-18 10:09:01.366  INFO 9300 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:09:01.366  INFO 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:09:01.366 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:09:01.366 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:09:01.366 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:09:01.382 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a2b5060
-2021-01-18 10:09:01.382 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@52833dd1
-2021-01-18 10:09:01.382 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:09:01.382  INFO 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2021-01-18 10:09:01.398 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:09:01.398 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:09:01.413 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:09:01.413 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:09:01.420 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:09:01.420 DEBUG 9300 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:09:01.469 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:09:01.469 DEBUG 9300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:09:03.671 DEBUG 9300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:09:18.316  INFO 18408 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 18408 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:09:18.332  INFO 18408 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:09:20.421  INFO 18408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:09:20.441  INFO 18408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:09:20.441  INFO 18408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:09:20.557  INFO 18408 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:09:20.557  INFO 18408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
-2021-01-18 10:09:20.827  INFO 18408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:09:20.847 DEBUG 18408 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:09:20.969 DEBUG 18408 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:09:20.969  INFO 18408 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:09:21.000 DEBUG 18408 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:09:21.020 DEBUG 18408 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:09:21.110  INFO 18408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:09:21.132  INFO 18408 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.506 seconds (JVM running for 4.391)
-2021-01-18 10:09:38.482  INFO 18408 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:09:38.482  INFO 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:09:38.482 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:09:38.482 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:09:38.482 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:09:38.482 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@77d8bdd
-2021-01-18 10:09:38.482 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@223286b9
-2021-01-18 10:09:38.482 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:09:38.482  INFO 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:09:38.497 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:09:38.513 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:09:38.519 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:09:38.519 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:09:38.519 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:09:38.519 DEBUG 18408 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:09:38.551 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:09:38.566 DEBUG 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:09:39.383 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:09:39.383 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:09:39.383 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:09:39.383 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:09:39.383 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:09:39.399 DEBUG 18408 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:09:39.399 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:09:39.399 DEBUG 18408 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:09:46.199 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:09:46.199 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:09:46.214 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:09:46.214 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:09:46.214 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:09:46.214 DEBUG 18408 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:09:46.214 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:09:46.214 DEBUG 18408 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:12:23.624  INFO 21740 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 21740 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:12:23.624  INFO 21740 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:12:25.887  INFO 21740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:12:25.902  INFO 21740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:12:25.902  INFO 21740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:12:26.027  INFO 21740 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:12:26.027  INFO 21740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2318 ms
-2021-01-18 10:12:26.320  INFO 21740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:12:26.332 DEBUG 21740 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:12:26.474 DEBUG 21740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:12:26.485  INFO 21740 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:12:26.505 DEBUG 21740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:12:26.515 DEBUG 21740 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:12:26.617  INFO 21740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:12:26.636  INFO 21740 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.657 seconds (JVM running for 4.29)
-2021-01-18 10:12:35.548  INFO 21740 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:12:35.548  INFO 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:12:35.548 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:12:35.548 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:12:35.548 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:12:35.548 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@35d5a2da
-2021-01-18 10:12:35.548 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@464d10f8
-2021-01-18 10:12:35.548 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:12:35.548  INFO 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:12:35.564 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:12:35.580 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:12:35.586 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:12:35.586 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:12:35.586 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:12:35.586 DEBUG 21740 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:12:35.633 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:12:35.633 DEBUG 21740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:12:56.894  INFO 12504 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 12504 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:12:56.894  INFO 12504 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:12:59.121  INFO 12504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:12:59.143  INFO 12504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:12:59.143  INFO 12504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:12:59.259  INFO 12504 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:12:59.259  INFO 12504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2227 ms
-2021-01-18 10:12:59.546  INFO 12504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:12:59.557 DEBUG 12504 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:12:59.689 DEBUG 12504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:12:59.689  INFO 12504 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:12:59.724 DEBUG 12504 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:12:59.740 DEBUG 12504 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:12:59.831  INFO 12504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:12:59.849  INFO 12504 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.688 seconds (JVM running for 4.569)
-2021-01-18 10:13:09.038  INFO 12504 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:13:09.039  INFO 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:13:09.040 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:13:09.041 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:13:09.041 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:13:09.042 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3da41894
-2021-01-18 10:13:09.043 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5ab0fdee
-2021-01-18 10:13:09.043 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:13:09.043  INFO 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-01-18 10:13:09.061 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index3.html", parameters={}
-2021-01-18 10:13:09.071 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:13:09.076 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:13:09.077 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:13:09.083 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:13:09.086 DEBUG 12504 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:13:09.120 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:13:09.126 DEBUG 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:14:37.923  INFO 1104 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 1104 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:14:37.940  INFO 1104 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:14:40.104  INFO 1104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:14:40.127  INFO 1104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:14:40.127  INFO 1104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:14:40.252  INFO 1104 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:14:40.252  INFO 1104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2244 ms
-2021-01-18 10:14:40.519  INFO 1104 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:14:40.537 DEBUG 1104 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:14:40.671 DEBUG 1104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:14:40.671  INFO 1104 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:14:40.702 DEBUG 1104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:14:40.710 DEBUG 1104 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:14:40.803  INFO 1104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:14:40.824  INFO 1104 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.592 seconds (JVM running for 4.425)
-2021-01-18 10:15:05.301  INFO 1104 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:15:05.317  INFO 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:15:05.317 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:15:05.317 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:15:05.317 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:15:05.317 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1824f782
-2021-01-18 10:15:05.317 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@68a1d2e1
-2021-01-18 10:15:05.317 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:15:05.317  INFO 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:15:05.323 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/index3.html", parameters={}
-2021-01-18 10:15:05.339 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:15:05.339 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:15:05.339 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:15:05.355 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:15:05.355 DEBUG 1104 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:15:05.386 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:15:05.402 DEBUG 1104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:15:07.457 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/index3.html", parameters={}
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:15:07.459 DEBUG 1104 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:16:00.660  INFO 5140 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 5140 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:16:00.664  INFO 5140 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:16:03.107  INFO 5140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:16:03.128  INFO 5140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:16:03.128  INFO 5140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:16:03.244  INFO 5140 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:16:03.244  INFO 5140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2488 ms
-2021-01-18 10:16:03.505  INFO 5140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:16:03.529 DEBUG 5140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:16:03.662 DEBUG 5140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:16:03.670  INFO 5140 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:16:03.692 DEBUG 5140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:16:03.702 DEBUG 5140 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:16:03.804  INFO 5140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:16:03.814  INFO 5140 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.925 seconds (JVM running for 4.848)
-2021-01-18 10:16:19.366  INFO 5140 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:16:19.366  INFO 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:16:19.382 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:16:19.382 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:16:19.382 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:16:19.382 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a2b5060
-2021-01-18 10:16:19.382 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@52833dd1
-2021-01-18 10:16:19.382 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:16:19.382  INFO 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:16:19.397 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/index3.html", parameters={}
-2021-01-18 10:16:19.397 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:16:19.413 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:16:19.413 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:16:19.413 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:16:19.413 DEBUG 5140 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:16:19.451 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:16:19.451 DEBUG 5140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:16:37.035 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/img/test.png", parameters={}
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:16:37.037 DEBUG 5140 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:18:40.859  INFO 6592 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 6592 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:18:40.870  INFO 6592 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:18:43.249  INFO 6592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:18:43.265  INFO 6592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:18:43.265  INFO 6592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:18:43.418  INFO 6592 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:18:43.418  INFO 6592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2447 ms
-2021-01-18 10:18:43.704  INFO 6592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:18:43.714 DEBUG 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:18:43.836 DEBUG 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:18:43.836  INFO 6592 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:18:43.869 DEBUG 6592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:18:43.877 DEBUG 6592 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:18:43.951  INFO 6592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:18:43.982  INFO 6592 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.255 seconds (JVM running for 5.183)
-2021-01-18 10:18:56.260  INFO 6592 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:18:56.260  INFO 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:18:56.260 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:18:56.260 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:18:56.260 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:18:56.260 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@776f1452
-2021-01-18 10:18:56.260 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@78cd475c
-2021-01-18 10:18:56.260 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:18:56.260  INFO 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:18:56.276 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/img/test.png", parameters={}
-2021-01-18 10:18:56.291 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:18:56.291 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:18:56.291 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:18:56.291 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:18:56.307 DEBUG 6592 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:18:56.338 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:18:56.338 DEBUG 6592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:19:20.350  INFO 13600 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 13600 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:19:20.350  INFO 13600 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:19:22.585  INFO 13600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:19:22.600  INFO 13600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:19:22.600  INFO 13600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:19:22.739  INFO 13600 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:19:22.739  INFO 13600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2304 ms
-2021-01-18 10:19:23.044  INFO 13600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:19:23.054 DEBUG 13600 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:19:23.186 DEBUG 13600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:19:23.186  INFO 13600 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:19:23.217 DEBUG 13600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:19:23.227 DEBUG 13600 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:19:23.339  INFO 13600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:19:23.369  INFO 13600 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.731 seconds (JVM running for 4.798)
-2021-01-18 10:19:39.288  INFO 13600 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:19:39.288  INFO 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:19:39.288 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:19:39.288 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:19:39.288 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:19:39.288 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a6526d5
-2021-01-18 10:19:39.288 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@59407e6b
-2021-01-18 10:19:39.288 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:19:39.288  INFO 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:19:39.304 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/img/test.png", parameters={}
-2021-01-18 10:19:39.307 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:19:39.307 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:19:39.307 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:19:39.323 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:19:39.323 DEBUG 13600 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:19:39.354 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:19:39.354 DEBUG 13600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:21:09.771  INFO 15476 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 15476 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:21:09.771  INFO 15476 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:21:11.968  INFO 15476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:21:11.984  INFO 15476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:21:11.984  INFO 15476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:21:12.108  INFO 15476 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:21:12.108  INFO 15476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2253 ms
-2021-01-18 10:21:12.414  INFO 15476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:21:12.424 DEBUG 15476 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:21:12.536 DEBUG 15476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:21:12.544  INFO 15476 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:21:12.575 DEBUG 15476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:21:12.587 DEBUG 15476 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:21:12.676  INFO 15476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:21:12.697  INFO 15476 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.601 seconds (JVM running for 4.287)
-2021-01-18 10:21:28.369  INFO 15476 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:21:28.369  INFO 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:21:28.369 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:21:28.369 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:21:28.369 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:21:28.369 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5af9dca5
-2021-01-18 10:21:28.369 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@23b5571d
-2021-01-18 10:21:28.369 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:21:28.369  INFO 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:21:28.385 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/img/test.png", parameters={}
-2021-01-18 10:21:28.405 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:21:28.405 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:21:28.405 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:21:28.405 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:21:28.405 DEBUG 15476 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:21:28.452 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:21:28.452 DEBUG 15476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:22:39.115  INFO 23496 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 23496 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:22:39.131  INFO 23496 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:22:41.690  INFO 23496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:22:41.713  INFO 23496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:22:41.713  INFO 23496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:22:41.854  INFO 23496 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:22:41.854  INFO 23496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2638 ms
-2021-01-18 10:22:42.148  INFO 23496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:22:42.159 DEBUG 23496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:22:42.291 DEBUG 23496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:22:42.301  INFO 23496 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:22:42.332 DEBUG 23496 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:22:42.342 DEBUG 23496 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:22:42.462  INFO 23496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:22:42.474  INFO 23496 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.102 seconds (JVM running for 5.166)
-2021-01-18 10:22:51.356  INFO 23496 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:22:51.356  INFO 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:22:51.356 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:22:51.356 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:22:51.356 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:22:51.356 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@21eac478
-2021-01-18 10:22:51.356 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@71a2aa25
-2021-01-18 10:22:51.356 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:22:51.356  INFO 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:22:51.373 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/img/test.png", parameters={}
-2021-01-18 10:22:51.389 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:22:51.389 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:22:51.389 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:22:51.389 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:22:51.389 DEBUG 23496 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:22:51.425 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:22:51.445 DEBUG 23496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:24:52.679  INFO 3404 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 3404 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:24:52.680  INFO 3404 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:24:55.356  INFO 3404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:24:55.371  INFO 3404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:24:55.371  INFO 3404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:24:55.503  INFO 3404 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:24:55.503  INFO 3404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2721 ms
-2021-01-18 10:24:55.804  INFO 3404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:24:55.819 DEBUG 3404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:24:55.945 DEBUG 3404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:24:55.957  INFO 3404 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:24:55.990 DEBUG 3404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:24:56.005 DEBUG 3404 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:24:56.133  INFO 3404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:24:56.157  INFO 3404 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.258 seconds (JVM running for 5.333)
-2021-01-18 10:26:57.868  INFO 3404 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:26:57.868  INFO 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:26:57.868 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:26:57.868 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:26:57.868 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:26:57.868 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1605156f
-2021-01-18 10:26:57.868 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@36343673
-2021-01-18 10:26:57.868 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:26:57.868  INFO 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:26:57.884 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/img/test.png", parameters={}
-2021-01-18 10:26:57.899 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:26:57.899 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:26:57.899 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:26:57.914 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:26:57.914 DEBUG 3404 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:26:57.945 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:26:57.961 DEBUG 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:27:07.946 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/", parameters={}
-2021-01-18 10:27:07.946 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:27:07.946 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:27:07.946 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:27:07.946 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:27:07.946 DEBUG 3404 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:27:07.952 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:27:07.952 DEBUG 3404 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:28:34.318  INFO 11288 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 11288 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:28:34.334  INFO 11288 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:28:36.469  INFO 11288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:28:36.485  INFO 11288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:28:36.485  INFO 11288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:28:36.604  INFO 11288 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:28:36.604  INFO 11288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2185 ms
-2021-01-18 10:28:36.875  INFO 11288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:28:36.891 DEBUG 11288 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:28:36.990 DEBUG 11288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:28:37.005  INFO 11288 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:28:37.030 DEBUG 11288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:28:37.040 DEBUG 11288 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:28:37.129  INFO 11288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:28:37.151  INFO 11288 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.591 seconds (JVM running for 4.512)
-2021-01-18 10:28:42.990  INFO 11288 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:28:42.990  INFO 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:28:42.990 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:28:42.990 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:28:42.990 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:28:42.998 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1c3d6564
-2021-01-18 10:28:43.000 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4b37c750
-2021-01-18 10:28:43.000 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:28:43.000  INFO 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2021-01-18 10:28:43.010 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/", parameters={}
-2021-01-18 10:28:43.020 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:28:43.028 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:28:43.028 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:28:43.028 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:28:43.040 DEBUG 11288 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:28:43.079 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:28:43.079 DEBUG 11288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2021-01-18 10:29:43.218  INFO 3968 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 3968 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
-2021-01-18 10:29:43.221  INFO 3968 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
-2021-01-18 10:29:45.364  INFO 3968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-18 10:29:45.379  INFO 3968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-01-18 10:29:45.379  INFO 3968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-18 10:29:45.533  INFO 3968 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
-2021-01-18 10:29:45.533  INFO 3968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2227 ms
-2021-01-18 10:29:45.809  INFO 3968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-18 10:29:45.819 DEBUG 3968 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-01-18 10:29:45.928 DEBUG 3968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2021-01-18 10:29:45.930  INFO 3968 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-01-18 10:29:45.961 DEBUG 3968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2021-01-18 10:29:45.979 DEBUG 3968 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2021-01-18 10:29:46.083  INFO 3968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
-2021-01-18 10:29:46.103  INFO 3968 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.565 seconds (JVM running for 4.471)
-2021-01-18 10:30:11.051  INFO 3968 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-18 10:30:11.051  INFO 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-18 10:30:11.051 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-01-18 10:30:11.051 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-01-18 10:30:11.051 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-01-18 10:30:11.051 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1824f782
-2021-01-18 10:30:11.051 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@68a1d2e1
-2021-01-18 10:30:11.051 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-01-18 10:30:11.051  INFO 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-18 10:30:11.067 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/MyFiles/", parameters={}
-2021-01-18 10:30:11.082 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
-2021-01-18 10:30:11.082 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2021-01-18 10:30:11.082 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2021-01-18 10:30:11.082 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/springboot/error", parameters={}
-2021-01-18 10:30:11.099 DEBUG 3968 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2021-01-18 10:30:11.120 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2021-01-18 10:30:11.135 DEBUG 3968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-02-27 17:26:03.501  INFO 23412 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 23412 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
+2021-02-27 17:26:03.518  INFO 23412 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-27 17:26:06.100  INFO 23412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-27 17:26:06.122  INFO 23412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-27 17:26:06.122  INFO 23412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-27 17:26:06.242  INFO 23412 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-02-27 17:26:06.244  INFO 23412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2625 ms
+2021-02-27 17:26:06.567  INFO 23412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-27 17:26:06.580 DEBUG 23412 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-27 17:26:06.764 DEBUG 23412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2021-02-27 17:26:06.774  INFO 23412 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-02-27 17:26:06.815 DEBUG 23412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-02-27 17:26:06.835 DEBUG 23412 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-27 17:26:06.947  INFO 23412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
+2021-02-27 17:26:06.967  INFO 23412 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.314 seconds (JVM running for 5.207)
+2021-02-27 17:27:09.826  INFO 23412 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-27 17:27:09.826  INFO 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-27 17:27:09.826 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-27 17:27:09.826 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-02-27 17:27:09.826 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-02-27 17:27:09.826 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@33e22617
+2021-02-27 17:27:09.826 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@63ff46cc
+2021-02-27 17:27:09.826 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-02-27 17:27:09.826  INFO 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-02-27 17:27:09.841 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/springboot/", parameters={}
+2021-02-27 17:27:09.857 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-02-27 17:27:09.857 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2021-02-27 17:27:09.857 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2021-02-27 17:27:09.873 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/springboot/index.html", parameters={}
+2021-02-27 17:27:09.873 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
+2021-02-27 17:27:09.888 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2021-02-27 17:27:09.888 DEBUG 23412 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 17:27:09.926 DEBUG 23412 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img/test.png", parameters={}
+2021-02-27 17:27:09.926 DEBUG 23412 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
+2021-02-27 17:27:09.926 DEBUG 23412 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 17:27:45.983 DEBUG 23412 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello", parameters={}
+2021-02-27 17:27:45.983 DEBUG 23412 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#hello()
+2021-02-27 17:27:46.006 DEBUG 23412 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-02-27 17:27:46.006 DEBUG 23412 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello, SpringBoot...maven, User{username='kelvin', age=18, address='北京海淀'}"]
+2021-02-27 17:27:46.006 DEBUG 23412 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 17:28:09.458 DEBUG 23412 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello1", parameters={}
+2021-02-27 17:28:09.459 DEBUG 23412 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#query()
+2021-02-27 17:28:09.512 DEBUG 23412 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-27 17:28:09.512 DEBUG 23412 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [User{username='kelvin', age=18, address='北京海淀'}]
+2021-02-27 17:28:09.529 DEBUG 23412 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 17:51:30.162  INFO 24944 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 24944 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
+2021-02-27 17:51:30.162  INFO 24944 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-27 17:51:32.298  INFO 24944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-27 17:51:32.325  INFO 24944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-27 17:51:32.325  INFO 24944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-27 17:51:33.075  INFO 24944 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-02-27 17:51:33.075  INFO 24944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2833 ms
+2021-02-27 17:51:33.375  INFO 24944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-27 17:51:33.391 DEBUG 24944 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-27 17:51:33.536 DEBUG 24944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2021-02-27 17:51:33.538  INFO 24944 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-02-27 17:51:33.569 DEBUG 24944 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-02-27 17:51:33.585 DEBUG 24944 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-27 17:51:33.691  INFO 24944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
+2021-02-27 17:51:33.714  INFO 24944 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 4.23 seconds (JVM running for 5.077)
+2021-02-27 17:51:38.643  INFO 24944 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-27 17:51:38.643  INFO 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-27 17:51:38.643 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-27 17:51:38.643 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-02-27 17:51:38.643 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-02-27 17:51:38.643 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@594388bb
+2021-02-27 17:51:38.643 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@54c63867
+2021-02-27 17:51:38.643 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-02-27 17:51:38.643  INFO 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-02-27 17:51:38.659 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index1.html", parameters={}
+2021-02-27 17:51:38.675 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/custom/", "/"]
+2021-02-27 17:51:38.712 DEBUG 24944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 18:13:28.266  INFO 7244 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 7244 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
+2021-02-27 18:13:28.266  INFO 7244 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-27 18:13:30.670  INFO 7244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-27 18:13:30.691  INFO 7244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-27 18:13:30.691  INFO 7244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-27 18:13:30.813  INFO 7244 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-02-27 18:13:30.813  INFO 7244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
+2021-02-27 18:13:31.148  INFO 7244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-27 18:13:31.159 DEBUG 7244 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-27 18:13:31.321 DEBUG 7244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2021-02-27 18:13:31.329  INFO 7244 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-02-27 18:13:31.372 DEBUG 7244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-02-27 18:13:31.390 DEBUG 7244 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-27 18:13:31.515  INFO 7244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
+2021-02-27 18:13:31.535  INFO 7244 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.962 seconds (JVM running for 4.763)
+2021-02-27 18:13:57.788  INFO 7244 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-27 18:13:57.788  INFO 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-27 18:13:57.788 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-27 18:13:57.788 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-02-27 18:13:57.788 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-02-27 18:13:57.788 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@c998640
+2021-02-27 18:13:57.788 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@fa07bfd
+2021-02-27 18:13:57.788 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-02-27 18:13:57.788  INFO 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-02-27 18:13:57.804 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index.html", parameters={}
+2021-02-27 18:13:57.820 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-02-27 18:13:57.857 DEBUG 7244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 20:07:22.610  INFO 24228 --- [main] com.gupaoedu.GpSpringBootApplication     : Starting GpSpringBootApplication using Java 1.8.0_261 on DESKTOP-TJCG53D with PID 24228 (C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create\target\classes started by JiaXie in C:\MySourceGithub\MySource\java\Spring\springboot_demo_manual_create)
+2021-02-27 20:07:22.618  INFO 24228 --- [main] com.gupaoedu.GpSpringBootApplication     : No active profile set, falling back to default profiles: default
+2021-02-27 20:07:24.659  INFO 24228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-27 20:07:24.679  INFO 24228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-27 20:07:24.679  INFO 24228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-27 20:07:24.801  INFO 24228 --- [main] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-02-27 20:07:24.801  INFO 24228 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2102 ms
+2021-02-27 20:07:25.104  INFO 24228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-27 20:07:25.116 DEBUG 24228 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-27 20:07:25.249 DEBUG 24228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2021-02-27 20:07:25.257  INFO 24228 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-02-27 20:07:25.287 DEBUG 24228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-02-27 20:07:25.300 DEBUG 24228 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-27 20:07:25.411  INFO 24228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/springboot'
+2021-02-27 20:07:25.442  INFO 24228 --- [main] com.gupaoedu.GpSpringBootApplication     : Started GpSpringBootApplication in 3.512 seconds (JVM running for 4.21)
+2021-02-27 20:07:36.025  INFO 24228 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-27 20:07:36.025  INFO 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-27 20:07:36.025 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-27 20:07:36.025 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-02-27 20:07:36.041 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-02-27 20:07:36.041 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@10516bfe
+2021-02-27 20:07:36.041 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@65a030c4
+2021-02-27 20:07:36.041 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-02-27 20:07:36.041  INFO 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2021-02-27 20:07:36.041 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/springboot/index1.html", parameters={}
+2021-02-27 20:07:36.056 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-02-27 20:07:36.080 DEBUG 24228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2021-02-27 20:07:36.110 DEBUG 24228 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/springboot/img/test.png", parameters={}
+2021-02-27 20:07:36.110 DEBUG 24228 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-02-27 20:07:36.125 DEBUG 24228 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2021-02-27 20:11:28.927 DEBUG 24228 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello", parameters={}
+2021-02-27 20:11:28.927 DEBUG 24228 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#hello()
+2021-02-27 20:11:28.959 DEBUG 24228 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-02-27 20:11:28.959 DEBUG 24228 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello, SpringBoot...maven, kelvin 18 北京海淀"]
+2021-02-27 20:11:28.977 DEBUG 24228 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-27 20:33:37.350 DEBUG 24228 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/springboot/hello1", parameters={}
+2021-02-27 20:33:37.350 DEBUG 24228 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gupaoedu.controller.UserController#query()
+2021-02-27 20:33:37.399 DEBUG 24228 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-27 20:33:37.399 DEBUG 24228 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [User{username='kelvin', age=18, address='北京海淀'}]
+2021-02-27 20:33:37.415 DEBUG 24228 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

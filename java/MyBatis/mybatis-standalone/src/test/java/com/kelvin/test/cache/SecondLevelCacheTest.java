@@ -32,7 +32,7 @@ public class SecondLevelCacheTest {
             BlogMapper mapper1 = session1.getMapper(BlogMapper.class);
             System.out.println("第一次查询，不提交事务");
             System.out.println(mapper1.selectBlogById(1));
-            // 注释掉 事务不提交的情况下，二级缓存会写入吗？
+            // 注释掉 事务不提交的情况下，二级缓存会写入吗？不会写入
             //session1.commit();
 
             System.out.println("第二次查询");

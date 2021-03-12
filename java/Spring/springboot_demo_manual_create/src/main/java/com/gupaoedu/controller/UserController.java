@@ -23,8 +23,7 @@ public class UserController {
 
     @GetMapping("/hello")
     public String hello(){
-        //return ("Hello, SpringBoot...maven, " + username + " " + age + " " + address);
-        return "Hello, SpringBoot...maven, " + user;
+        return ("Hello, SpringBoot...maven, " + username + " " + age + " " + address);
     }
 
     @GetMapping("/hello1")
