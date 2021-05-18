@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="C:/MySourceGithub/MySource/java/GuPaoP6_Fifth/2-3Spring&#28304;&#30721;/2-&#39030;&#23618;&#35774;&#35745;&#20043;IOC-gupaoedu-vip-spring-2.0-ioc/src/main/resources">
+			<include name="**/*"/>
+		</dir>
+		<dir name="C:/MySourceGithub/MySource/java/GuPaoP6_Fifth/2-3Spring&#28304;&#30721;/2-&#39030;&#23618;&#35774;&#35745;&#20043;IOC-gupaoedu-vip-spring-2.0-ioc/src/main/java">
+			<exclude name="**/*.java"/>
+			<exclude name="**/*.class"/>
+		</dir>
+		<dir name="C:/MySourceGithub/MySource/java/GuPaoP6_Fifth/2-3Spring&#28304;&#30721;/2-&#39030;&#23618;&#35774;&#35745;&#20043;IOC-gupaoedu-vip-spring-2.0-ioc/target/classes">
+		</dir>
+	</classpath>
+
+</application>

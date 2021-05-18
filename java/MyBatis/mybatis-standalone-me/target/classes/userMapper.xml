@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kelvin.mapper.UserMapper">
+    <cache/>
+    <select id="selectAllUsers" resultMap="userMap">
+        select * from user
+    </select>
+
+    <select id="selectUserById" resultType="user" parameterType="int">
+        select * from user where id = ${id}
+    </select>
+
+    <update id="updateUserById" parameterType="user" statementType="PREPARED">
+        update user set name=#{name}, age=${age}, favourites=#{favourites} where id=${id}
+    </update>
+
+    <resultMap id="userMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="age" property="age"></result>
+        <result column="name" property="name"></result>
+        <result column="favourites" property="favourites" typeHandler="com.kelvin.typehandler.MyTypeHandler"></result>
+    </resultMap>
+</mapper>

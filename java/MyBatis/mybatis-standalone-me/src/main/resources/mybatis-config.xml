@@ -9,14 +9,24 @@
 
         <setting name="lazyLoadingEnabled" value="true"/>
 
-        <setting name="localCacheScope" value="SESSION"/>
+        <!--<setting name="localCacheScope" value="SESSION"/>-->
 
     </settings>
 
     <typeAliases>
+        <typeAlias type="com.kelvin.entity.User" alias="user"/>
         <typeAlias type="com.kelvin.entity.Blog" alias="blog"/>
     </typeAliases>
-    
+
+    <typeHandlers>
+        <typeHandler handler="com.kelvin.typehandler.MyTypeHandler"/>
+    </typeHandlers>
+    <plugins>
+        <!--<plugin interceptor="com.kelvin.interceptor.MyInterceptor">
+            <property name="testProp" value="100"/>
+        </plugin>-->
+        <plugin interceptor="com.kelvin.interceptor.HideSensitiveDataInterceptor"/>
+    </plugins>
     <environments default="local">
         <environment id="local">
             <transactionManager type="JDBC"></transactionManager>
@@ -30,5 +40,6 @@
     </environments>
     <mappers>
         <mapper resource="BlogMapper.xml"></mapper>
+        <mapper resource="userMapper.xml"></mapper>
     </mappers>
 </configuration>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gupaoedu.vip.mapper.UserMapper">
+
+  <resultMap id="BaseResultMap" type="user">
+    <id property="id" column="id" jdbcType="INTEGER"/>
+    <result property="userName" column="user_name" jdbcType="VARCHAR" />
+    <result property="realName" column="real_name" jdbcType="VARCHAR" />
+    <result property="password" column="password" jdbcType="VARCHAR"/>
+    <result property="age" column="age" jdbcType="INTEGER"/>
+    <result property="dId" column="d_id" jdbcType="INTEGER"/>
+  </resultMap>
+
+    <sql id="baseSQL">
+        id,user_name,real_name,password,age,d_id
+    </sql>
+
+  <select id="selectUserById" resultType="user" statementType="PREPARED"  >
+        select
+         id,
+         user_name userName,
+         real_name realName,
+         password,
+         age,
+         d_id
+         from t_user where id = #{id}
+    </select>
+
+  <!-- $只能用在自定义类型和map上 -->
+  <select id="selectUserByBean"  parameterType="user" resultMap="BaseResultMap" >
+        select * from t_user where user_name = '${userName}'
+    </select>
+
+  <select id="selectUserList" resultMap="BaseResultMap" >
+        select * from t_user
+    </select>
+
+    <select id="queryUserList" resultMap="BaseResultMap" >
+        select * from t_user
+    </select>
+
+    <insert id="insertUser" parameterType="user">
+        insert into t_user(user_name,real_name)values(#{userName},#{realName})
+    </insert>
+
+    <!-- 批量插入
+        insert into t_user() values (),(),(),()
+    -->
+    <insert id="insertUserList" parameterType="java.util.List" >
+        insert into t_user(user_name,real_name)
+        values
+        <foreach collection="list" item="user" separator=",">
+            (#{user.userName},#{user.realName})
+        </foreach>
+
+    </insert>
+
+    <update id="updateUserList">
+     update t_user set
+        user_name =
+        <foreach collection="list" item="user" index="index" separator=" " open="case id" close="end">
+        when #{user.id} then #{user.userName}
+        </foreach>
+         ,real_name =
+         <foreach collection="list" item="user" index="index" separator=" " open="case id" close="end">
+          when #{user.id} then #{user.realName}
+         </foreach>
+         where id in
+         <foreach collection="list" item="item" open="(" separator="," close=")">
+          #{item.id,jdbcType=INTEGER}
+         </foreach>
+     </update>
+
+    <delete id="deleteByList" parameterType="java.util.List">
+         delete from t_user where id in
+         <!-- ( 1 , 2  , 3) -->
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item.id,jdbcType=INTEGER}
+        </foreach>
+    </delete>
+
+
+    <!-- if 的使用 -->
+    <select id="selectListIf" parameterType="user" resultMap="BaseResultMap" >
+        select
+            <include refid="baseSQL"></include>
+        from t_user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userName != null">
+                and user_name = #{userName}
+            </if>
+        </where>
+    </select>
+
+    <!-- choose 的使用 -->
+    <select id="selectListChoose" parameterType="user" resultMap="BaseResultMap" >
+        select
+        <include refid="baseSQL"></include>
+        from t_user
+        <where>
+            <choose>
+                <when test="id != null">
+                    id = #{id}
+                </when>
+                <when test="userName != null and userName != ''">
+                    and user_name like CONCAT(CONCAT('%',#{userName,jdbcType=VARCHAR}),'%')
+                </when>
+                <otherwise>
+
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--
+        trim 的使用
+        替代where标签的使用
+    -->
+    <select id="selectListTrim" resultMap="BaseResultMap"
+            parameterType="user">
+        select <include refid="baseSQL"></include>
+        <!-- <where>
+            <if test="username!=null">
+                and name = #{username}
+            </if>
+        </where> -->
+        <trim prefix="where" prefixOverrides="AND |OR ">
+            <if test="userName!=null">
+                and user_name = #{userName}
+            </if>
+            <if test="age != 0">
+                and age = #{age}
+            </if>
+        </trim>
+    </select>
+
+    <!-- 替代set标签的使用 -->
+    <update id="updateUser" parameterType="User">
+        update t_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userName!=null">
+                user_name = #{userName},
+            </if>
+            <if test="age != 0">
+                age = #{age}
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+
+
+
+    <!-- 嵌套查询 1对1 1个用户对应一个部门-->
+    <resultMap id="nestedMap1" type="user">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR" />
+        <result property="realName" column="real_name" jdbcType="VARCHAR" />
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="INTEGER"/>
+        <result property="dId" column="d_id" jdbcType="INTEGER"/>
+        <association property="dept" javaType="dept">
+            <id column="did" property="dId"/>
+            <result column="d_name" property="dName"/>
+            <result column="d_desc" property="dDesc"/>
+        </association>
+    </resultMap>
+
+    <select id="queryUserNested" resultMap="nestedMap1">
+        SELECT
+            t1.`id`
+            ,t1.`user_name`
+            ,t1.`real_name`
+            ,t1.`password`
+            ,t1.`age`
+            ,t2.`did`
+            ,t2.`d_name`
+            ,t2.`d_desc`
+        FROM t_user t1
+        LEFT JOIN
+            t_department t2
+            ON t1.`d_id` = t2.`did`
+    </select>
+
+    <!-- 延迟加载 1对1 -->
+    <resultMap id="nestedMap1Lazy" type="user">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR" />
+        <result property="realName" column="real_name" jdbcType="VARCHAR" />
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="INTEGER"/>
+        <result property="dId" column="d_id" jdbcType="INTEGER"/>
+        <association property="dept" javaType="dept" column="d_id" select="queryDeptByUserIdLazy">
+
+        </association>
+    </resultMap>
+    <resultMap id="baseDept" type="dept">
+        <id column="did" property="dId"/>
+        <result column="d_name" property="dName"/>
+        <result column="d_desc" property="dDesc"/>
+    </resultMap>
+    <select id="queryUserNestedLazy" resultMap="nestedMap1Lazy">
+        SELECT
+            t1.`id`
+            ,t1.`user_name`
+            ,t1.`real_name`
+            ,t1.`password`
+            ,t1.`age`
+            ,t1.d_id
+        FROM t_user t1
+    </select>
+    <select id="queryDeptByUserIdLazy" parameterType="int" resultMap="baseDept">
+        select * from t_department where did = #{did}
+    </select>
+
+    <!-- 嵌套查询 1对多 1个部门有多个用户-->
+    <resultMap id="nestedMap2" type="dept">
+        <id column="did" property="dId"/>
+        <result column="d_name" property="dName"/>
+        <result column="d_desc" property="dDesc"/>
+        <collection property="users" ofType="user">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR" />
+            <result property="realName" column="real_name" jdbcType="VARCHAR" />
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="dId" column="d_id" jdbcType="INTEGER"/>
+        </collection>
+    </resultMap>
+    <select id="queryDeptNested" resultMap="nestedMap2">
+        SELECT
+            t1.`id`
+            ,t1.`user_name`
+            ,t1.`real_name`
+            ,t1.`password`
+            ,t1.`age`
+            ,t2.`did`
+            ,t2.`d_name`
+            ,t2.`d_desc`
+        FROM t_user t1
+        RIGHT JOIN
+            t_department t2
+            ON t1.`d_id` = t2.`did`
+    </select>
+
+    <!-- 1对多 延迟加载 -->
+    <resultMap id="nestedMap2Lazy" type="dept">
+        <id column="did" property="dId"/>
+        <result column="d_name" property="dName"/>
+        <result column="d_desc" property="dDesc"/>
+        <collection property="users" ofType="user" column="did" select="queryUserByDeptLazy">
+        </collection>
+    </resultMap>
+
+    <select id="queryDeptNestedLazy" resultMap="nestedMap2">
+        SELECT
+            ,t2.`did`
+            ,t2.`d_name`
+            ,t2.`d_desc`
+        FROM
+            t_department t2
+
+    </select>
+
+    <select id="queryUserByDeptLazy"  resultMap="BaseResultMap" >
+        select * from t_user where d_id = #{did}
+    </select>
+
+
+</mapper>
