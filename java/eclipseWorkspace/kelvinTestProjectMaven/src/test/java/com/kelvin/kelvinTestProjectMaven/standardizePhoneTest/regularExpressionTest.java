@@ -1,4 +1,4 @@
-package com.kelvin.kelvinTestProjectMaven;
+package com.kelvin.kelvinTestProjectMaven.standardizePhoneTest;
 import static org.junit.Assert.*;
 
 import java.util.regex.Matcher;
@@ -7,8 +7,6 @@ import java.util.regex.Pattern;
 import junit.framework.Assert;
 
 import org.junit.Test;
-
-import com.ibm.idm.helper.IDMPhoneNumberUtil;
 
 public class regularExpressionTest {
 	

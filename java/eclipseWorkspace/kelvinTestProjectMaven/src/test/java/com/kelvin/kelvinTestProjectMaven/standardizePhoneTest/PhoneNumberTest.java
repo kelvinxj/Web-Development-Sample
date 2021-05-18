@@ -1,4 +1,4 @@
-package com.kelvin.kelvinTestProjectMaven;
+package com.kelvin.kelvinTestProjectMaven.standardizePhoneTest;
 
 import static org.junit.Assert.*;
 

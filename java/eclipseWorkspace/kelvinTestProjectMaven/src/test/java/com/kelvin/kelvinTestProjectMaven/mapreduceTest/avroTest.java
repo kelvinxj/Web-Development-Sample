@@ -1,4 +1,4 @@
-package com.kelvin.kelvinTestProjectMaven.mapreduce;
+package com.kelvin.kelvinTestProjectMaven.mapreduceTest;
 
 import static org.junit.Assert.*;
 
