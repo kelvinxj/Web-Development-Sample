@@ -28,6 +28,9 @@ public class DBAccess {
 		Statement stmt = null;
 		try {
 			//1. load my sql driver
+			//when execute Class.forName, will execute static block of class com.mysql.cj.jdbc.Driver
+			//in static block, will call JDBC java.sql.DriverManager.registerDriver
+			//to register this driver.
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			//2. get connection
@@ -52,19 +55,7 @@ public class DBAccess {
 			//5. get result set meta data:
 			int columnCount = meta.getColumnCount();
 			System.out.println("Column count: " + columnCount);
-			String columnName = "";
-			String columnLabel = "";
-			int columnDisplaySize = 0;
-			String columnType = "";
-			
-			for(int i = 1; i <= columnCount; i++) {
-				columnName = meta.getColumnName(i);
-				columnLabel = meta.getColumnLabel(i);
-				columnDisplaySize = meta.getColumnDisplaySize(i);
-				columnType = meta.getColumnTypeName(i) + "(" + meta.getColumnType(i) + ")";
-				
-				System.out.println(MessageFormat.format("column {0}, name: {1}, label: {2}, type:{3}, column display size: {4}", i, columnName, columnLabel, columnType, columnDisplaySize));
-			}
+			DBUtil.writeColumnMetaData(rs, System.out);
 			
 //			int i = 0;
 //			while(rs.next()){
@@ -115,6 +106,7 @@ public class DBAccess {
 		Statement stmt = null;
 		try {
 			//1. load my sql driver
+			//when execute Class.forname, it will run static block of com.mysql.cj.jdbc.Driver.javaN
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(connectionString, "xiejia", "Lihui2020");
 			
@@ -129,10 +121,10 @@ public class DBAccess {
 //					rs.getMetaData().getColumnType(columnCount)
 				}
 			}
-		} catch (ClassNotFoundException e) {
+		}catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (SQLException e) {
+		}catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

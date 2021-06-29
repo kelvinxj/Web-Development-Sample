@@ -24,7 +24,13 @@ public class testReadFromPropertyFile {
 	
 	@Test
 	public void testReadFromPropertiesInPackage() throws ClassNotFoundException, IllegalAccessException, InstantiationException{
-		ResourceBundle bundle = ResourceBundle.getBundle("com.kelvin.test.iotest.myProperty");
+		/**
+		 * if you use maven,
+		 * put myProperty.properties file
+		 * to: ${ProjectRootFolder}\src\main\java\com\kelvin\kelvinTestProjectMaven\iotest
+		 * then make maven to package properties file:
+		 */
+		ResourceBundle bundle = ResourceBundle.getBundle("com.kelvin.kelvinTestProjectMaven.iotest.myProperty");
 		Enumeration<String> keyIterator = bundle.getKeys();
 		
 		String key = "";
